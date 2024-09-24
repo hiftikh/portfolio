@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Haris Iftikhar",
     default: "Haris Iftikhar",
   },
-  description: "Portfolio of Haris Iftikhar.",
+  description: "Portfolio of Haris Iftikhar",
   creator: "Haris Iftikhar",
   publisher: "Haris Iftikhar",
   keywords: ["Next.js", "React", "JavaScript"],
