@@ -1,3 +1,7 @@
 export default function Page() {
-  return <h1>Project</h1>;
+  return (
+    <>
+      <p>this is where my projects go i guess...</p>
+    </>
+  );
 }

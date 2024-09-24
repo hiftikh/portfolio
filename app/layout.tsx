@@ -6,8 +6,14 @@ import Navigation from "../components/Navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Haris Iftikhar",
+  title: {
+    template: "%s | Haris Iftikhar",
+    default: "Haris Iftikhar",
+  },
   description: "Portfolio of Haris Iftikhar.",
+  creator: "Haris Iftikhar",
+  publisher: "Haris Iftikhar",
+  keywords: ["Next.js", "React", "JavaScript"],
 };
 
 export default function RootLayout({
@@ -18,12 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {" "}
         <Navigation />
-        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          {" "}
-          <main>{children}</main>
-        </div>
+        <main>
+          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+            {children}
+          </div>
+        </main>
       </body>
     </html>
   );
