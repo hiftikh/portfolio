@@ -4,15 +4,8 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
 import Link from "next/link";
-
-const navigation = [
-  { name: "About", href: "/about", current: false, _id: 1 },
-  { name: "Work", href: "/work", current: false, _id: 2 },
-  { name: "Projects", href: "/projects", current: false, _id: 3 },
-  { name: "Contact", href: "/contact", current: false, _id: 4 },
-];
+import navigation from "../json/navagation.json";
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
