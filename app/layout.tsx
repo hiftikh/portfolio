@@ -1,9 +1,13 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { Mulish } from "next/font/google";
+import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Mulish({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -22,14 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={font.className}>
+      <body className="flex flex-col min-h-screen">
         <Navigation />
-        <main>
+        <main className="">
           <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
             {children}
           </div>
         </main>
+        <Footer />
       </body>
     </html>
   );
