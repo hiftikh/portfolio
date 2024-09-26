@@ -1,7 +1,9 @@
+import Header from "@/components/Header";
+
 export default function Page() {
   return (
     <>
-      <p>this is where my projects go i guess...</p>
+      <Header title="Recent Projects" underline />
     </>
   );
 }
