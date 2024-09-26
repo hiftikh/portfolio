@@ -33,6 +33,9 @@ export const ContentBox: React.FC<CardProps> = ({ data }: CardProps) => {
               <CardHeader>
                 <CardTitle>{item.name || "Name"} </CardTitle>
                 <CardDescription>{item.description}</CardDescription>
+                <CardDescription>
+                  {item.description || "Description"}
+                </CardDescription>
               </CardHeader>
 
               <CardFooter>
