@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Lora } from "next/font/google";
 import Link from "next/link";
+import data from "@/json/dataURL.json";
 const font = Lora({ subsets: ["latin"], display: "swap" });
 
 export default function Home() {
@@ -22,10 +23,10 @@ export default function Home() {
           </p>
           <div className="mt-10 flex justify-center gap-4">
             <Button asChild variant="outline" className="text-secondary">
-              <Link href="/">Github</Link>
+              <Link href={data[0].github}>Github</Link>
             </Button>
             <Button asChild variant="outline" className="text-secondary">
-              <Link href="/">LinkedIn</Link>
+              <Link href={data[0].linkedin}>LinkedIn</Link>
             </Button>
           </div>
         </div>
