@@ -2,16 +2,17 @@
   {
     "id": 0,
     "name": "Nurcare",
-    "description": "Find the tools and support you need to achieve your wellness",
-    "url": "/",
-    "slug": "/nurcare",
+    "description": "Find the tools and support you need to achieve your wellness.",
+    "longDescription": "",
+    "url": "https://nurcare.ca/",
+    "slug": "nurcare",
     "img": {
       "logo": {
-        "url": "",
+        "url": "logo.png",
         "alt": ""
       },
       "banner": {
-        "url": "",
+        "url": "banner.png",
         "alt": ""
       }
     },
@@ -22,14 +23,14 @@
     "name": "Jace",
     "description": "Jilani and Asuncion Consulting Engineers (JACE) is a building systems consulting and engineering firm that provides quality comprehensive Professional Mechanical and Electrical Engineering Services. ",
     "url": "/",
-    "slug": "/jace",
+    "slug": "jace",
     "img": {
       "logo": {
-        "url": "",
+        "url": "logo.png",
         "alt": ""
       },
       "banner": {
-        "url": "",
+        "url": "banner.png",
         "alt": ""
       }
     },
