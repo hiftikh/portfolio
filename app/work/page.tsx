@@ -6,13 +6,12 @@ export const metadata: Metadata = {
   title: "Work",
 };
 
-import data from "../../json/work.json";
+import data from "@/json/work.json";
 
 export default function Page() {
   return (
     <>
-      <Header title="Work"></Header>
-      <p>This is where my Work would go i guess..</p>
+      <Header title="Recent Work" underline />
       <ContentBox data={data} />
     </>
   );
