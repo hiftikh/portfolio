@@ -17,9 +17,6 @@
 }
 
 @layer utilities {
-  s .text-balance {
-    text-wrap: balance;
-  }
 }
 
 @layer base {
