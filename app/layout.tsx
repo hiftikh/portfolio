@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Mulish } from "next/font/google";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -14,10 +14,17 @@ export const metadata: Metadata = {
     template: "%s | Haris Iftikhar",
     default: "Haris Iftikhar",
   },
-  description: "Portfolio of Haris Iftikhar",
+  description: "Portfolio of Haris Iftikhar.",
   creator: "Haris Iftikhar",
   publisher: "Haris Iftikhar",
   keywords: ["Next.js", "React", "JavaScript"],
+  generator: "Next.js",
+  referrer: "origin-when-cross-origin",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
 };
 
 export default function RootLayout({
