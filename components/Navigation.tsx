@@ -11,7 +11,6 @@ import {
   Sheet,
   SheetContent,
   SheetDescription,
-  SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
@@ -29,7 +28,7 @@ export default function Navigation() {
               <div className="flex-shrink-0">
                 <Link href="/">
                   <Image
-                    src="/logo.svg"
+                    src="/img/hi-logo.svg"
                     alt="Haris Iftikhar"
                     width={30}
                     height={30}
