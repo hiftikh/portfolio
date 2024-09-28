@@ -25,6 +25,22 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  openGraph: {
+    title: {
+      template: "%s | Haris Iftikhar",
+      default: "",
+    },
+    description: "Portfolio of Haris Iftikhar.",
+    url: "",
+    siteName: "Haris Iftikhar",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
