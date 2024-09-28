@@ -8,7 +8,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <Header title="Recent Projects" underline />
+      <Header align="center" underline>
+        Recent Projects
+      </Header>
     </>
   );
 }
