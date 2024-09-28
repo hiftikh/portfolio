@@ -6,10 +6,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-
 import ContextCard from "../app/interfaces/Card";
 import Image from "next/image";
 import Link from "next/link";
+import { orderByNewDate, orderByAlphabetically } from "@/lib/utils";
 
 interface CardProps {
   data: ContextCard[];
@@ -19,27 +19,40 @@ export const ContentBox: React.FC<CardProps> = ({ data }: CardProps) => {
   return (
     <>
       <div className="grid grid-cols-1 gap-8 my-8 md:grid-cols-2 lg:grid-cols-3">
-        {data.map((item) => (
+        {data.sort(orderByNewDate).map((item) => (
           <Link href={`/work/${item.slug}`} key={item.id}>
-            <Card className="hover:bg-gray-100">
-              {/* <Image src={item.img.banner.url} alt="" height={3} width={3} /> */}
-              <CardHeader>
-                <CardTitle>{item.name || "Name"} </CardTitle>
-                <CardDescription>
-                  {item.description || "Description"}
-                </CardDescription>
-              </CardHeader>
+            <Card className="border-none border-b-8 border-accent overflow-hidden hover:shadow-xl h-full">
+              <div className="relative h-28 bg-secondary">
+                <Image
+                  fill
+                  src={`/img/${item.img.logo.url}`}
+                  alt={item.img.logo.alt}
+                  style={{ objectFit: "contain" }}
+                  className="p-5"
+                />
+              </div>
 
-              <CardFooter>
-                {item.keywords.map((keyword, index) => (
-                  <Badge
-                    variant="outline"
-                    className="mr-1 text-gray-500"
-                    key={index}
-                  >
-                    {keyword}
-                  </Badge>
-                ))}
+              <CardHeader className="bg-gray-50 text-center pb-4">
+                <CardTitle className="leading-7">
+                  {item.name || "Name"}
+                </CardTitle>
+
+                {/* <CardDescription>
+                  {item.description || "Description"}
+                </CardDescription> */}
+              </CardHeader>
+              <CardFooter className="bg-gray-50 flex-wrap justify-center">
+                {item.keywords
+                  .sort(orderByAlphabetically)
+                  .map((keyword, index) => (
+                    <Badge
+                      variant="outline"
+                      className="mr-1 mb-2 text-gray-500"
+                      key={index}
+                    >
+                      {keyword}
+                    </Badge>
+                  ))}
               </CardFooter>
             </Card>
           </Link>
