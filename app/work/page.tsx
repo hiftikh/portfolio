@@ -11,7 +11,9 @@ import data from "@/json/work.json";
 export default function Page() {
   return (
     <>
-      <Header title="Recent Work" underline />
+      <Header align="center" underline>
+        Recent Work
+      </Header>
       <ContentBox data={data} />
     </>
   );
