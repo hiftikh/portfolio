@@ -27,7 +27,7 @@ export default function Page({ params }: any) {
       <div className="container mx-auto w-10/12 md:w-8/12">
         <p className="text-center text-primary">{work.description}</p>
         <Image
-          src={`/img/work/${work.slug}/${work.img.logo.url}`}
+          src={`/img/${work.img.logo.url}`}
           alt={`${work.name} Logo`}
           height={200}
           width={200}
