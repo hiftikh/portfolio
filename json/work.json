@@ -1,28 +1,35 @@
 [
   {
     "id": 0,
+    "show": true,
     "name": "Nurcare",
-    "description": "Find the tools and support you need to achieve your wellness.",
-    "longDescription": "",
-    "url": "https://nurcare.ca/",
     "slug": "nurcare",
+    "description": {
+      "company": "Rekindle your inner light.",
+      "whatIDid": ["Designed logo", "Designed business card"]
+    },
+    "url": "https://nurcare.ca/",
     "img": {
       "logo": {
-        "url": "logo/nurcare-logo.png",
+        "url": "/img/logo/nurcare-logo.png",
         "alt": "Nurcare Logo"
       },
-      "banner": {
-        "url": "banner/nurcare-banner.png",
-        "alt": "Nurcare Banner"
-      }
+      "artwork": [
+        {
+          "url": "/img/artwork/nurecare-business-card-mock-up.png",
+          "alt": "Nurcare Business Card",
+          "caption": "Business Card Mock Up"
+        }
+      ]
     },
-    "keywords": ["Logo Design", "Business Card"]
+    "keywords": ["Logo Design", "Business Card"],
+    "dateAdded": "2024-08-01"
   },
   {
     "id": 1,
-    "name": "Jace",
-    "description": "Jilani and Asuncion Consulting Engineers (JACE) is a building systems consulting and engineering firm that provides quality comprehensive Professional Mechanical and Electrical Engineering Services. ",
-    "url": "/",
+    "name": "Jilani and Asuncion Consulting Engineers",
+    "description": "Jilani and Asuncion Consulting Engineers (JACE) is a building systems consulting and engineering firm that provides quality comprehensive Professional Mechanical and Electrical Engineering Services.",
+    "url": "https://jaceng.ca/",
     "slug": "jace",
     "img": {
       "logo": {
@@ -34,6 +41,113 @@
         "alt": "Jace Banner"
       }
     },
-    "keywords": ["Logo Design", "Business Card"]
+    "keywords": ["Logo Design", "Business Card"],
+    "date": "2017-05-01"
+  },
+  {
+    "id": 2,
+    "name": "Beladi's Bakery",
+    "description": "Created dynamic TV Menus using Adobe Photoshop for the graphics and Adobe Premier to create a video of the animation to different menu items",
+    "url": "https://beladis.com/",
+    "slug": "beladis",
+    "img": {
+      "logo": {
+        "url": "logo/beladi-logo.png",
+        "alt": "beladi Logo"
+      },
+      "banner": {
+        "url": "banner/beladi-banner.png",
+        "alt": "beladi Banner"
+      }
+    },
+    "keywords": ["TV Menu"],
+    "date": "2019-10-01"
+  },
+  {
+    "id": 3,
+    "name": "Forest City Ramadan",
+    "description": "This initiative started out as a simple flyer with information on the basic rules of Fiqh(deep understanding) related to Islamic practice, including the do's and don'ts of fasting in Ramadan, but quickly evolved into a magazine. There is so much to share in the context of Ramadan, with so many topics and perspectives, that we felt we could try to make it a comprehensive go-to practical guide and resource for everyone in the Forest City.",
+    "url": "",
+    "slug": "forest-city-ramandan",
+    "img": {
+      "logo": {
+        "url": "logo/forest-city-ramandan-logo.png",
+        "alt": "Forest City Ramandan Logo"
+      },
+      "banner": {
+        "url": "banner/forest-city-ramandan-banner.png",
+        "alt": "Forest City Ramandan Banner"
+      }
+    },
+    "keywords": [
+      "Advertising and Marketing Design",
+      "Business Card",
+      "Photography",
+      "Publication"
+    ],
+    "date": "2020-05-01"
+  },
+  {
+    "id": 4,
+    "name": "McSherim Bakery",
+    "description": "",
+    "url": "",
+    "slug": "mcsherim-bakery",
+    "img": {
+      "logo": {
+        "url": "logo/mcsherim-bakery-logo.png",
+        "alt": "McSherim Bakery Logo"
+      },
+      "banner": {
+        "url": "banner/mcsherim-bakery-banner.png",
+        "alt": "McSherim Bakery Banner"
+      }
+    },
+    "keywords": ["Logo Design", "Business Card", "Packaging Design"],
+    "date": "2020-07-01"
+  },
+  {
+    "id": 5,
+    "name": "Shraim's Sweets",
+    "description": "",
+    "url": "",
+    "slug": "shraims-sweets",
+    "img": {
+      "logo": {
+        "url": "logo/shraims-sweets.png",
+        "alt": "Shraim's Sweets Logo"
+      },
+      "banner": {
+        "url": "banner/shraims-sweets.png",
+        "alt": "Shraim's Sweets Banner"
+      }
+    },
+    "keywords": [
+      "Advertising and Marketing Design",
+      "Logo Design",
+      "Business Card",
+      "Signage",
+      "Packaging Design"
+    ],
+    "date": "2019-03-01"
+  },
+  {
+    "id": 6,
+    "name": "Westdell",
+    "description": "",
+    "url": "https://www.westdellcorp.com/",
+    "slug": "westdell",
+    "img": {
+      "logo": {
+        "url": "logo/westdell.png",
+        "alt": "Westdell Logo"
+      },
+      "banner": {
+        "url": "banner/westdell.png",
+        "alt": "Westdell Banner"
+      }
+    },
+    "keywords": ["Publication", "Signage", "Website"],
+    "date": "2020-05-01"
   }
 ]
