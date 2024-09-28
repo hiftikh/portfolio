@@ -5,7 +5,7 @@ import Link from "next/link";
 import navigation from "../json/navagation.json";
 import Image from "next/image";
 
-import { joinclassNames } from "@/lib/utils";
+import { joinClassNames } from "@/lib/utils";
 
 import {
   Sheet,
@@ -49,7 +49,7 @@ export default function Navigation() {
                           aria-current={
                             item.href === pathname ? "page" : undefined
                           }
-                          className={joinclassNames(
+                          className={joinClassNames(
                             "px-2 py-2 text-sm font-normal text-white underline-offset-8 decoration-2",
                             item.href === pathname
                               ? "underline font-extrabold decoration-accent text-accent"
@@ -87,7 +87,7 @@ export default function Navigation() {
                           aria-current={
                             item.href === pathname ? "page" : undefined
                           }
-                          className={joinclassNames(
+                          className={joinClassNames(
                             "text-left py-3 block text-3xl text-slate-300",
                             item.href === pathname
                               ? "font-bold text-white underline underline-offset-8"
