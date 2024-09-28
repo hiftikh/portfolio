@@ -1,8 +1,12 @@
 export default interface Card {
   id: number;
+  show: boolean;
   name: string;
-  description: string;
   slug: string;
+  description: {
+    company: string;
+    whatIDid: string[];
+  };
   url: string;
   img: {
     logo: {
@@ -13,6 +17,14 @@ export default interface Card {
       url: string;
       alt: string;
     };
+    artwork: [
+      {
+        url: string;
+        alt: string;
+        caption: string;
+      }
+    ];
   };
   keywords: string[];
+  dateAdded: string;
 }
