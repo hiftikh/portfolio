@@ -8,12 +8,12 @@
     "slug": "nurcare",
     "img": {
       "logo": {
-        "url": "logo.png",
-        "alt": ""
+        "url": "logo/nurcare-logo.png",
+        "alt": "Nurcare Logo"
       },
       "banner": {
-        "url": "banner.png",
-        "alt": ""
+        "url": "banner/nurcare-banner.png",
+        "alt": "Nurcare Banner"
       }
     },
     "keywords": ["Logo Design", "Business Card"]
@@ -26,12 +26,12 @@
     "slug": "jace",
     "img": {
       "logo": {
-        "url": "logo.png",
-        "alt": ""
+        "url": "logo/jace-logo.png",
+        "alt": "Jace Logo"
       },
       "banner": {
-        "url": "banner.png",
-        "alt": ""
+        "url": "banner/jace-banner.png",
+        "alt": "Jace Banner"
       }
     },
     "keywords": ["Logo Design", "Business Card"]
