@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import data from "@/json/work.json";
-import { Container } from "lucide-react";
 
 export async function generateStaticParams() {
   return data.map((item) => ({
@@ -21,37 +20,61 @@ export default function Page({ params }: any) {
     notFound();
   }
 
+  console.log(work.description.company);
+
   return (
     <>
-      <Header title={work.name} className="text-center"></Header>
-      <div className="container mx-auto w-10/12 md:w-8/12">
-        <p className="text-center text-primary">{work.description}</p>
-        <Image
-          src={`/img/${work.img.logo.url}`}
-          alt={`${work.name} Logo`}
-          height={200}
-          width={200}
-          className="mx-auto my-10"
-        />
-      </div>
+      <div className="w-10/12 mx-auto">
+        <Header underline>{work.name}</Header>
+        {work.description.company && (
+          <p className="text-secondary">{work.description.company}</p>
+        )}
+        {/* <div className="mx-auto md:w-8/12">
+          <Header underline>{work.name}</Header>
+         
 
-      <div className="container mx-auto my-6 w-10/12 md:w-8/12 text-center">
-        {work.keywords.map((keyword, index) => (
-          <Badge
-            variant="outline"
-            className="text-primary mr-2 px-5 py-2"
-            key={index}
-          >
-            {keyword}
-          </Badge>
-        ))}
-      </div>
-      <div className="container mx-auto my-6 w-8/12 text-center">
-        <Button asChild className="my-5 text-primary-secondary hover:bg-accent">
-          <Link href={work.url} target="_blank">
-            Website
-          </Link>
-        </Button>
+          <Image
+            src={`/img/${work.img.logo.url}`}
+            alt={`${work.name} Logo`}
+            height={200}
+            width={200}
+            className="mx-auto my-10"
+          />
+        </div> */}
+
+        <div className="container mx-auto my-6 text-center">
+          {work.img.artwork &&
+            work.img.artwork.map((art, index) => (
+              <div key={index}>
+                <Image src={art.url} width={1000} height={1000} alt={art.alt} />
+                <p>{art.caption}</p>
+              </div>
+            ))}
+        </div>
+
+        <div className="container mx-auto my-6  md:w-8/12 text-center">
+          {work.keywords.map((keyword, index) => (
+            <Badge
+              variant="outline"
+              className="text-secondary mr-2 px-5 py-2"
+              key={index}
+            >
+              {keyword}
+            </Badge>
+          ))}
+        </div>
+        <div className="container mx-auto my-6 w-8/12 text-center">
+          {work.url && (
+            <Button
+              asChild
+              className="my-5 text-primary-secondary hover:bg-accent"
+            >
+              <Link href={work.url} target="_blank">
+                Website
+              </Link>
+            </Button>
+          )}
+        </div>
       </div>
     </>
   );
