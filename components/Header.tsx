@@ -1,18 +1,31 @@
 import { Lora } from "next/font/google";
 const font = Lora({ subsets: ["latin"], display: "swap" });
 
+import { joinClassNames } from "@/lib/utils";
+
 export default function Header(params: any) {
-  let className =
-    "text-4xl font-bold font py-4 text-secondary text-center " +
-    `${params.className}`;
+  const textAlign = params.align ? `text-${params.align}` : "";
+  const underlineAlign = params.align == "center" ? `mx-auto` : "";
+
+  const className = joinClassNames(
+    "text-4xl font-bold py-4 text-secondary",
+    `${params.className}`,
+    `${textAlign}`
+  );
 
   return (
     <>
       <header className={font.className}>
-        <h1 className={className}>{params.title}</h1>
+        <h1 className={className}>{params.children || "Header Text"}</h1>
         {params.underline && (
-          <hr className="mx-auto w-1/12 underline h-1 bg-accent border-accent" />
+          <div
+            className={joinClassNames(
+              "w-2/12 underline h-1 bg-accent border-accent",
+              underlineAlign
+            )}
+          ></div>
         )}
+        <br />
       </header>
     </>
   );
