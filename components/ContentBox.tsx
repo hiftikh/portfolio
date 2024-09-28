@@ -21,7 +21,7 @@ export const ContentBox: React.FC<CardProps> = ({ data }: CardProps) => {
       <div className="grid grid-cols-1 gap-8 my-8 md:grid-cols-2 lg:grid-cols-3">
         {data.map((item) => (
           <Link href={`/work/${item.slug}`} key={item.id}>
-            <Card className="">
+            <Card className="hover:bg-gray-100">
               {/* <Image src={item.img.banner.url} alt="" height={3} width={3} /> */}
               <CardHeader>
                 <CardTitle>{item.name || "Name"} </CardTitle>
