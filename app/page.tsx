@@ -3,6 +3,7 @@ import { Lora } from "next/font/google";
 import Link from "next/link";
 import data from "@/json/dataURL.json";
 const font = Lora({ subsets: ["latin"], display: "swap" });
+import { joinClassNames } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -10,15 +11,23 @@ export default function Home() {
       <div className="flex h-[70svh] justify-center items-center">
         <div className="text-center">
           <h1
-            className={`text-secondary text-7xl ${font.className} font-normal`}
+            className={joinClassNames(
+              "text-secondary text-7xl font-normal",
+              `${font.className}`
+            )}
           >
-            Hi, I'm{" "}
+            Hi, I&apos;m{" "}
             <span className="font-bold underline decoration-accent underline-offset-8">
               Haris
             </span>
             .
           </h1>
-          <p className={`text-secondary text-2xl ${font.className}  pt-4`}>
+          <p
+            className={joinClassNames(
+              "text-secondary text-2xl pt-4",
+              `${font.className}`
+            )}
+          >
             Keeping it Simple.
           </p>
           <div className="mt-10 flex justify-center gap-4">
