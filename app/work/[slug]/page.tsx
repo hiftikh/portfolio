@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import data from "@/json/work.json";
+import BreadCrumbCus from "@/components/BreadCrumbCus";
 
 export async function generateStaticParams() {
   return data.map((item) => ({
@@ -21,10 +22,16 @@ export default function Page({ params }: any) {
   }
 
   console.log(work.description.company);
+  const breadCrumbObj = {
+    currentPage: work.name,
+    currentSubPageURL: "/work",
+    currentSubPageName: "Work",
+  };
 
   return (
     <>
       <div className="w-10/12 mx-auto">
+        <BreadCrumbCus {...breadCrumbObj} />
         <Header underline>{work.name}</Header>
         {work.description.company && (
           <p className="text-secondary">{work.description.company}</p>
