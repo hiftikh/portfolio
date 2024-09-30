@@ -14,6 +14,7 @@ export default function Page() {
       <Header align="center" underline>
         Recent Work
       </Header>
+
       <ContentBox data={data} />
     </>
   );
