@@ -4,10 +4,8 @@
     "show": true,
     "name": "Nurcare",
     "slug": "nurcare",
-    "description": {
-      "company": "Rekindle your inner light.",
-      "whatIDid": ["Designed logo", "Designed business card"]
-    },
+    "componentName": "Nurcare",
+    "description": "Nurcare takes on a humanistic, strength-based, trauma-informed, anti-oppressive and anti-racist approach to virtual therapy.",
     "url": "https://nurcare.ca/",
     "img": {
       "logo": {
@@ -16,9 +14,14 @@
       },
       "artwork": [
         {
-          "url": "/img/artwork/nurecare-business-card-mock-up.png",
-          "alt": "Nurcare Business Card",
-          "caption": "Business Card Mock Up"
+          "url": "/img/artwork/nurcare-logo-mock-up.png",
+          "alt": "Nurcare Logo Mock Up",
+          "caption": "Logo mock up. (Left: Normal Logo, Right: Alt Logo)."
+        },
+        {
+          "url": "/img/artwork/nurcare-business-card-mock-up.jpg",
+          "alt": "Nurcare Business Card Mock Up",
+          "caption": "Business card mock up."
         }
       ]
     },
@@ -27,7 +30,9 @@
   },
   {
     "id": 1,
+    "show": true,
     "name": "Jilani and Asuncion Consulting Engineers",
+    "componentName": "Jace",
     "description": "Jilani and Asuncion Consulting Engineers (JACE) is a building systems consulting and engineering firm that provides quality comprehensive Professional Mechanical and Electrical Engineering Services.",
     "url": "https://jaceng.ca/",
     "slug": "jace",
@@ -46,8 +51,10 @@
   },
   {
     "id": 2,
+    "show": true,
     "name": "Beladi's Bakery",
-    "description": "Created dynamic TV Menus using Adobe Photoshop for the graphics and Adobe Premier to create a video of the animation to different menu items",
+    "componentName": "BeladisBakey",
+    "description": "",
     "url": "https://beladis.com/",
     "slug": "beladis",
     "img": {
@@ -65,10 +72,12 @@
   },
   {
     "id": 3,
+    "show": true,
     "name": "Forest City Ramadan",
-    "description": "This initiative started out as a simple flyer with information on the basic rules of Fiqh(deep understanding) related to Islamic practice, including the do's and don'ts of fasting in Ramadan, but quickly evolved into a magazine. There is so much to share in the context of Ramadan, with so many topics and perspectives, that we felt we could try to make it a comprehensive go-to practical guide and resource for everyone in the Forest City.",
+    "componentName": "ForestCityRamadan",
     "url": "",
     "slug": "forest-city-ramandan",
+    "description": "This initiative started out as a simple flyer with information on the basic rules of deep understanding related to Islamic practice, including the do's and don'ts of fasting in Ramadan, but quickly evolved into a magazine. There is so much to share in the context of Ramadan, with so many topics and perspectives, that we felt we could try to make it a comprehensive go-to practical guide and resource for everyone in the Forest City.",
     "img": {
       "logo": {
         "url": "logo/forest-city-ramandan-logo.png",
@@ -89,7 +98,9 @@
   },
   {
     "id": 4,
+    "show": true,
     "name": "McSherim Bakery",
+    "componentName": "McSherimBakery",
     "description": "",
     "url": "",
     "slug": "mcsherim-bakery",
@@ -108,8 +119,10 @@
   },
   {
     "id": 5,
+    "show": true,
     "name": "Shraim's Sweets",
     "description": "",
+    "componentName": "ShraimsSweets",
     "url": "",
     "slug": "shraims-sweets",
     "img": {
@@ -133,7 +146,9 @@
   },
   {
     "id": 6,
+    "show": true,
     "name": "Westdell",
+    "componentName": "Westdell",
     "description": "",
     "url": "https://www.westdellcorp.com/",
     "slug": "westdell",
