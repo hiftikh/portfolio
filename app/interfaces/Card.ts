@@ -3,28 +3,24 @@ export default interface Card {
   show: boolean;
   name: string;
   slug: string;
-  description: {
-    company: string;
-    whatIDid: string[];
-  };
-  url: string;
+  componentName?: string;
+  description?: string;
+  url?: string;
   img: {
-    logo: {
-      url: string;
-      alt: string;
+    logo?: {
+      url?: string;
+      alt?: string;
     };
-    banner: {
-      url: string;
-      alt: string;
+    banner?: {
+      url?: string;
+      alt?: string;
     };
-    artwork: [
-      {
-        url: string;
-        alt: string;
-        caption: string;
-      }
-    ];
+    artwork?: Array<{
+      url?: string;
+      alt?: string;
+      caption?: string;
+    }>;
   };
-  keywords: string[];
-  dateAdded: string;
+  keywords?: string[];
+  dateAdded?: string;
 }
