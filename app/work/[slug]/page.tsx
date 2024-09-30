@@ -5,7 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import data from "@/json/work.json";
-import BreadCrumbCus from "@/components/BreadCrumbCus";
+import BreadCrumbCustom from "@/components/BreadCrumbCustom";
+import dynamic from "next/dynamic";
 
 export async function generateStaticParams() {
   return data.map((item) => ({
@@ -21,7 +22,16 @@ export default function Page({ params }: any) {
     notFound();
   }
 
-  console.log(work.description.company);
+  const DetailedContent = dynamic(
+    () =>
+      import(`@/components/content/${work.componentName}`).catch((err) => {
+        return () => "";
+      }),
+    {
+      ssr: true,
+    }
+  );
+
   const breadCrumbObj = {
     currentPage: work.name,
     currentSubPageURL: "/work",
@@ -31,57 +41,60 @@ export default function Page({ params }: any) {
   return (
     <>
       <div className="w-10/12 mx-auto">
-        <BreadCrumbCus {...breadCrumbObj} />
+        <BreadCrumbCustom {...breadCrumbObj} />
         <Header underline>{work.name}</Header>
-        {work.description.company && (
-          <p className="text-secondary">{work.description.company}</p>
-        )}
-        {/* <div className="mx-auto md:w-8/12">
-          <Header underline>{work.name}</Header>
-         
 
-          <Image
-            src={`/img/${work.img.logo.url}`}
-            alt={`${work.name} Logo`}
-            height={200}
-            width={200}
-            className="mx-auto my-10"
-          />
-        </div> */}
+        <h3 className="text-2xl font-bold">About</h3>
+        <p className="text-secondary mb-3">{work.description}</p>
 
-        <div className="container mx-auto my-6 text-center">
-          {work.img.artwork &&
-            work.img.artwork.map((art, index) => (
-              <div key={index}>
-                <Image src={art.url} width={1000} height={1000} alt={art.alt} />
-                <p>{art.caption}</p>
+        <hr className="my-5" />
+
+        <DetailedContent></DetailedContent>
+
+        {work.img.artwork && (
+          <div className="mx-auto my-10 text-center bg w-full md:w-10/12">
+            {work.img.artwork.map((art, index) => (
+              <div key={index} className="mb-10">
+                <Image
+                  src={art.url}
+                  alt={art.alt}
+                  width={1000}
+                  height={1000}
+                  className="mx-auto"
+                />
+                <p className="py-3 px-3 italic bg-slate-800 text-xs md:text-base">
+                  {art.caption}
+                </p>
               </div>
             ))}
-        </div>
+          </div>
+        )}
 
-        <div className="container mx-auto my-6  md:w-8/12 text-center">
-          {work.keywords.map((keyword, index) => (
-            <Badge
-              variant="outline"
-              className="text-secondary mr-2 px-5 py-2"
-              key={index}
-            >
-              {keyword}
-            </Badge>
-          ))}
-        </div>
-        <div className="container mx-auto my-6 w-8/12 text-center">
-          {work.url && (
+        {work.url && (
+          <div className="container mx-auto my-6 w-8/12 text-center">
             <Button
               asChild
-              className="my-5 text-primary-secondary hover:bg-accent"
+              className="my-5 text-primary bg-secondary hover:bg-slate-300 hover:text-primary"
             >
               <Link href={work.url} target="_blank">
                 Website
               </Link>
             </Button>
-          )}
-        </div>
+          </div>
+        )}
+        {work.keywords && (
+          <div className="container mx-auto my-6  md:w-8/12 text-center">
+            {work.keywords.map((keyword, index) => (
+              <Badge
+                variant="outline"
+                className="text-slate-300 border-slate-300 mr-2 px-5 py-2"
+                key={index}
+              >
+                {keyword}
+              </Badge>
+            ))}
+          </div>
+        )}
       </div>
     </>
   );
