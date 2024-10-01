@@ -101,4 +101,7 @@
   p {
     @apply mb-3 leading-7;
   }
+  p a {
+    @apply underline underline-offset-4 mr-1 hover:bg-black/50;
+  }
 }
