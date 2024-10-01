@@ -29,7 +29,7 @@ export const ContentBox: React.FC<CardProps> = ({ data }: CardProps) => {
                     alt={item.img.banner.alt || ""}
                   />
                   {item.dateAdded && (
-                    <p className="text-sm absolute font-bold bottom-0 right-3 bg-black/70 outline-black py-1 px-5 rounded-xl">
+                    <p className="text-sm absolute font-bold bottom-3 right-3 bg-black/70 outline-black py-1 px-5 rounded-xl">
                       {displayYear(item.dateAdded)}
                     </p>
                   )}
