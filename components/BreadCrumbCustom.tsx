@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function BreadCrumbCustom(props: any) {
   return (
-    <Breadcrumb>
+    <Breadcrumb className="mb-4">
       <BreadcrumbList>
         <BreadcrumbItem>
           <Link href="/" className="text-secondary hover:text-slate-500">
