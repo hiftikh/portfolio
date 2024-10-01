@@ -3,9 +3,12 @@ export default interface Card {
   show: boolean;
   name: string;
   slug: string;
-  componentName?: string;
   description?: string;
-  url?: string;
+  componentName?: string;
+  url?: {
+    site?: string;
+    github?: string;
+  };
   img: {
     logo?: {
       url?: string;
@@ -15,11 +18,6 @@ export default interface Card {
       url?: string;
       alt?: string;
     };
-    artwork?: Array<{
-      url?: string;
-      alt?: string;
-      caption?: string;
-    }>;
   };
   keywords?: string[];
   dateAdded?: string;
