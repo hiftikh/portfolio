@@ -6,11 +6,14 @@
     "slug": "nurcare",
     "componentName": "Nurcare",
     "description": "Nurcare takes on a humanistic, strength-based, trauma-informed, anti-oppressive and anti-racist approach to virtual therapy.",
-    "url": "https://nurcare.ca/",
     "img": {
       "logo": {
-        "url": "/img/logo/nurcare-logo.png",
+        "url": "/img/logo/nurcare.png",
         "alt": "Nurcare Logo"
+      },
+      "banner": {
+        "url": "/img/banner/nurcare.jpg",
+        "alt": "Nurcare Banner"
       },
       "artwork": [
         {
@@ -25,7 +28,7 @@
         }
       ]
     },
-    "keywords": ["Logo Design", "Business Card"],
+    "keywords": ["Logo", "Business Card"],
     "dateAdded": "2024-08-01"
   },
   {
@@ -38,16 +41,16 @@
     "slug": "jace",
     "img": {
       "logo": {
-        "url": "logo/jace-logo.png",
+        "url": "/img/logo/jace.png",
         "alt": "Jace Logo"
       },
       "banner": {
-        "url": "banner/jace-banner.png",
+        "url": "/img/banner/jace.jpg",
         "alt": "Jace Banner"
       }
     },
-    "keywords": ["Logo Design", "Business Card"],
-    "date": "2017-05-01"
+    "keywords": ["Logo", "Business Card"],
+    "dateAdded": "2017-05-01"
   },
   {
     "id": 2,
@@ -59,16 +62,16 @@
     "slug": "beladis",
     "img": {
       "logo": {
-        "url": "logo/beladi-logo.png",
+        "url": "/img/logo/beladis.png",
         "alt": "beladi Logo"
       },
       "banner": {
-        "url": "banner/beladi-banner.png",
+        "url": "/img/banner/beladis.jpg",
         "alt": "beladi Banner"
       }
     },
     "keywords": ["TV Menu"],
-    "date": "2019-10-01"
+    "dateAdded": "2019-10-01"
   },
   {
     "id": 3,
@@ -80,21 +83,16 @@
     "description": "This initiative started out as a simple flyer with information on the basic rules of deep understanding related to Islamic practice, including the do's and don'ts of fasting in Ramadan, but quickly evolved into a magazine. There is so much to share in the context of Ramadan, with so many topics and perspectives, that we felt we could try to make it a comprehensive go-to practical guide and resource for everyone in the Forest City.",
     "img": {
       "logo": {
-        "url": "logo/forest-city-ramandan-logo.png",
+        "url": "/img/logo/forest-city-ramadan.png",
         "alt": "Forest City Ramandan Logo"
       },
       "banner": {
-        "url": "banner/forest-city-ramandan-banner.png",
+        "url": "/img/banner/forest-city-ramadan.jpg",
         "alt": "Forest City Ramandan Banner"
       }
     },
-    "keywords": [
-      "Advertising and Marketing Design",
-      "Business Card",
-      "Photography",
-      "Publication"
-    ],
-    "date": "2020-05-01"
+    "keywords": ["Business Card", "Photography", "Publication", "Logo"],
+    "dateAdded": "2020-05-01"
   },
   {
     "id": 4,
@@ -106,16 +104,16 @@
     "slug": "mcsherim-bakery",
     "img": {
       "logo": {
-        "url": "logo/mcsherim-bakery-logo.png",
+        "url": "/img/logo/mcsherim-bakery.png",
         "alt": "McSherim Bakery Logo"
       },
       "banner": {
-        "url": "banner/mcsherim-bakery-banner.png",
+        "url": "/img/banner/mcsherim-bakery.jpg",
         "alt": "McSherim Bakery Banner"
       }
     },
-    "keywords": ["Logo Design", "Business Card", "Packaging Design"],
-    "date": "2020-07-01"
+    "keywords": ["Logo", "Business Card", "Packaging"],
+    "dateAdded": "2020-07-01"
   },
   {
     "id": 5,
@@ -127,22 +125,16 @@
     "slug": "shraims-sweets",
     "img": {
       "logo": {
-        "url": "logo/shraims-sweets.png",
+        "url": "/img/logo/shraims-sweets.png",
         "alt": "Shraim's Sweets Logo"
       },
       "banner": {
-        "url": "banner/shraims-sweets.png",
+        "url": "/img/banner/shraims-sweets.jpg",
         "alt": "Shraim's Sweets Banner"
       }
     },
-    "keywords": [
-      "Advertising and Marketing Design",
-      "Logo Design",
-      "Business Card",
-      "Signage",
-      "Packaging Design"
-    ],
-    "date": "2019-03-01"
+    "keywords": ["Logo", "Business Card", "Signage", "Packaging"],
+    "dateAdded": "2019-03-01"
   },
   {
     "id": 6,
@@ -154,15 +146,185 @@
     "slug": "westdell",
     "img": {
       "logo": {
-        "url": "logo/westdell.png",
+        "url": "/img/logo/westdell.png",
         "alt": "Westdell Logo"
       },
       "banner": {
-        "url": "banner/westdell.png",
+        "url": "/img/banner/westdell.jpg",
         "alt": "Westdell Banner"
       }
     },
     "keywords": ["Publication", "Signage", "Website"],
-    "date": "2020-05-01"
+    "dateAdded": "2020-05-01"
+  },
+  {
+    "id": 7,
+    "show": true,
+    "name": "Yasmine's",
+    "componentName": "Yasmines",
+    "description": "Yasmine’s is a unique concept that combines modern and traditional Lebanese dishes reflecting the amazing flavours of the region’s cuisine.",
+    "url": "https://yasminesrestaurant.com/",
+    "slug": "yasmines",
+    "img": {
+      "logo": {
+        "url": "/img/logo/yasmines.png",
+        "alt": "Yasmines' Logo"
+      },
+      "banner": {
+        "url": "/img/banner/yasmines.jpg",
+        "alt": "Yasmines' Banner"
+      }
+    },
+    "keywords": ["Signage", "Website"],
+    "dateAdded": "2021-02-01"
+  },
+  {
+    "id": 8,
+    "show": true,
+    "name": "Lionheart Tattoo Parlour",
+    "componentName": "Lionheart",
+    "description": "At Lionheart Tattoo Parlour, we strive to provide a friendly and welcoming atmosphere and are confident that you will leave feeling thrilled with your experience and new tattoo.",
+    "url": "https://lionhearttattoo.ca/",
+    "slug": "lionheart",
+    "img": {
+      "logo": {
+        "url": "/img/logo/lionheart.png",
+        "alt": "Lionheart Logo"
+      },
+      "banner": {
+        "url": "/img/banner/lionheart.jpg",
+        "alt": "Lionheart' Banner"
+      }
+    },
+    "keywords": ["Logo", "Website", "Photography"],
+    "dateAdded": "2023-07-01"
+  },
+  {
+    "id": 9,
+    "show": true,
+    "name": "London Muslim Seniors Network",
+    "componentName": "LondonMuslimSeniorsNetwork",
+    "description": "",
+    "url": "",
+    "slug": "london-muslim-seniors-network",
+    "img": {
+      "logo": {
+        "url": "/img/logo/london-muslim-seniors-network.png",
+        "alt": "London Muslim Seniors Network Logo"
+      },
+      "banner": {
+        "url": "/img/banner/london-muslim-seniors-network.jpg",
+        "alt": "London Muslim Seniors Network Banner"
+      }
+    },
+    "keywords": ["Logo"],
+    "dateAdded": "2021-01-01"
+  },
+  {
+    "id": 10,
+    "show": true,
+    "name": "Muslim Soup Kitchen",
+    "componentName": "MuslimSoupKitchen",
+    "description": "",
+    "url": "",
+    "slug": "muslim-soup-kitchen",
+    "img": {
+      "logo": {
+        "url": "/img/logo/muslim-soup-kitchen.png",
+        "alt": "Muslim Soup Kitchen Logo"
+      },
+      "banner": {
+        "url": "/img/banner/muslim-soup-kitchen.jpg",
+        "alt": "Muslim Soup Kitchen Banner"
+      }
+    },
+    "keywords": ["Logo"],
+    "dateAdded": "2021-01-01"
+  },
+  {
+    "id": 11,
+    "show": true,
+    "name": "Pistachios",
+    "componentName": "Pistachios",
+    "description": "",
+    "url": "",
+    "slug": "pistachios",
+    "img": {
+      "logo": {
+        "url": "/img/logo/pistachios.png",
+        "alt": "Pistachios Logo"
+      },
+      "banner": {
+        "url": "/img/banner/pistachios.jpg",
+        "alt": "Pistachios Banner"
+      }
+    },
+    "keywords": ["Logo"],
+    "dateAdded": "2021-11-01"
+  },
+
+  {
+    "id": 12,
+    "show": true,
+    "name": "Edgewood Estates",
+    "componentName": "EdgewoodEstates",
+    "description": "",
+    "url": "https://edgewoodestates.ca/",
+    "slug": "edgewood-estates",
+    "img": {
+      "logo": {
+        "url": "/img/logo/edgewood-estates.png",
+        "alt": "Edgewood Estates Logo"
+      },
+      "banner": {
+        "url": "/img/banner/edgewood.jpg",
+        "alt": "Edgewood Estates Banner"
+      }
+    },
+    "keywords": ["Website"],
+    "dateAdded": "2021-07-01"
+  },
+
+  {
+    "id": 13,
+    "show": true,
+    "name": "Canterbury Homes",
+    "componentName": "CanterburyHomes",
+    "description": "",
+    "url": "https://canterburyhomes.ca/",
+    "slug": "canterbury-homes",
+    "img": {
+      "logo": {
+        "url": "/img/logo/canterbury-homes.png",
+        "alt": "Canterbury Homes Logo"
+      },
+      "banner": {
+        "url": "/img/banner/canterbury.jpg",
+        "alt": "Canterbury Homes Banner"
+      }
+    },
+    "keywords": ["Website"],
+    "dateAdded": "2021-07-01"
+  },
+  {
+    "id": 14,
+    "show": true,
+    "name": "Forest City Muslim",
+    "componentName": "ForestCityMuslim",
+    "url": "",
+    "slug": "forest-city-muslim",
+    "description": "This initiative started out as a simple flyer with information on the basic rules of deep understanding related to Islamic practice, including the do's and don'ts of fasting in Ramadan, but quickly evolved into a magazine. There is so much to share in the context of Ramadan, with so many topics and perspectives, that we felt we could try to make it a comprehensive go-to practical guide and resource for everyone in the Forest City.",
+    "img": {
+      "logo": {
+        "url": "/img/logo/forest-city-muslim.png",
+        "alt": "Forest City Muslim Logo"
+      },
+      "banner": {
+        "url": "/img/banner/forest-city-muslim.jpg",
+        "alt": "Forest City Muslim Banner"
+      }
+    },
+    "keywords": ["Business Card", "Photography", "Publication", "Logo"],
+    "dateAdded": "2020-05-01"
   }
 ]
