@@ -43,59 +43,75 @@ export default function Page({ params }: any) {
       <div className="w-10/12 mx-auto">
         <BreadCrumbCustom {...breadCrumbObj} />
         <Header underline>{work.name}</Header>
-
-        <h3 className="text-2xl font-bold">About</h3>
-        <p className="text-secondary mb-3">{work.description}</p>
-
-        <hr className="my-5" />
-
+        {work.description && <About description={work.description} />}
         <DetailedContent></DetailedContent>
-
-        {work.img.artwork && (
-          <div className="mx-auto my-10 text-center bg w-full md:w-10/12">
-            {work.img.artwork.map((art, index) => (
-              <div key={index} className="mb-10">
-                <Image
-                  src={art.url}
-                  alt={art.alt}
-                  width={1000}
-                  height={1000}
-                  className="mx-auto"
-                />
-                <p className="py-3 px-3 italic bg-slate-800 text-xs md:text-base">
-                  {art.caption}
-                </p>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {work.url && (
-          <div className="container mx-auto my-6 w-8/12 text-center">
-            <Button
-              asChild
-              className="my-5 text-primary bg-secondary hover:bg-slate-300 hover:text-primary"
-            >
-              <Link href={work.url} target="_blank">
-                Website
-              </Link>
-            </Button>
-          </div>
-        )}
-        {work.keywords && (
-          <div className="container mx-auto my-6  md:w-8/12 text-center">
-            {work.keywords.map((keyword, index) => (
-              <Badge
-                variant="outline"
-                className="text-slate-300 border-slate-300 mr-2 px-5 py-2"
-                key={index}
-              >
-                {keyword}
-              </Badge>
-            ))}
-          </div>
-        )}
+        {work.img.artwork && <ArtWork artwork={work.img.artwork} />}
+        {work.url && <URLBtn url={work.url} />}
+        {work.keywords && <KeyWords keywords={work.keywords} />}
       </div>
     </>
   );
 }
+
+const About = ({ description }: any) => {
+  return (
+    <>
+      <h2 className="text-2xl font-bold">About</h2>
+      <p className="text-secondary">{description}</p>
+    </>
+  );
+};
+
+const ArtWork = ({ artwork }: any) => {
+  return (
+    <>
+      <div className="mx-auto my-10 text-center bg w-full md:w-10/12">
+        {artwork.map((art: any, index: number) => (
+          <div key={index} className="mb-10">
+            <Image
+              src={art.url}
+              alt={art.alt}
+              width={1000}
+              height={1000}
+              className="mx-auto"
+            />
+            <p className="py-3 px-3 italic bg-slate-800 text-xs md:text-base">
+              {art.caption}
+            </p>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+};
+
+const URLBtn = ({ url }: any) => {
+  return (
+    <div className="container mx-auto my-6 w-8/12 text-center">
+      <Button
+        asChild
+        className="my-5 text-primary bg-secondary hover:bg-slate-300 hover:text-primary"
+      >
+        <Link href={url} target="_blank">
+          Website
+        </Link>
+      </Button>
+    </div>
+  );
+};
+
+const KeyWords = ({ keywords }: any) => {
+  return (
+    <div className="container mx-auto my-6  md:w-8/12 text-center">
+      {keywords.map((keyword: any, index: number) => (
+        <Badge
+          variant="outline"
+          className="text-slate-300 border-slate-300 mr-2 px-5 py-2"
+          key={index}
+        >
+          {keyword}
+        </Badge>
+      ))}
+    </div>
+  );
+};
