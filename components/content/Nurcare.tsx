@@ -34,7 +34,7 @@ export default function Nurcare() {
         was born. The green pastel color evoking a calm nurturing atmosphere and
         the yellow color producing a sense of warmth. The typography is in
         lowercase and rounded which conveys comfort and softness. The yellow
-        rotated squares on the "u" takes inspiration from the{" "}
+        rotated squares on the `&quot;`u`&quot;` takes inspiration from the{" "}
         <a href="https://en.wikipedia.org/wiki/Arabic_alphabet" target="_blank">
           Arabic Alphabet
           <Icon name="external-link" />
