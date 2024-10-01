@@ -1,15 +1,13 @@
-import {
-  Card,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import ContextCard from "../app/interfaces/Card";
 import Image from "next/image";
 import Link from "next/link";
-import { orderByNewDate, orderByAlphabetically } from "@/lib/utils";
+import {
+  orderByNewDate,
+  orderByAlphabetically,
+  displayYear,
+} from "@/lib/utils";
 
 interface CardProps {
   data: ContextCard[];
@@ -18,46 +16,47 @@ interface CardProps {
 export const ContentBox: React.FC<CardProps> = ({ data }: CardProps) => {
   return (
     <>
-      <div className="grid grid-cols-1 gap-8 my-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-10 mt-10 mx-5 sm:grid-cols-2 lg:grid-cols-3">
         {data.sort(orderByNewDate).map((item) => (
           <Link href={`/work/${item.slug}`} key={item.id}>
-            <Card className="border-none border-b-8 border-accent overflow-hidden hover:shadow-xl h-full">
-              {item.img.logo && (
-                <div className="relative h-28 bg-secondary">
+            <div className="border-0 rounded-xl bg-transparent overflow-clip h-full hover:shadow-lg hover:shadow-black/40 transition ease-in-out duration-300 ">
+              {item.img.banner && (
+                <div className="relative outline-0">
                   <Image
-                    fill
-                    src={`/img/${item.img.logo.url}` || ""}
-                    alt={item.img.logo.alt || ""}
-                    style={{ objectFit: "contain" }}
-                    className="p-5"
+                    width={600}
+                    height={600}
+                    src={item.img.banner.url || ""}
+                    alt={item.img.banner.alt || ""}
                   />
+                  {item.dateAdded && (
+                    <p className="text-sm absolute font-bold bottom-0 right-3 bg-black/70 outline-black py-1 px-5 rounded-xl">
+                      {displayYear(item.dateAdded)}
+                    </p>
+                  )}
                 </div>
               )}
-              <CardHeader className="bg-gray-50 text-center pb-4">
-                <CardTitle className="leading-7">
+              <div className="p-5 bg-white h-full">
+                <h2 className="leading-7 text-black pb-2 font-semibold text-xl">
                   {item.name || "Name"}
-                </CardTitle>
+                </h2>
 
-                {/* <CardDescription>
-                  {item.description || "Description"}
-                </CardDescription> */}
-              </CardHeader>
-              {item.keywords && (
-                <CardFooter className="bg-gray-50 flex-wrap justify-center">
-                  {item.keywords
-                    .sort(orderByAlphabetically)
-                    .map((keyword, index) => (
-                      <Badge
-                        variant="outline"
-                        className="mr-1 mb-2 text-gray-500"
-                        key={index}
-                      >
-                        {keyword}
-                      </Badge>
-                    ))}
-                </CardFooter>
-              )}
-            </Card>
+                {item.keywords && (
+                  <div className="flex-wrap justify-normal">
+                    {item.keywords
+                      .sort(orderByAlphabetically)
+                      .map((keyword, index) => (
+                        <Badge
+                          variant="outline"
+                          className="mr-1 mb-2 text-gray-500"
+                          key={index}
+                        >
+                          {keyword}
+                        </Badge>
+                      ))}
+                  </div>
+                )}
+              </div>
+            </div>
           </Link>
         ))}
       </div>
