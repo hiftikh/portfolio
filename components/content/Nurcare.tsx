@@ -1,4 +1,6 @@
 import Icon from "@/components/Icon";
+import Artwork from "../Artwork";
+
 export default function Nurcare() {
   return (
     <>
@@ -22,6 +24,7 @@ export default function Nurcare() {
         </a>
         respectfully.
       </p>
+      <h3 className="text-xl font-bold">Logo</h3>
       <p>
         Taking inspriation from the words <b>Noor(Arabic for light)</b>,{" "}
         <b>Nurture</b>, and <b>Care</b>, the idea of{" "}
@@ -39,7 +42,22 @@ export default function Nurcare() {
         .
       </p>
       <h3 className="text-xl font-bold">Icon</h3>
-      <p> </p>
+      <p>
+        Having open hands means having an open heart which allows you to talk to
+        someone in a very open and honest way. The rays of sunshine symbolzing a
+        positive and welcoming presense.
+      </p>
+      <Artwork
+        imageURL="/img/artwork/nurcare-logo-mock-up.png"
+        alt="Nurcare Logo Mock Up"
+        caption="Logo mock up. (Left: Normal Logo, Right: Alt Logo)."
+      />
+      <h3 className="text-xl font-bold">Business Card</h3>
+      <Artwork
+        imageURL="/img/artwork/nurcare-business-card-mock-up.jpg"
+        alt="Business Card Mock Up"
+        caption="Business card mock up."
+      />
     </>
   );
 }
