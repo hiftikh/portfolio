@@ -90,8 +90,19 @@
   ul {
     @apply text-secondary;
   }
+
+  h2,
+  h3 {
+    @apply pt-3 pb-2;
+  }
+
+  h2 {
+    @apply text-2xl font-bold;
+  }
+
   p {
     @apply mb-3 leading-7;
+    @apply pb-3 leading-7 text-secondary;
   }
   p a {
     @apply underline underline-offset-4 mr-1 hover:bg-black/50;
