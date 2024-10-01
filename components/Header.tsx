@@ -8,7 +8,7 @@ export default function Header(params: any) {
   const underlineAlign = params.align == "center" ? `mx-auto` : "";
 
   const className = joinClassNames(
-    "text-4xl font-bold py-4 text-secondary",
+    "text-4xl font-bold py-4",
     `${params.className}`,
     `${textAlign}`
   );
