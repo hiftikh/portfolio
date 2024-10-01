@@ -30,9 +30,9 @@ export const displayMonthYear = (date: string) => {
 };
 
 export function orderByNewDate(a: any, b: any) {
-  return new Date(a.date) < new Date(b.date)
+  return new Date(a.dateAdded) < new Date(b.dateAdded)
     ? 1
-    : new Date(a.date) > new Date(b.date)
+    : new Date(a.dateAdded) > new Date(b.dateAdded)
     ? -1
     : 0;
 }
