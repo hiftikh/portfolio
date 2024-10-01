@@ -29,6 +29,11 @@ export const displayMonthYear = (date: string) => {
   return `${month[dateISO.getMonth()].slice(0, 3)} ${dateISO.getFullYear()}`;
 };
 
+export const displayYear = (date: string) => {
+  const dateISO = new Date(date);
+  return `${dateISO.getFullYear()}`;
+};
+
 export function orderByNewDate(a: any, b: any) {
   return new Date(a.dateAdded) < new Date(b.dateAdded)
     ? 1
