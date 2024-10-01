@@ -5,7 +5,7 @@
     "name": "Nurcare",
     "slug": "nurcare",
     "componentName": "Nurcare",
-    "description": "Nurcare takes on a humanistic, strength-based, trauma-informed, anti-oppressive and anti-racist approach to virtual therapy.",
+    "description": "Nurcare takes on a humanistic, strength-based, trauma-informed, anti-oppressive and anti-racist approach to therapy.",
     "img": {
       "logo": {
         "url": "/img/logo/nurcare.png",
@@ -225,7 +225,7 @@
     "show": true,
     "name": "Muslim Soup Kitchen",
     "componentName": "MuslimSoupKitchen",
-    "description": "",
+    "description": "The Muslim Soup Kitchen London (MSK London) has been operating at Hyatt Mosque since July 2020. ",
     "url": "",
     "slug": "muslim-soup-kitchen",
     "img": {
