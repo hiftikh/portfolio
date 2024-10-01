@@ -14,19 +14,7 @@
       "banner": {
         "url": "/img/banner/nurcare.jpg",
         "alt": "Nurcare Banner"
-      },
-      "artwork": [
-        {
-          "url": "/img/artwork/nurcare-logo-mock-up.png",
-          "alt": "Nurcare Logo Mock Up",
-          "caption": "Logo mock up. (Left: Normal Logo, Right: Alt Logo)."
-        },
-        {
-          "url": "/img/artwork/nurcare-business-card-mock-up.jpg",
-          "alt": "Nurcare Business Card Mock Up",
-          "caption": "Business card mock up."
-        }
-      ]
+      }
     },
     "keywords": ["Logo", "Business Card"],
     "dateAdded": "2024-08-01"
@@ -37,7 +25,6 @@
     "name": "Jilani and Asuncion Consulting Engineers",
     "componentName": "Jace",
     "description": "Jilani and Asuncion Consulting Engineers (JACE) is a building systems consulting and engineering firm that provides quality comprehensive Professional Mechanical and Electrical Engineering Services.",
-    "url": "https://jaceng.ca/",
     "slug": "jace",
     "img": {
       "logo": {
@@ -58,7 +45,6 @@
     "name": "Beladi's Bakery",
     "componentName": "BeladisBakey",
     "description": "",
-    "url": "https://beladis.com/",
     "slug": "beladis",
     "img": {
       "logo": {
@@ -78,7 +64,6 @@
     "show": true,
     "name": "Forest City Ramadan",
     "componentName": "ForestCityRamadan",
-    "url": "",
     "slug": "forest-city-ramandan",
     "description": "This initiative started out as a simple flyer with information on the basic rules of deep understanding related to Islamic practice, including the do's and don'ts of fasting in Ramadan, but quickly evolved into a magazine. There is so much to share in the context of Ramadan, with so many topics and perspectives, that we felt we could try to make it a comprehensive go-to practical guide and resource for everyone in the Forest City.",
     "img": {
@@ -100,7 +85,6 @@
     "name": "McSherim Bakery",
     "componentName": "McSherimBakery",
     "description": "",
-    "url": "",
     "slug": "mcsherim-bakery",
     "img": {
       "logo": {
@@ -121,7 +105,6 @@
     "name": "Shraim's Sweets",
     "description": "",
     "componentName": "ShraimsSweets",
-    "url": "",
     "slug": "shraims-sweets",
     "img": {
       "logo": {
@@ -142,7 +125,7 @@
     "name": "Westdell",
     "componentName": "Westdell",
     "description": "",
-    "url": "https://www.westdellcorp.com/",
+    "url": { "site": "https://www.westdellcorp.com/" },
     "slug": "westdell",
     "img": {
       "logo": {
@@ -163,7 +146,7 @@
     "name": "Yasmine's",
     "componentName": "Yasmines",
     "description": "Yasmine’s is a unique concept that combines modern and traditional Lebanese dishes reflecting the amazing flavours of the region’s cuisine.",
-    "url": "https://yasminesrestaurant.com/",
+    "url": { "site": "https://yasminesrestaurant.com/" },
     "slug": "yasmines",
     "img": {
       "logo": {
@@ -184,7 +167,7 @@
     "name": "Lionheart Tattoo Parlour",
     "componentName": "Lionheart",
     "description": "At Lionheart Tattoo Parlour, we strive to provide a friendly and welcoming atmosphere and are confident that you will leave feeling thrilled with your experience and new tattoo.",
-    "url": "https://lionhearttattoo.ca/",
+    "url": { "site": "https://lionhearttattoo.ca/" },
     "slug": "lionheart",
     "img": {
       "logo": {
@@ -205,7 +188,6 @@
     "name": "London Muslim Seniors Network",
     "componentName": "LondonMuslimSeniorsNetwork",
     "description": "",
-    "url": "",
     "slug": "london-muslim-seniors-network",
     "img": {
       "logo": {
@@ -225,8 +207,7 @@
     "show": true,
     "name": "Muslim Soup Kitchen",
     "componentName": "MuslimSoupKitchen",
-    "description": "The Muslim Soup Kitchen London (MSK London) has been operating at Hyatt Mosque since July 2020. ",
-    "url": "",
+    "description": "The Muslim Soup Kitchen London (MSK London) has been operating at Hyatt Mosque since July 2020.",
     "slug": "muslim-soup-kitchen",
     "img": {
       "logo": {
@@ -247,7 +228,6 @@
     "name": "Pistachios",
     "componentName": "Pistachios",
     "description": "",
-    "url": "",
     "slug": "pistachios",
     "img": {
       "logo": {
@@ -269,7 +249,7 @@
     "name": "Edgewood Estates",
     "componentName": "EdgewoodEstates",
     "description": "",
-    "url": "https://edgewoodestates.ca/",
+    "url": { "site": "https://edgewoodestates.ca/" },
     "slug": "edgewood-estates",
     "img": {
       "logo": {
@@ -291,7 +271,7 @@
     "name": "Canterbury Homes",
     "componentName": "CanterburyHomes",
     "description": "",
-    "url": "https://canterburyhomes.ca/",
+    "url": { "site": "https://canterburyhomes.ca/" },
     "slug": "canterbury-homes",
     "img": {
       "logo": {
@@ -311,7 +291,6 @@
     "show": true,
     "name": "Forest City Muslim",
     "componentName": "ForestCityMuslim",
-    "url": "",
     "slug": "forest-city-muslim",
     "description": "This initiative started out as a simple flyer with information on the basic rules of deep understanding related to Islamic practice, including the do's and don'ts of fasting in Ramadan, but quickly evolved into a magazine. There is so much to share in the context of Ramadan, with so many topics and perspectives, that we felt we could try to make it a comprehensive go-to practical guide and resource for everyone in the Forest City.",
     "img": {
