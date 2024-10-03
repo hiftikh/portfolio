@@ -1,4 +1,4 @@
-export default interface Card {
+export default interface Work {
   id: number;
   show: boolean;
   name: string;

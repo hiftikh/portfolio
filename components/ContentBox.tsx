@@ -1,6 +1,6 @@
 import { Card, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import ContextCard from "../app/interfaces/Card";
+import WorkInterance from "../app/interfaces/Work";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -10,7 +10,7 @@ import {
 } from "@/lib/utils";
 
 interface CardProps {
-  data: ContextCard[];
+  data: WorkInterance[];
 }
 
 export const ContentBox: React.FC<CardProps> = ({ data }: CardProps) => {

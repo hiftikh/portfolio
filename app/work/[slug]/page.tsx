@@ -8,7 +8,7 @@ import data from "@/json/work.json";
 import BreadCrumbCustom from "@/components/BreadCrumbCustom";
 import dynamic from "next/dynamic";
 import Icon from "@/components/Icon";
-import Card from "@/app/interfaces/Card";
+import WorkInterface from "@/app/interfaces/Work";
 
 export async function generateStaticParams() {
   return data.map((item) => ({
@@ -54,7 +54,7 @@ export default function Page({ params }: any) {
   );
 }
 
-const About = ({ description }: Card) => {
+const About = ({ description }: WorkInterface) => {
   return (
     <>
       <h2>About</h2>
@@ -63,7 +63,7 @@ const About = ({ description }: Card) => {
   );
 };
 
-const Btn = ({ url }: Card) => {
+const Btn = ({ url }: WorkInterface) => {
   return (
     <div className="container mx-auto my-6 w-8/12 text-center">
       <Button
@@ -78,7 +78,7 @@ const Btn = ({ url }: Card) => {
   );
 };
 
-const KeyWords = ({ keywords }: Card) => {
+const KeyWords = ({ keywords }: WorkInterface) => {
   return (
     <div className="container mx-auto my-6 md:w-8/12 text-center">
       {keywords?.map((keyword: any, index: number) => (
