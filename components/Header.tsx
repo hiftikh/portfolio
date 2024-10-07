@@ -15,18 +15,19 @@ export default function Header(params: any) {
 
   return (
     <>
-      <header className={font.className}>
-        <h1 className={className}>{params.children || "Header Text"}</h1>
-        {params.underline && (
-          <div
-            className={joinClassNames(
-              "w-2/12 underline h-1 bg-accent border-accent",
-              underlineAlign
-            )}
-          ></div>
-        )}
-        <br />
-      </header>
+      <div className="mb-10">
+        <header className={font.className}>
+          <h1 className={className}>{params.children || "Header Text"}</h1>
+          {params.underline && (
+            <div
+              className={joinClassNames(
+                "w-2/12 underline h-1 bg-accent border-accent",
+                underlineAlign
+              )}
+            ></div>
+          )}
+        </header>
+      </div>
     </>
   );
 }
