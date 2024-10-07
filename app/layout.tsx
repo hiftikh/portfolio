@@ -3,6 +3,7 @@ import { Mulish } from "next/font/google";
 import type { Metadata, Viewport } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "@/components/Footer";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const font = Mulish({
   subsets: ["latin"],
@@ -57,6 +58,7 @@ export default function RootLayout({
           </div>
         </main>
         <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   );
