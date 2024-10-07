@@ -7,6 +7,7 @@ export const metadata: Metadata = {
 };
 
 import data from "@/json/work.json";
+import KeywordFilter from "@/components/KeywordFilter";
 
 export default function Page() {
   return (
@@ -14,6 +15,8 @@ export default function Page() {
       <Header align="center" underline>
         Recent Work
       </Header>
+
+      {/* {data && <KeywordFilter data={data} />} */}
 
       <ContentBox data={data} />
     </>
