@@ -42,7 +42,6 @@ export const metadata: Metadata = {
 //   initialScale: 1,
 //   maximumScale: 1,
 // };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -50,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className}>
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen transition-colors duration-500 ease-in-out">
         <Navigation />
         <main className="">
           <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">

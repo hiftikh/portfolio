@@ -16,7 +16,7 @@ export default function NotFound() {
         <Button
           asChild
           variant="outline"
-          className="bg-transparent text-secondary mt-6"
+          className="bg-transparent text-secondary mt-6 hover:border-accent"
         >
           <Link href="/">Return Home Safely</Link>
         </Button>
