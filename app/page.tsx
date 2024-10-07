@@ -31,10 +31,18 @@ export default function Home() {
             Keeping it Simple.
           </p>
           <div className="mt-10 flex justify-center gap-4">
-            <Button asChild variant="outline" className="text-secondary">
+            <Button
+              asChild
+              variant="outline"
+              className="text-secondary hover:border-accent"
+            >
               <Link href={data[0].github}>Github</Link>
             </Button>
-            <Button asChild variant="outline" className="text-secondary">
+            <Button
+              asChild
+              variant="outline"
+              className="text-secondary hover:border-accent"
+            >
               <Link href={data[0].linkedin}>LinkedIn</Link>
             </Button>
           </div>
