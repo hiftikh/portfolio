@@ -75,10 +75,9 @@ export default function Navigation() {
               </SheetTrigger>
 
               <SheetContent className="w-screen pt-10">
-                <SheetTitle className="text-center text-accent text-sm hidden">
-                  MENU
-                </SheetTitle>
-                <SheetDescription>
+                <SheetTitle className="text-white/60 text-sm">MENU</SheetTitle>
+
+                <SheetDescription className="mt-2">
                   {navigation.map(
                     (item) =>
                       !item.show || (
@@ -89,7 +88,7 @@ export default function Navigation() {
                             item.href === pathname ? "page" : undefined
                           }
                           className={joinClassNames(
-                            "text-left py-3 block text-3xl text-slate-300",
+                            "text-left py-2 block text-3xl text-slate-300",
                             item.href === pathname
                               ? "font-bold text-white underline underline-offset-8"
                               : "hover:text-white"
@@ -100,6 +99,13 @@ export default function Navigation() {
                         </Link>
                       )
                   )}
+                  <Image
+                    src="/img/hi-logo.svg"
+                    alt="Haris Iftikhar"
+                    width={30}
+                    height={30}
+                    className="text-left absolute bottom-8"
+                  />
                 </SheetDescription>
               </SheetContent>
             </Sheet>

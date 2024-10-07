@@ -66,7 +66,7 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <SheetPrimitive.Close className="absolute text-secondary right-4 top-4 rounded-sm opacity-70 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-3 disabled:pointer-events-none data-[state=open]:bg-secondary">
+      <SheetPrimitive.Close className="absolute text-secondary p-1 right-5 top-8 rounded-sm opacity-70 transition-opacity hover:opacity-100 focus:outline-none focus:ring-0 focus:ring-secondary focus:ring-offset-3 disabled:pointer-events-none data-[state=open]:bg-secondary hover:bg-accent">
         <span className="absolute -inset-0.5" />
         <XMarkIcon aria-hidden="true" className="h-6 w-6 " />
       </SheetPrimitive.Close>
