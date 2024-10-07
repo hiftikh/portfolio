@@ -42,6 +42,10 @@ export function orderByNewDate(a: any, b: any) {
     : 0;
 }
 
-export function orderByAlphabetically(a: string, b: string) {
+export function orderByAlphabetically(a: any, b: any) {
   return a > b ? 1 : a < b ? -1 : 0;
+}
+
+export function removeDuplicates(data: any) {
+  return [...new Set(data)];
 }
