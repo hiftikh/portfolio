@@ -16,9 +16,11 @@ import {
 } from "@/components/ui/sheet";
 
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export default function Navigation() {
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
   return (
     <>
       <nav>
@@ -62,7 +64,7 @@ export default function Navigation() {
                 </div>
               </div>
             </div>
-            <Sheet>
+            <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger className="md:hidden">
                 <div className="group relative inline-flex items-center justify-center rounded-md p-2 text-secondary hover:bg-accent hover:text-white">
                   <Bars3Icon
@@ -80,7 +82,7 @@ export default function Navigation() {
                   {navigation.map(
                     (item) =>
                       !item.show || (
-                        <a
+                        <Link
                           key={item.name}
                           href={item.href}
                           aria-current={
@@ -91,11 +93,11 @@ export default function Navigation() {
                             item.href === pathname
                               ? "font-bold text-white underline underline-offset-8"
                               : "hover:text-white"
-                            // "block rounded-md py-3 text-3xl font-light text-center text-secondary"
                           )}
+                          onClick={() => setOpen(false)}
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       )
                   )}
                 </SheetDescription>
