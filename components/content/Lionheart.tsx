@@ -25,10 +25,10 @@ export default function Lionheart() {
       />
       <h3 className="text-xl font-bold">Website</h3>
       <p>
-        The website would be used by potional customers to look at the client's
-        artwork, learn about tattoo care, and/or being able to contact the
-        business with ease. Having this in mind, I decided to create a simple
-        website.
+        The website would be used by potional customers to look at the
+        client&apos;s artwork, learn about tattoo care, and/or being able to
+        contact the business with ease. Having this in mind, I decided to create
+        a simple website.
       </p>
       <p>
         Since the client wanted to do their own updates after the completion of
