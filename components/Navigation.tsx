@@ -99,13 +99,15 @@ export default function Navigation() {
                         </Link>
                       )
                   )}
-                  <Image
-                    src="/img/hi-logo.svg"
-                    alt="Haris Iftikhar"
-                    width={30}
-                    height={30}
-                    className="text-left absolute bottom-8"
-                  />
+                  <Link href="/" onClick={() => setOpen(false)}>
+                    <Image
+                      src="/img/hi-logo.svg"
+                      alt="Haris Iftikhar"
+                      width={30}
+                      height={30}
+                      className="text-left absolute bottom-8"
+                    />
+                  </Link>
                 </SheetDescription>
               </SheetContent>
             </Sheet>
