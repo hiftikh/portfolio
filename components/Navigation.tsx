@@ -65,7 +65,7 @@ export default function Navigation() {
               </div>
             </div>
             <Sheet open={open} onOpenChange={setOpen}>
-              <SheetTrigger className="md:hidden">
+              <SheetTrigger className="md:hidden" aria-label="MobileMenu">
                 <div className="group relative inline-flex items-center justify-center rounded-md p-2 text-secondary hover:bg-accent hover:text-white">
                   <Bars3Icon
                     aria-hidden="true"
