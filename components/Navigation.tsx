@@ -70,6 +70,7 @@ export default function Navigation() {
                   <Bars3Icon
                     aria-hidden="true"
                     className="block h-6 w-6 group-data-[open]:hidden"
+                    aria-label="MenuButton"
                   />
                 </div>
               </SheetTrigger>
