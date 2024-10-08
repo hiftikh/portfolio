@@ -43,29 +43,27 @@ export default function Lionheart() {
         A basic Wordpress template was purchased and then modified to meet the
         needs of the business.
       </p>
-      <p>
-        The following tools were added to the site:
-        <ul className="list-disc list-inside">
-          <li>
-            <a
-              href="https://marketingplatform.google.com/about/analytics/"
-              target="_blank"
-            >
-              Google Analytics
-              <Icon name="external-link" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://search.google.com/search-console/about"
-              target="_blank"
-            >
-              Google Search Console
-              <Icon name="external-link" />
-            </a>
-          </li>
-        </ul>
-      </p>
+      <p>The following tools were added to the site:</p>
+      <ul className="list-disc list-inside">
+        <li>
+          <a
+            href="https://marketingplatform.google.com/about/analytics/"
+            target="_blank"
+          >
+            Google Analytics
+            <Icon name="external-link" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://search.google.com/search-console/about"
+            target="_blank"
+          >
+            Google Search Console
+            <Icon name="external-link" />
+          </a>
+        </li>
+      </ul>
       <Artwork
         imageURL="/img/artwork/lionheart-webpage.jpg"
         alt="Lionheart Webpage"
