@@ -24,7 +24,7 @@ export default function Home() {
           </h1>
           <p
             className={joinClassNames(
-              "text-secondary text-2xl pt-4",
+              "text-secondary text-2xl pt-4 mt-3",
               `${font.className}`
             )}
           >
