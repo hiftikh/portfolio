@@ -33,6 +33,14 @@ export const metadata: Metadata = {
       default: "",
     },
     siteName: "Haris Iftikhar",
+    url: "harisiftikhar.com",
+    images: {
+      url: "/img/og.png",
+      width: 1200,
+      height: 630,
+      alt: "Haris Iftikhar",
+    },
+    type: "website",
   },
 };
 
