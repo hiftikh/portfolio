@@ -4,6 +4,7 @@ import type { Metadata, Viewport } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import GoogleAnalytics from "@/components/tools/GoogleAnalytics";
 
 const font = Mulish({
   subsets: ["latin"],
@@ -42,6 +43,7 @@ export const metadata: Metadata = {
 //   initialScale: 1,
 //   maximumScale: 1,
 // };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -49,6 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className}>
+      <GoogleAnalytics />
       <body className="flex flex-col min-h-screen transition-colors duration-500 ease-in-out">
         <Navigation />
         <main className="">
