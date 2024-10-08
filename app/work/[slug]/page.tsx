@@ -8,6 +8,24 @@ import BreadCrumbCustom from "@/components/BreadCrumbCustom";
 import dynamic from "next/dynamic";
 import Icon from "@/components/Icon";
 import WorkInterface from "@/app/interfaces/Work";
+import type { Metadata, ResolvingMetadata } from "next";
+
+type Props = {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const slug = params.slug;
+  const work = data.find((item) => item.slug.toString() === slug);
+
+  return {
+    title: work?.name,
+  };
+}
 
 export async function generateStaticParams() {
   return data.map((item) => ({

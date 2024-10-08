@@ -32,8 +32,6 @@ export const metadata: Metadata = {
       template: "%s | Haris Iftikhar",
       default: "",
     },
-    description: "Portfolio of Haris Iftikhar.",
-    url: "",
     siteName: "Haris Iftikhar",
   },
 };
