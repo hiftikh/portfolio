@@ -31,6 +31,8 @@ export const ContentBox = ({ data }: CardProps) => {
                   src={item.img.banner.url || ""}
                   alt={item.img.banner.alt || ""}
                   className="group-hover:opacity-80"
+                  placeholder="blur"
+                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkWNz6HwAD/AIpceji/QAAAABJRU5ErkJggg=="
                 />
 
                 {item.dateAdded && (
