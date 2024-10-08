@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 import data from "@/json/work.json";
-import KeywordFilter from "@/components/KeywordFilter";
+// import KeywordFilter from "@/components/KeywordFilter";
 
 export default function Page() {
   return (
