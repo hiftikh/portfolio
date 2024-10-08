@@ -8,14 +8,10 @@ const ScrollToTopButton = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      // if the user scrolls down, show the button
-      //   console.log(window.innerHeight, window.scrollY);
       window.scrollY > 10 ? setIsVisible(true) : setIsVisible(false);
     };
-    // listen for scroll events
     window.addEventListener("scroll", toggleVisibility);
 
-    // clear the listener on component unmount
     return () => {
       window.removeEventListener("scroll", toggleVisibility);
     };
@@ -32,8 +28,8 @@ const ScrollToTopButton = () => {
   return (
     <button
       className={`fixed bottom-4 right-4 text-white rounded-full bg-accent p-2 transition-opacity duration-500 ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
+        isVisible ? "opacity-100 visible" : "opacity-0 invisible"
+      } `}
       onClick={scrollToTop}
       aria-label="ToTopButton"
     >
