@@ -30,10 +30,11 @@ export default function Navigation() {
               <div className="flex-shrink-0">
                 <Link href="/">
                   <Image
+                    priority
                     src="/img/hi-logo.svg"
                     alt="Haris Iftikhar"
                     width={30}
-                    height={30}
+                    height={41}
                   />
                 </Link>
               </div>
