@@ -35,6 +35,7 @@ export default function Home() {
               asChild
               variant="outline"
               className="text-secondary hover:border-accent"
+              aria-label="Github"
             >
               <Link href={data[0].github}>Github</Link>
             </Button>
@@ -42,6 +43,7 @@ export default function Home() {
               asChild
               variant="outline"
               className="text-secondary hover:border-accent"
+              aria-label="LinkedIn"
             >
               <Link href={data[0].linkedin}>LinkedIn</Link>
             </Button>
