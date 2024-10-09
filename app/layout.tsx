@@ -44,12 +44,6 @@ export const metadata: Metadata = {
   },
 };
 
-// export const viewport: Viewport = {
-//   width: "device-width",
-//   initialScale: 1,
-//   maximumScale: 1,
-// };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -57,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className}>
-      <GoogleAnalytics />
+      {/* <GoogleAnalytics /> */}
       <body className="flex flex-col min-h-screen transition-colors duration-500 ease-in-out">
         <Navigation />
         <main className="">
