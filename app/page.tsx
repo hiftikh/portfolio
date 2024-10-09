@@ -4,6 +4,7 @@ import Link from "next/link";
 import data from "@/json/dataURL.json";
 const font = Lora({ subsets: ["latin"], display: "swap" });
 import { joinClassNames } from "@/lib/utils";
+import Icon from "@/components/Icon";
 
 export default function Home() {
   return (
@@ -37,7 +38,9 @@ export default function Home() {
               className="text-secondary hover:border-accent"
               aria-label="Github"
             >
-              <Link href={data[0].github}>Github</Link>
+              <Link href={data[0].github} target="_blank">
+                Github <Icon name="external-link" />
+              </Link>
             </Button>
             <Button
               asChild
@@ -45,7 +48,9 @@ export default function Home() {
               className="text-secondary hover:border-accent"
               aria-label="LinkedIn"
             >
-              <Link href={data[0].linkedin}>LinkedIn</Link>
+              <Link href={data[0].linkedin} target="_blank">
+                LinkedIn <Icon name="external-link" />
+              </Link>
             </Button>
           </div>
         </div>
