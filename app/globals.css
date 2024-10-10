@@ -103,7 +103,8 @@
   p {
     @apply pb-3 leading-7 text-secondary;
   }
-  main p a {
+  main p a,
+  main ul li a {
     @apply underline underline-offset-4 mr-1 hover:bg-black/50;
   }
 }
