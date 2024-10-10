@@ -35,7 +35,7 @@ export default function ContentBox({ data }: CardProps) {
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkWNz6HwAD/AIpceji/QAAAABJRU5ErkJggg=="
                 />
 
-                {item.dateAdded && <DateAddedComp {...item} />}
+                {/* {item.dateAdded && <DateAddedComp {...item} />} */}
               </div>
             )}
             <div className="p-5 bg-white h-full">
