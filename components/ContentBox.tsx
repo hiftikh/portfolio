@@ -24,13 +24,13 @@ export default function ContentBox({ data }: CardProps) {
             className="border-0 rounded-xl bg-transparent overflow-hidden group "
           >
             {item.img.banner && (
-              <div className="relative ">
+              <div className="relative bg-black">
                 <Image
                   width={600}
                   height={600}
                   src={item.img.banner.url || ""}
                   alt={item.img.banner.alt || ""}
-                  className="group-hover:opacity-80"
+                  className="group-hover:opacity-60"
                   placeholder="blur"
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkWNz6HwAD/AIpceji/QAAAABJRU5ErkJggg=="
                 />
