@@ -4,10 +4,9 @@ import Artwork from "../Artwork";
 export default function Lionheart() {
   return (
     <>
-      <h2>Logo</h2>
+      <h2>Process</h2>
       <p>
-        The client had provided a rough sketch on paper of what they wanted the
-        logo to like. Using{" "}
+        The logo was created using{" "}
         <a
           href="https://www.adobe.com/ca/products/illustrator.html"
           target="_blank"
@@ -15,12 +14,23 @@ export default function Lionheart() {
           Adobe Illustrator
           <Icon name="external-link" />
         </a>
-        {""}, I was able to create a digital vectorized logo.
+        and the website with{" "}
+        <a href="https://wordpress.com/" target="_blank">
+          Wordpress
+          <Icon name="external-link" />
+        </a>
+        .
+      </p>
+      <h3>Logo</h3>
+      <p>
+        The client had provided a rough sketch on paper of what they wanted the
+        logo to like. The choice of the color red was inspired by the word
+        &quot;Heart&quot; in the wordmark logo.
       </p>
       <Artwork
         imageURL="/img/artwork/lionheart-logo-mock-up.png"
         alt="Lionheart Logo Mock Up"
-        caption="Logo mock up. (Top: Normal Logo, Bottom: Alt Logo)."
+        caption="Logo mock up (Top: Normal Logo, Bottom: Alt Logo)."
       />
       <h2>Website</h2>
       <p>
