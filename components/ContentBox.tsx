@@ -13,7 +13,7 @@ interface CardProps {
   data: WorkInterance[] | ProjectInterance[];
 }
 
-export const ContentBox = ({ data }: CardProps) => {
+export default function ContentBox({ data }: CardProps) {
   return (
     <>
       <div className="my-10 mx-5 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -35,39 +35,47 @@ export const ContentBox = ({ data }: CardProps) => {
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkWNz6HwAD/AIpceji/QAAAABJRU5ErkJggg=="
                 />
 
-                {item.dateAdded && (
-                  <p className=" text-sm absolute font-semibold bottom-3 right-3 bg-black/70 outline-black py-1 px-5 rounded-xl">
-                    {displayYear(item.dateAdded)}
-                  </p>
-                )}
+                {item.dateAdded && <DateAddedComp {...item} />}
               </div>
             )}
             <div className="p-5 bg-white h-full">
-              <h2 className="leading-7 text-black pb-2 font-semibold text-xl">
-                {item.name || "Name"}
-              </h2>
-
-              {item.keywords && (
-                <div className="flex-wrap justify-normal">
-                  {item.keywords
-                    .sort(orderByAlphabetically)
-                    .map((keyword, index) => (
-                      <Badge
-                        variant="outline"
-                        className="mr-1 mb-2 text-gray-500"
-                        key={index}
-                      >
-                        {keyword}
-                      </Badge>
-                    ))}
-                </div>
-              )}
+              {item.name && <Title {...item} />}
+              {item.keywords && <KeyWords {...item} />}
             </div>
           </Link>
         ))}
       </div>
     </>
   );
+}
+
+const DateAddedComp = ({ dateAdded }: WorkInterance) => {
+  return (
+    <p className=" text-sm absolute font-semibold bottom-3 right-3 bg-black/70 outline-black py-1 px-5 rounded-xl">
+      {displayYear(dateAdded || "####")}
+    </p>
+  );
 };
 
-export default ContentBox;
+const Title = ({ name }: WorkInterance) => {
+  return (
+    <h2 className="leading-7 text-black pb-2 font-semibold text-xl">{name}</h2>
+  );
+};
+
+const KeyWords = ({ keywords }: WorkInterance) => {
+  return (
+    <div className="flex-wrap justify-normal">
+      {keywords &&
+        keywords.sort(orderByAlphabetically).map((keyword, index) => (
+          <Badge
+            variant="outline"
+            className="mr-1 mb-2 text-gray-500"
+            key={index}
+          >
+            {keyword}
+          </Badge>
+        ))}
+    </div>
+  );
+};
