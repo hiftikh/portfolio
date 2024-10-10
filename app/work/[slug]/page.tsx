@@ -59,14 +59,12 @@ export default function Page({ params }: any) {
 
   return (
     <>
-      <div className="w-10/12 mx-auto">
-        <BreadCrumbCustom {...breadCrumbObj} />
-        <Header underline>{work.name}</Header>
-        {work.description && <About {...work} />}
-        <DetailedContent></DetailedContent>
-        {work.url && <Btn {...work} />}
-        {work.keywords && <KeyWords {...work} />}
-      </div>
+      <BreadCrumbCustom {...breadCrumbObj} />
+      <Header underline>{work.name}</Header>
+      {work.description && <About {...work} />}
+      <DetailedContent></DetailedContent>
+      {work.url && <Btn {...work} />}
+      {work.keywords && <KeyWords {...work} />}
     </>
   );
 }
