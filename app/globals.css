@@ -112,6 +112,6 @@
     @apply underline underline-offset-4 hover:bg-black/50;
   }
   main ul li {
-    @apply mb-1;
+    @apply mb-2;
   }
 }
