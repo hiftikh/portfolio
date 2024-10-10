@@ -44,7 +44,7 @@
     "show": true,
     "name": "Beladi's Bakery",
     "componentName": "BeladisBakey",
-    "description": "",
+    "description": "Beladi’s brings the taste of the Middle East to London, Ontario with traditional, authentic, home-made cuisine!",
     "slug": "beladis",
     "img": {
       "logo": {
@@ -84,7 +84,7 @@
     "show": true,
     "name": "McSherim Bakery",
     "componentName": "McSherimBakery",
-    "description": "",
+    "description": "Bringing homemade pita bread to your table.",
     "slug": "mcsherim-bakery",
     "img": {
       "logo": {
@@ -103,7 +103,7 @@
     "id": 5,
     "show": true,
     "name": "Shraim's Sweets",
-    "description": "",
+    "description": "Shraim's Sweets is an exclusive collection of world wide sweets and recipes servered with our special chocolates and fruits.",
     "componentName": "ShraimsSweets",
     "slug": "shraims-sweets",
     "img": {
@@ -124,7 +124,7 @@
     "show": true,
     "name": "Westdell",
     "componentName": "Westdell",
-    "description": "",
+    "description": "Westdell Development Corporation is a commercial, office and residential development company based in London, Ontario that has been developing and managing a growing portfolio of commercial, office and residential properties for over 30 years.",
     "url": { "site": "https://www.westdellcorp.com/" },
     "slug": "westdell",
     "img": {
@@ -166,7 +166,7 @@
     "show": true,
     "name": "Lionheart Tattoo Parlour",
     "componentName": "Lionheart",
-    "description": "At Lionheart Tattoo Parlour, we strive to provide a friendly and welcoming atmosphere and are confident that you will leave feeling thrilled with your experience and new tattoo.",
+    "description": "Lionheart Tattoo Parlour strives to provide a friendly and welcoming atmosphere and are confident that you will leave feeling thrilled with your experience and new tattoo.",
     "url": { "site": "https://lionhearttattoo.ca/" },
     "slug": "lionheart",
     "img": {
@@ -187,7 +187,7 @@
     "show": true,
     "name": "London Muslim Seniors Network",
     "componentName": "LondonMuslimSeniorsNetwork",
-    "description": "",
+    "description": "To improve the quality of life for Muslim seniors through the delivery of culturally sensitive programs and services to enhance and facilitate seniors’ proud & independent living, social support and integration in the community and their own homes.",
     "slug": "london-muslim-seniors-network",
     "img": {
       "logo": {
@@ -207,7 +207,7 @@
     "show": true,
     "name": "Muslim Soup Kitchen",
     "componentName": "MuslimSoupKitchen",
-    "description": "The Muslim Soup Kitchen London (MSK London) has been operating at Hyatt Mosque since July 2020.",
+    "description": "The Muslim Soup Kitchen is a weekly soup kitchen based out of Hyatt Mosque in London, ON that has been running since 2019.",
     "slug": "muslim-soup-kitchen",
     "img": {
       "logo": {
@@ -227,7 +227,7 @@
     "show": true,
     "name": "Pistachios",
     "componentName": "Pistachios",
-    "description": "",
+    "description": "Pistachios is your one-stop shop for all your quality meats and groceries needs!",
     "slug": "pistachios",
     "img": {
       "logo": {
@@ -248,7 +248,7 @@
     "show": true,
     "name": "Edgewood Estates",
     "componentName": "EdgewoodEstates",
-    "description": "",
+    "description": "This thriving community offers small town charm just minutes from big city amenities located in Mount Brydes, Ontario.",
     "url": { "site": "https://edgewoodestates.ca/" },
     "slug": "edgewood-estates",
     "img": {
@@ -270,7 +270,7 @@
     "show": true,
     "name": "Canterbury Homes",
     "componentName": "CanterburyHomes",
-    "description": "",
+    "description": "Canterbury Homes brings the craftsmanship, construction techniques, and attention to detail you'd expect to see from a custom home builder to everything we do.",
     "url": { "site": "https://canterburyhomes.ca/" },
     "slug": "canterbury-homes",
     "img": {

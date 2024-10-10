@@ -4,8 +4,7 @@ import Artwork from "../Artwork";
 export default function Lionheart() {
   return (
     <>
-      <h2 className="text-2xl font-bold">Process</h2>
-      <h3 className="text-xl font-bold">Logo</h3>
+      <h2>Logo</h2>
       <p>
         The client had provided a rough sketch on paper of what they wanted the
         logo to like. Using{" "}
@@ -23,7 +22,7 @@ export default function Lionheart() {
         alt="Lionheart Logo Mock Up"
         caption="Logo mock up. (Top: Normal Logo, Bottom: Alt Logo)."
       />
-      <h3 className="text-xl font-bold">Website</h3>
+      <h2>Website</h2>
       <p>
         The website would be used by potional customers to look at the
         client&apos;s artwork, learn about tattoo care, and/or being able to
