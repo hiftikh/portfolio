@@ -109,6 +109,6 @@
   }
   main p a,
   main ul li a {
-    @apply underline underline-offset-4 mr-1 hover:bg-black/50;
+    @apply underline underline-offset-4 hover:bg-black/50;
   }
 }
