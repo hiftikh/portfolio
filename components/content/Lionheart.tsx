@@ -13,7 +13,7 @@ export default function Lionheart() {
         >
           Adobe Illustrator
           <Icon name="external-link" />
-        </a>
+        </a>{" "}
         and the website with{" "}
         <a href="https://wordpress.com/" target="_blank">
           Wordpress
@@ -30,9 +30,9 @@ export default function Lionheart() {
       <Artwork
         imageURL="/img/artwork/lionheart-logo-mock-up.png"
         alt="Lionheart Logo Mock Up"
-        caption="Logo mock up (Top: Normal Logo, Bottom: Alt Logo)."
+        caption="Top: Primary Logo | Bottom: Alternate Logo"
       />
-      <h2>Website</h2>
+      <h3>Website</h3>
       <p>
         The website would be used by potional customers to look at the
         client&apos;s artwork, learn about tattoo care, and/or being able to
@@ -43,7 +43,8 @@ export default function Lionheart() {
         Since the client wanted to do their own updates after the completion of
         this work, I decided to go with EasyWP(Managed WordPress Hosting) by{" "}
         <a href="https://www.namecheap.com/" target="_blank">
-          Namecheap <Icon name="external-link" />
+          Namecheap
+          <Icon name="external-link" />
         </a>
         . The reason why I went with NameCheap is because they offer free SSL
         and Supersonic CDN.
@@ -52,7 +53,7 @@ export default function Lionheart() {
         A basic Wordpress template was purchased and then modified to meet the
         needs of the business.
       </p>
-      <p>The following tools were added to the site:</p>
+      <p>The following tools were added:</p>
       <ul className="list-disc list-inside">
         <li>
           <a

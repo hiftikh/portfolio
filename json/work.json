@@ -76,7 +76,7 @@
         "alt": "Forest City Ramandan Banner"
       }
     },
-    "keywords": ["Business Card", "Photography", "Publication", "Logo"],
+    "keywords": ["Photography", "Publication", "Logo"],
     "dateAdded": "2020-05-01"
   },
   {
@@ -207,7 +207,7 @@
     "show": true,
     "name": "Muslim Soup Kitchen",
     "componentName": "MuslimSoupKitchen",
-    "description": "The Muslim Soup Kitchen is a weekly soup kitchen based out of Hyatt Mosque in London, ON that has been running since 2019.",
+    "description": "The Muslim Soup Kitchen is a weekly soup kitchen based out of Hyatt Mosque in London, Ontario that has been running since 2019.",
     "slug": "muslim-soup-kitchen",
     "img": {
       "logo": {
@@ -304,6 +304,6 @@
       }
     },
     "keywords": ["Business Card", "Photography", "Publication", "Logo"],
-    "dateAdded": "2020-05-01"
+    "dateAdded": "2020-06-09"
   }
 ]
