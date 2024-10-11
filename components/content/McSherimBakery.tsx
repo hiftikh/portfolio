@@ -6,23 +6,23 @@ export default function McSherimBakery() {
     <>
       <h2>Process</h2>
       <p>
-        The logo and sticker were created in{" "}
+        The logo and sticker were created in&nbsp;
         <a
           href="https://www.adobe.com/ca/products/illustrator.html"
           target="_blank"
         >
           Adobe Illustrator
           <Icon name="external-link" />
-        </a>{" "}
-        and{" "}
+        </a>
+        &nbsp; and&nbsp;
         <a
           href="https://www.adobe.com/ca/products/photoshop.html"
           target="_blank"
         >
           Adobe Photoshop
           <Icon name="external-link" />
-        </a>{" "}
-        respectively.
+        </a>
+        &nbsp; respectively.
       </p>
       <h3>Logo</h3>
       <Artwork

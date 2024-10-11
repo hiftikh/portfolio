@@ -6,7 +6,7 @@ export default function CanterburyHomes() {
     <>
       <h2>Process</h2>
       <p>
-        The website was created using{" "}
+        The website was created using&nbsp;
         <a href="https://wordpress.com/" target="_blank">
           Wordpress
           <Icon name="external-link" />
@@ -24,8 +24,7 @@ export default function CanterburyHomes() {
         logo, "Coming Soon" text, and contact information.
       </p>
       <p>
-        {" "}
-        The client was already hosting other websites on{" "}
+        &nbsp; The client was already hosting other websites on&nbsp;
         <a href="https://www.godaddy.com/" target="_blank">
           GoDaddy
           <Icon name="external-link" />

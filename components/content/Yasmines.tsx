@@ -6,15 +6,15 @@ export default function CanterburyHomes() {
     <>
       <h2>Process</h2>
       <p>
-        The signage was designed by{" "}
+        The signage was designed by&nbsp;
         <a
           href="https://www.adobe.com/ca/products/photoshop.html"
           target="_blank"
         >
           Adobe Photoshop
           <Icon name="external-link" />
-        </a>{" "}
-        and the website was created using{" "}
+        </a>
+        &nbsp; and the website was created using&nbsp;
         <a href="https://wordpress.com/" target="_blank">
           Wordpress
           <Icon name="external-link" />
@@ -24,8 +24,8 @@ export default function CanterburyHomes() {
       <h3>Billboard</h3>
       <p>
         The purpose for the billboard was to alert future customers that the
-        restaurant was finally open. The daily impressions were <b>10,000+</b>{" "}
-        per day as the billboard was located in a major interaction.
+        restaurant was finally open. The daily impressions were <b>10,000+</b>
+        &nbsp; per day as the billboard was located in a major interaction.
       </p>
       <Artwork
         imageURL="/img/artwork/yasmines-billboard.jpg"
@@ -39,13 +39,13 @@ export default function CanterburyHomes() {
       </p>
       <p>
         I decided to use Wordpress since the client wanted to edit the content
-        after the completion of this project.{" "}
+        after the completion of this project.&nbsp;
         <a href="https://www.godaddy.com/" target="_blank">
           GoDaddy
           <Icon name="external-link" />
-        </a>{" "}
-        was used for domain and hosting. A Wordpress template was purchased and
-        then altered to better fit the information.
+        </a>
+        &nbsp; was used for domain and hosting. A Wordpress template was
+        purchased and then altered to better fit the information.
       </p>
       <p>
         The color branding was used throughout the site to better inforce its

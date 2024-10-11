@@ -1,7 +1,8 @@
 import Icon from "@/components/Icon";
 import Artwork from "../Artwork";
+import Link from "next/link";
 
-export default function EdgewoodEstates() {
+export default function Westdell() {
   return (
     <>
       <h2>Process</h2>
@@ -15,24 +16,16 @@ export default function EdgewoodEstates() {
       </p>
       <h3>Website</h3>
       <p>
-        The main users of the website would be future homeowners who would want
-        to get more information about the builder and the Edgewood Estates
-        project.
+        The main users of the website would be future investors or the general
+        public who would want to get more information about Westdell and their
+        properties.
       </p>
       <p>
-        Since this was just a simple landing page with minor information, I
-        decided to create a single page website. The client was already hosting
-        other websites on&nbsp;
-        <a href="https://www.godaddy.com/" target="_blank">
-          GoDaddy
-          <Icon name="external-link" />
-        </a>
-        , so I decided to stick with it for hosting and domain.
+        A realtor Wordpress template was purchased and then altered to better
+        fit the information. A "Recently Added Property" section was added to
+        the homepage.
       </p>
-      <p>
-        A Wordpress template was purchased and then altered to better fit the
-        information.
-      </p>
+
       <p>The following tools/plugins were used:</p>
       <ul className="list-disc list-inside">
         <li>
@@ -59,21 +52,22 @@ export default function EdgewoodEstates() {
             <Icon name="external-link" />
           </a>
         </li>
-        <li>
-          <a
-            href="https://en-ca.wordpress.org/plugins/contact-form-7/"
-            target="_blank"
-          >
-            Contact Form 7 (Plugin)
-            <Icon name="external-link" />
-          </a>
-        </li>
       </ul>
       <Artwork
-        imageURL="/img/artwork/edgewood-webpage-screenshot.jpg"
-        alt="Edgewood Estates Webpage"
-        caption="Edgewood Estates Website (Desktop) Screenshot"
+        imageURL="/img/artwork/westdell-website-screenshot.jpg"
+        alt="Westdell Webpage"
+        caption="Westdell Website (Desktop) Screenshot"
       />
+      <Artwork
+        imageURL="/img/artwork/westdell-property-screenshot.jpg"
+        alt="Westdell Property Webpage"
+        caption="Westdell Property (Desktop) Screenshot"
+      />
+      <p>
+        Checkout other property projects websites I worked with Westdell:&nbsp;
+        <Link href="/work/canterbury-homes">Canterbury Homes</Link> and&nbsp;
+        <Link href="/work/edgewood-estates">Edgewood Estates</Link>.
+      </p>
     </>
   );
 }

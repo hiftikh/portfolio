@@ -17,7 +17,7 @@ export default function Home() {
               `${font.className}`
             )}
           >
-            Hi, I&apos;m{" "}
+            Hi, I&apos;m&nbsp;
             <span className="font-bold underline decoration-accent underline-offset-8">
               Haris
             </span>

@@ -6,35 +6,36 @@ export default function Nurcare() {
     <>
       <h2 className="text-2xl font-bold">Process</h2>
       <p>
-        Designed the logo/icon business card using{" "}
+        Designed the logo/icon business card using&nbsp;
         <a
           href="https://www.adobe.com/ca/products/illustrator.html"
           target="_blank"
         >
           Adobe Illustrator
           <Icon name="external-link" />
-        </a>{" "}
-        and{" "}
+        </a>
+        &nbsp; and&nbsp;
         <a
           href="https://www.adobe.com/ca/products/indesign.html"
           target="_blank"
         >
           Adobe InDesign
           <Icon name="external-link" />
-        </a>{" "}
-        respectfully.
+        </a>
+        &nbsp; respectfully.
       </p>
       <h3 className="text-xl font-bold">Logo</h3>
       <p>
-        Taking inspriation from the words <b>Noor(Arabic for light)</b>,{" "}
-        <b>Nurture</b>, and <b>Care</b>, the idea of{" "}
+        Taking inspriation from the words <b>Noor(Arabic for light)</b>,&nbsp;
+        <b>Nurture</b>, and <b>Care</b>, the idea of&nbsp;
         <b>
           <i>Nurcare</i>
-        </b>{" "}
-        was born. The green pastel color evoking a calm nurturing atmosphere and
-        the yellow color producing a sense of warmth. The typography is in
-        lowercase and rounded which conveys comfort and softness. The yellow
-        rotated squares on the &quot;u&quot; takes inspiration from the{" "}
+        </b>
+        &nbsp; was born. The green pastel color evoking a calm nurturing
+        atmosphere and the yellow color producing a sense of warmth. The
+        typography is in lowercase and rounded which conveys comfort and
+        softness. The yellow rotated squares on the &quot;u&quot; takes
+        inspiration from the&nbsp;
         <a href="https://en.wikipedia.org/wiki/Arabic_alphabet" target="_blank">
           Arabic Alphabet
           <Icon name="external-link" />

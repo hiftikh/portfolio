@@ -6,7 +6,7 @@ export default function MuslimSoupKitchen() {
     <>
       <h2>Process</h2>
       <p>
-        The logo/icon was designed in{" "}
+        The logo/icon was designed in&nbsp;
         <a
           href="https://www.adobe.com/ca/products/illustrator.html"
           target="_blank"

@@ -6,15 +6,15 @@ export default function Lionheart() {
     <>
       <h2>Process</h2>
       <p>
-        The logo was created using{" "}
+        The logo was created using&nbsp;
         <a
           href="https://www.adobe.com/ca/products/illustrator.html"
           target="_blank"
         >
           Adobe Illustrator
           <Icon name="external-link" />
-        </a>{" "}
-        and the website with{" "}
+        </a>
+        &nbsp; and the website with&nbsp;
         <a href="https://wordpress.com/" target="_blank">
           Wordpress
           <Icon name="external-link" />
@@ -41,7 +41,8 @@ export default function Lionheart() {
       </p>
       <p>
         Since the client wanted to do their own updates after the completion of
-        this work, I decided to go with EasyWP(Managed WordPress Hosting) by{" "}
+        this work, I decided to go with EasyWP(Managed WordPress Hosting)
+        by&nbsp;
         <a href="https://www.namecheap.com/" target="_blank">
           Namecheap
           <Icon name="external-link" />

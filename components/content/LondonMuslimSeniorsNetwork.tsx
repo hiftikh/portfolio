@@ -6,7 +6,7 @@ export default function LondonMuslimSeniorsNetwork() {
     <>
       <h2>Process</h2>
       <p>
-        The logo was designed in{" "}
+        The logo was designed in&nbsp;
         <a
           href="https://www.adobe.com/ca/products/illustrator.html"
           target="_blank"

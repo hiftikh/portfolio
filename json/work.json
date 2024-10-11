@@ -43,7 +43,7 @@
     "id": 2,
     "show": true,
     "name": "Beladi's Bakery",
-    "componentName": "BeladisBakey",
+    "componentName": "BeladisBakery",
     "description": "Beladi’s brings the taste of the Middle East to London, Ontario with traditional, authentic, home-made cuisine!",
     "slug": "beladis",
     "img": {
@@ -64,16 +64,16 @@
     "show": true,
     "name": "Forest City Ramadan",
     "componentName": "ForestCityRamadan",
-    "slug": "forest-city-ramandan",
+    "slug": "forest-city-ramadan",
     "description": "This initiative started out as a simple flyer with information on the basic rules of deep understanding related to Islamic practice, including the do's and don'ts of fasting in Ramadan, but quickly evolved into a magazine. There is so much to share in the context of Ramadan, with so many topics and perspectives, that we felt we could try to make it a comprehensive go-to practical guide and resource for everyone in the Forest City.",
     "img": {
       "logo": {
         "url": "/img/logo/forest-city-ramadan.png",
-        "alt": "Forest City Ramandan Logo"
+        "alt": "Forest City ramadan Logo"
       },
       "banner": {
         "url": "/img/banner/forest-city-ramadan.jpg",
-        "alt": "Forest City Ramandan Banner"
+        "alt": "Forest City ramadan Banner"
       }
     },
     "keywords": ["Photography", "Publication", "Logo"],
@@ -116,7 +116,7 @@
         "alt": "Shraim's Sweets Banner"
       }
     },
-    "keywords": ["Logo", "Business Card", "Signage", "Packaging"],
+    "keywords": ["Logo", "Signage", "Packaging"],
     "dateAdded": "2019-03-01"
   },
   {
@@ -137,7 +137,7 @@
         "alt": "Westdell Banner"
       }
     },
-    "keywords": ["Publication", "Signage", "Website"],
+    "keywords": ["Website"],
     "dateAdded": "2020-05-01"
   },
   {
@@ -303,7 +303,7 @@
         "alt": "Forest City Muslim Banner"
       }
     },
-    "keywords": ["Business Card", "Photography", "Publication", "Logo"],
+    "keywords": ["Photography", "Publication", "Logo"],
     "dateAdded": "2020-06-09"
   }
 ]
