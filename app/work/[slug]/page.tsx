@@ -7,7 +7,7 @@ import data from "@/json/work.json";
 import BreadCrumbCustom from "@/components/BreadCrumbCustom";
 import dynamic from "next/dynamic";
 import Icon from "@/components/Icon";
-import WorkInterface from "@/app/interfaces/Work";
+import WorkInterface from "@/app/interfaces/Data";
 import type { Metadata, ResolvingMetadata } from "next";
 
 type Props = {

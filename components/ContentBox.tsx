@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import WorkInterance from "../app/interfaces/Work";
-import ProjectInterance from "../app/interfaces/Project";
+import DataInterance from "../app/interfaces/Data";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -9,8 +8,8 @@ import {
   displayYear,
 } from "@/lib/utils";
 
-interface CardProps {
-  data: WorkInterance[] | ProjectInterance[];
+export interface CardProps {
+  data: DataInterance[];
 }
 
 export default function ContentBox({ data }: CardProps) {
@@ -29,7 +28,7 @@ export default function ContentBox({ data }: CardProps) {
                   width={600}
                   height={600}
                   src={item.img.banner.url || ""}
-                  alt={item.img.banner.alt || ""}
+                  alt={item.img.banner.alt || "Alt Tag"}
                   className="group-hover:opacity-60"
                   placeholder="blur"
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkWNz6HwAD/AIpceji/QAAAABJRU5ErkJggg=="
@@ -49,21 +48,13 @@ export default function ContentBox({ data }: CardProps) {
   );
 }
 
-const DateAddedComp = ({ dateAdded }: WorkInterance) => {
-  return (
-    <p className=" text-sm absolute font-semibold bottom-3 right-3 bg-black/70 outline-black py-1 px-5 rounded-xl">
-      {displayYear(dateAdded || "####")}
-    </p>
-  );
-};
-
-const Title = ({ name }: WorkInterance) => {
+const Title = ({ name }: DataInterance) => {
   return (
     <h2 className="leading-7 text-black pb-2 font-semibold text-xl">{name}</h2>
   );
 };
 
-const KeyWords = ({ keywords }: WorkInterance) => {
+const KeyWords = ({ keywords }: DataInterance) => {
   return (
     <div className="flex-wrap justify-normal">
       {keywords &&
@@ -77,5 +68,13 @@ const KeyWords = ({ keywords }: WorkInterance) => {
           </Badge>
         ))}
     </div>
+  );
+};
+
+const DateAddedComp = ({ dateAdded }: DataInterance) => {
+  return (
+    <p className=" text-sm absolute font-semibold bottom-3 right-3 bg-black/70 outline-black py-1 px-5 rounded-xl">
+      {displayYear(dateAdded || "####")}
+    </p>
   );
 };
