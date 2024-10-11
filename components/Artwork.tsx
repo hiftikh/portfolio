@@ -18,7 +18,7 @@ export default function Artwork(params: Artwork) {
           width={params.width || 800}
           height={params.height || 800}
           className="mx-auto"
-          style={{ height: "100%", width: "auto" }}
+          style={{ height: "auto", width: "auto" }}
         />
         {params.caption && <Caption {...params} />}
       </div>
