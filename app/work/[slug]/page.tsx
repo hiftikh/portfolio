@@ -9,6 +9,7 @@ import dynamic from "next/dynamic";
 import Icon from "@/components/Icon";
 import WorkInterface from "@/app/interfaces/Data";
 import type { Metadata, ResolvingMetadata } from "next";
+import { orderByAlphabetically } from "@/lib/utils";
 
 type Props = {
   params: { slug: string };
@@ -96,15 +97,17 @@ const Btn = ({ url }: WorkInterface) => {
 const KeyWords = ({ keywords }: WorkInterface) => {
   return (
     <div className="container mx-auto my-6 md:w-8/12 text-center">
-      {keywords?.map((keyword: any, index: number) => (
-        <Badge
-          variant="outline"
-          className="text-slate-300 border-slate-300 mx-1 px-5 py-2"
-          key={index}
-        >
-          {keyword}
-        </Badge>
-      ))}
+      {keywords
+        ?.sort(orderByAlphabetically)
+        .map((keyword: any, index: number) => (
+          <Badge
+            variant="outline"
+            className="text-slate-300 border-slate-300 mx-1 px-5 py-2"
+            key={index}
+          >
+            {keyword}
+          </Badge>
+        ))}
     </div>
   );
 };
