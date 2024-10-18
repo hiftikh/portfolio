@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import DataInterance from "../app/interfaces/Data";
+import DataInterance from "../../app/interfaces/Data";
 import Image from "next/image";
 import Link from "next/link";
 import {

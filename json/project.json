@@ -1,0 +1,21 @@
+[
+  {
+    "id": 0,
+    "show": true,
+    "name": "Portfolio",
+    "slug": "portfolio",
+    "description": "Portfolio of Haris Iftikhar",
+    "url": {
+      "github": "https://github.com/hiftikh/portfolio",
+      "site": "harisiftikhar.com"
+    },
+    "img": {
+      "banner": {
+        "url": "/img/banner/portfolio.jpg",
+        "alt": "Nurcare Banner"
+      }
+    },
+    "keywords": ["NextJS", "ReactJS", "Tailwind", "shadcn/ui"],
+    "dateAdded": "2024-10-01"
+  }
+]
