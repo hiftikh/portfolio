@@ -1,16 +1,8 @@
 import { joinClassNames } from "@/lib/utils";
+import ArtworkInterface from "../app/interfaces/Artwork";
 import Image from "next/image";
 
-interface Artwork {
-  caption?: string;
-  imageURL: string;
-  alt: string;
-  width?: number;
-  height?: number;
-  bgColor?: string;
-}
-
-export default function Artwork(params: Artwork) {
+export default function Artwork(params: ArtworkInterface) {
   return (
     <>
       <div className="my-10 mx-auto md:w-8/12 text-center">
@@ -33,10 +25,8 @@ export default function Artwork(params: Artwork) {
   );
 }
 
-const Caption = ({ caption }: Artwork) => {
+const Caption = ({ caption }: ArtworkInterface) => {
   return (
-    <p className="py-2 px-2 font-light mx-auto bg-slate-800/30 text-xs md:text-s">
-      {caption}
-    </p>
+    <p className="py-2 px-2 font-light mx-auto text-xs md:text-s">{caption}</p>
   );
 };
