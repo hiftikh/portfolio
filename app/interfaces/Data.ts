@@ -1,4 +1,4 @@
-export default interface Work {
+export default interface Data {
   id: number;
   show: boolean;
   name: string;
