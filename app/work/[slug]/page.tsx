@@ -102,7 +102,7 @@ const KeyWords = ({ keywords }: WorkInterface) => {
         .map((keyword: any, index: number) => (
           <Badge
             variant="outline"
-            className="text-slate-300 border-slate-300 mx-1 px-5 py-2"
+            className="text-slate-300 border-slate-300 mx-1 px-5 py-2 mb-3"
             key={index}
           >
             {keyword}
