@@ -125,7 +125,7 @@
     "name": "Westdell",
     "componentName": "Westdell",
     "description": "Westdell Development Corporation is a commercial, office and residential development company based in London, Ontario that has been developing and managing a growing portfolio of commercial, office and residential properties for over 30 years.",
-    "url": { "site": "https://www.westdellcorp.com/" },
+    "url": { "site": "//www.westdellcorp.com" },
     "slug": "westdell",
     "img": {
       "logo": {
@@ -146,7 +146,7 @@
     "name": "Yasmine's",
     "componentName": "Yasmines",
     "description": "Yasmine’s is a unique concept that combines modern and traditional Lebanese dishes reflecting the amazing flavours of the region’s cuisine.",
-    "url": { "site": "https://yasminesrestaurant.com/" },
+    "url": { "site": "//yasminesrestaurant.com" },
     "slug": "yasmines",
     "img": {
       "logo": {
@@ -167,7 +167,7 @@
     "name": "Lionheart Tattoo Parlour",
     "componentName": "Lionheart",
     "description": "Lionheart Tattoo Parlour strives to provide a friendly and welcoming atmosphere and are confident that you will leave feeling thrilled with your experience and new tattoo.",
-    "url": { "site": "https://lionhearttattoo.ca/" },
+    "url": { "site": "//lionhearttattoo.ca" },
     "slug": "lionheart",
     "img": {
       "logo": {
@@ -249,7 +249,7 @@
     "name": "Edgewood Estates",
     "componentName": "EdgewoodEstates",
     "description": "This thriving community offers small town charm just minutes from big city amenities located in Mount Brydes, Ontario.",
-    "url": { "site": "https://edgewoodestates.ca/" },
+    "url": { "site": "//edgewoodestates.ca" },
     "slug": "edgewood-estates",
     "img": {
       "logo": {
@@ -271,7 +271,7 @@
     "name": "Canterbury Homes",
     "componentName": "CanterburyHomes",
     "description": "Canterbury Homes brings the craftsmanship, construction techniques, and attention to detail you'd expect to see from a custom home builder to everything we do.",
-    "url": { "site": "https://canterburyhomes.ca/" },
+    "url": { "site": "//canterburyhomes.ca" },
     "slug": "canterbury-homes",
     "img": {
       "logo": {
