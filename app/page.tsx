@@ -38,6 +38,7 @@ export default function Home() {
               variant="outline"
               className="text-secondary hover:border-accent"
               text="Github"
+              external
             />
             <Button
               href={data[0].linkedin}
@@ -45,6 +46,7 @@ export default function Home() {
               variant="outline"
               className="text-secondary hover:border-accent"
               text="LinkedIn"
+              external
             />
           </div>
         </div>
