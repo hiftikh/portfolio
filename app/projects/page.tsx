@@ -13,7 +13,7 @@ export default function Page() {
       <Header align="center" underline>
         Recent Projects
       </Header>
-      <ContentBox data={data} />
+      <ContentBox data={data} flatCard={true} />
     </>
   );
 }
