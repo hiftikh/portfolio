@@ -4,7 +4,7 @@ import type { Metadata, Viewport } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-import GoogleAnalytics from "@/components/tools/GoogleAnalytics";
+import GoogleAnalytics from "@/components/Tools/GoogleAnalytics";
 
 const font = Mulish({
   subsets: ["latin"],
