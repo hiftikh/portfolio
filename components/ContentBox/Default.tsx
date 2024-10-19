@@ -9,6 +9,7 @@ import {
   displayYear,
 } from "@/lib/utils";
 import Button from "@/components/Button";
+import Data from "../../app/interfaces/Data";
 
 export interface CardProps {
   data: DataInterance[];
@@ -21,7 +22,6 @@ export default function ContentBox({ data, flatCard = false }: CardProps) {
   };
   return (
     <>
-      .
       <div className="my-10  grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {data.sort(orderByNewDate).map((item) => (
           <React.Fragment key={item.id}>
@@ -48,16 +48,8 @@ const CardComp = (item: DataInterance) => {
       {item.img.banner && <Banner {...item} />}
       <div className="p-5 bg-white h-full">
         {item.name && <Title {...item} />}
-        {item.url?.github && (
-          <Button
-            href={item.url.github}
-            className="text-secondary"
-            text="Github"
-            external
-            icon="external-link"
-          />
-        )}
         {item.keywords && <KeyWords {...item} />}
+        {item.url?.github && <ButtonGroup {...item} />}
       </div>
     </div>
   );
@@ -82,6 +74,32 @@ const KeyWords = ({ keywords }: DataInterance) => {
             {keyword}
           </Badge>
         ))}
+    </div>
+  );
+};
+
+const ButtonGroup = ({ url }: Data) => {
+  return (
+    <div className="flex gap-3 mt-4">
+      {url?.github && (
+        <Button
+          href={url.github}
+          className="text-secondary w-3/6"
+          text="Github"
+          external
+          icon="external-link"
+        />
+      )}
+      {url?.site && (
+        <Button
+          href={url.site}
+          className="text-secondary w-3/6"
+          text="Website"
+          external
+          icon="external-link"
+          variant=""
+        />
+      )}
     </div>
   );
 };
