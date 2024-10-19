@@ -2,7 +2,7 @@ export default interface Data {
   id: number;
   show: boolean;
   name: string;
-  slug: string;
+  slug?: string;
   description?: string;
   componentName?: string;
   url?: {
