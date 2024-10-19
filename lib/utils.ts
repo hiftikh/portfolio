@@ -34,7 +34,7 @@ export const displayYear = (date: string) => {
   return `${dateISO.getFullYear()}`;
 };
 
-export function orderByNewDate(a: any, b: any) {
+export function orderByRecent(a: any, b: any) {
   return new Date(a.dateAdded) < new Date(b.dateAdded)
     ? 1
     : new Date(a.dateAdded) > new Date(b.dateAdded)
