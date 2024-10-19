@@ -1,6 +1,6 @@
 import { Card, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import WorkInterance from "../app/interfaces/Data";
+import WorkInterance from "../../app/interfaces/Data";
 import Image from "next/image";
 import Link from "next/link";
 import { orderByNewDate, orderByAlphabetically } from "@/lib/utils";
