@@ -1,6 +1,5 @@
 [
   {
-    "id": 0,
     "show": true,
     "name": "Nurcare",
     "slug": "nurcare",
@@ -8,11 +7,11 @@
     "description": "Nurcare takes on a humanistic, strength-based, trauma-informed, anti-oppressive and anti-racist approach to therapy.",
     "img": {
       "logo": {
-        "url": "/img/logo/nurcare.png",
+        "url": "/img/logo/work/nurcare.png",
         "alt": "Nurcare Logo"
       },
       "banner": {
-        "url": "/img/banner/nurcare.jpg",
+        "url": "/img/banner/work/nurcare.jpg",
         "alt": "Nurcare Banner"
       }
     },
@@ -20,7 +19,6 @@
     "dateAdded": "2024-08-01"
   },
   {
-    "id": 1,
     "show": true,
     "name": "Jilani and Asuncion Consulting Engineers",
     "componentName": "Jace",
@@ -28,11 +26,11 @@
     "slug": "jace",
     "img": {
       "logo": {
-        "url": "/img/logo/jace.png",
+        "url": "/img/logo/work/jace.png",
         "alt": "Jace Logo"
       },
       "banner": {
-        "url": "/img/banner/jace.jpg",
+        "url": "/img/banner/work/jace.jpg",
         "alt": "Jace Banner"
       }
     },
@@ -40,7 +38,6 @@
     "dateAdded": "2017-05-01"
   },
   {
-    "id": 2,
     "show": true,
     "name": "Beladi's Bakery",
     "componentName": "BeladisBakery",
@@ -48,11 +45,11 @@
     "slug": "beladis",
     "img": {
       "logo": {
-        "url": "/img/logo/beladis.png",
+        "url": "/img/logo/work/beladis.png",
         "alt": "beladi Logo"
       },
       "banner": {
-        "url": "/img/banner/beladis.jpg",
+        "url": "/img/banner/work/beladis.jpg",
         "alt": "beladi Banner"
       }
     },
@@ -60,7 +57,6 @@
     "dateAdded": "2019-10-01"
   },
   {
-    "id": 3,
     "show": true,
     "name": "Forest City Ramadan",
     "componentName": "ForestCityRamadan",
@@ -68,11 +64,11 @@
     "description": "This initiative started out as a simple flyer with information on the basic rules of deep understanding related to Islamic practice, including the do's and don'ts of fasting in Ramadan, but quickly evolved into a magazine. There is so much to share in the context of Ramadan, with so many topics and perspectives, that we felt we could try to make it a comprehensive go-to practical guide and resource for everyone in the Forest City.",
     "img": {
       "logo": {
-        "url": "/img/logo/forest-city-ramadan.png",
+        "url": "/img/logo/work/forest-city-ramadan.png",
         "alt": "Forest City ramadan Logo"
       },
       "banner": {
-        "url": "/img/banner/forest-city-ramadan.jpg",
+        "url": "/img/banner/work/forest-city-ramadan.jpg",
         "alt": "Forest City ramadan Banner"
       }
     },
@@ -80,7 +76,6 @@
     "dateAdded": "2020-05-01"
   },
   {
-    "id": 4,
     "show": true,
     "name": "McSherim Bakery",
     "componentName": "McSherimBakery",
@@ -88,11 +83,11 @@
     "slug": "mcsherim-bakery",
     "img": {
       "logo": {
-        "url": "/img/logo/mcsherim-bakery.png",
+        "url": "/img/logo/work/mcsherim-bakery.png",
         "alt": "McSherim Bakery Logo"
       },
       "banner": {
-        "url": "/img/banner/mcsherim-bakery.jpg",
+        "url": "/img/banner/work/mcsherim-bakery.jpg",
         "alt": "McSherim Bakery Banner"
       }
     },
@@ -100,7 +95,6 @@
     "dateAdded": "2020-07-01"
   },
   {
-    "id": 5,
     "show": true,
     "name": "Shraim's Sweets",
     "description": "Shraim's Sweets is an exclusive collection of world wide sweets and recipes servered with our special chocolates and fruits.",
@@ -108,11 +102,11 @@
     "slug": "shraims-sweets",
     "img": {
       "logo": {
-        "url": "/img/logo/shraims-sweets.png",
+        "url": "/img/logo/work/shraims-sweets.png",
         "alt": "Shraim's Sweets Logo"
       },
       "banner": {
-        "url": "/img/banner/shraims-sweets.jpg",
+        "url": "/img/banner/work/shraims-sweets.jpg",
         "alt": "Shraim's Sweets Banner"
       }
     },
@@ -120,7 +114,6 @@
     "dateAdded": "2019-03-01"
   },
   {
-    "id": 6,
     "show": true,
     "name": "Westdell",
     "componentName": "Westdell",
@@ -129,11 +122,11 @@
     "slug": "westdell",
     "img": {
       "logo": {
-        "url": "/img/logo/westdell.png",
+        "url": "/img/logo/work/westdell.png",
         "alt": "Westdell Logo"
       },
       "banner": {
-        "url": "/img/banner/westdell.jpg",
+        "url": "/img/banner/work/westdell.jpg",
         "alt": "Westdell Banner"
       }
     },
@@ -141,7 +134,6 @@
     "dateAdded": "2020-05-01"
   },
   {
-    "id": 7,
     "show": true,
     "name": "Yasmine's",
     "componentName": "Yasmines",
@@ -150,11 +142,11 @@
     "slug": "yasmines",
     "img": {
       "logo": {
-        "url": "/img/logo/yasmines.png",
+        "url": "/img/logo/work/yasmines.png",
         "alt": "Yasmines' Logo"
       },
       "banner": {
-        "url": "/img/banner/yasmines.jpg",
+        "url": "/img/banner/work/yasmines.jpg",
         "alt": "Yasmines' Banner"
       }
     },
@@ -162,7 +154,6 @@
     "dateAdded": "2021-02-01"
   },
   {
-    "id": 8,
     "show": true,
     "name": "Lionheart Tattoo Parlour",
     "componentName": "Lionheart",
@@ -171,11 +162,11 @@
     "slug": "lionheart",
     "img": {
       "logo": {
-        "url": "/img/logo/lionheart.png",
+        "url": "/img/logo/work/lionheart.png",
         "alt": "Lionheart Logo"
       },
       "banner": {
-        "url": "/img/banner/lionheart.jpg",
+        "url": "/img/banner/work/lionheart.jpg",
         "alt": "Lionheart' Banner"
       }
     },
@@ -183,7 +174,6 @@
     "dateAdded": "2023-07-01"
   },
   {
-    "id": 9,
     "show": true,
     "name": "London Muslim Seniors Network",
     "componentName": "LondonMuslimSeniorsNetwork",
@@ -191,11 +181,11 @@
     "slug": "london-muslim-seniors-network",
     "img": {
       "logo": {
-        "url": "/img/logo/london-muslim-seniors-network.png",
+        "url": "/img/logo/work/london-muslim-seniors-network.png",
         "alt": "London Muslim Seniors Network Logo"
       },
       "banner": {
-        "url": "/img/banner/london-muslim-seniors-network.jpg",
+        "url": "/img/banner/work/london-muslim-seniors-network.jpg",
         "alt": "London Muslim Seniors Network Banner"
       }
     },
@@ -203,7 +193,6 @@
     "dateAdded": "2021-01-01"
   },
   {
-    "id": 10,
     "show": true,
     "name": "Muslim Soup Kitchen",
     "componentName": "MuslimSoupKitchen",
@@ -211,11 +200,11 @@
     "slug": "muslim-soup-kitchen",
     "img": {
       "logo": {
-        "url": "/img/logo/muslim-soup-kitchen.png",
+        "url": "/img/logo/work/muslim-soup-kitchen.png",
         "alt": "Muslim Soup Kitchen Logo"
       },
       "banner": {
-        "url": "/img/banner/muslim-soup-kitchen.jpg",
+        "url": "/img/banner/work/muslim-soup-kitchen.jpg",
         "alt": "Muslim Soup Kitchen Banner"
       }
     },
@@ -223,7 +212,6 @@
     "dateAdded": "2021-01-01"
   },
   {
-    "id": 11,
     "show": true,
     "name": "Pistachios",
     "componentName": "Pistachios",
@@ -231,11 +219,11 @@
     "slug": "pistachios",
     "img": {
       "logo": {
-        "url": "/img/logo/pistachios.png",
+        "url": "/img/logo/work/pistachios.png",
         "alt": "Pistachios Logo"
       },
       "banner": {
-        "url": "/img/banner/pistachios.jpg",
+        "url": "/img/banner/work/pistachios.jpg",
         "alt": "Pistachios Banner"
       }
     },
@@ -244,7 +232,6 @@
   },
 
   {
-    "id": 12,
     "show": true,
     "name": "Edgewood Estates",
     "componentName": "EdgewoodEstates",
@@ -253,11 +240,11 @@
     "slug": "edgewood-estates",
     "img": {
       "logo": {
-        "url": "/img/logo/edgewood-estates.png",
+        "url": "/img/logo/work/edgewood-estates.png",
         "alt": "Edgewood Estates Logo"
       },
       "banner": {
-        "url": "/img/banner/edgewood.jpg",
+        "url": "/img/banner/work/edgewood.jpg",
         "alt": "Edgewood Estates Banner"
       }
     },
@@ -266,7 +253,6 @@
   },
 
   {
-    "id": 13,
     "show": true,
     "name": "Canterbury Homes",
     "componentName": "CanterburyHomes",
@@ -275,11 +261,11 @@
     "slug": "canterbury-homes",
     "img": {
       "logo": {
-        "url": "/img/logo/canterbury-homes.png",
+        "url": "/img/logo/work/canterbury-homes.png",
         "alt": "Canterbury Homes Logo"
       },
       "banner": {
-        "url": "/img/banner/canterbury.jpg",
+        "url": "/img/banner/work/canterbury.jpg",
         "alt": "Canterbury Homes Banner"
       }
     },
@@ -287,7 +273,6 @@
     "dateAdded": "2021-07-01"
   },
   {
-    "id": 14,
     "show": true,
     "name": "Forest City Muslim",
     "componentName": "ForestCityMuslim",
@@ -295,11 +280,11 @@
     "description": "This initiative started out as a simple flyer with information on the basic rules of deep understanding related to Islamic practice, including the do's and don'ts of fasting in Ramadan, but quickly evolved into a magazine. There is so much to share in the context of Ramadan, with so many topics and perspectives, that we felt we could try to make it a comprehensive go-to practical guide and resource for everyone in the Forest City.",
     "img": {
       "logo": {
-        "url": "/img/logo/forest-city-muslim.png",
+        "url": "/img/logo/work/forest-city-muslim.png",
         "alt": "Forest City Muslim Logo"
       },
       "banner": {
-        "url": "/img/banner/forest-city-muslim.jpg",
+        "url": "/img/banner/work/forest-city-muslim.jpg",
         "alt": "Forest City Muslim Banner"
       }
     },

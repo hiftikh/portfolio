@@ -89,7 +89,7 @@ export default function ForestCityMuslim() {
       </ul>
 
       <Artwork
-        imageURL="/img/artwork/fcm-magazines.jpg"
+        imageURL="/img/artwork/work/fcm-magazines.jpg"
         alt="Forest City Muslim Magazines"
         caption="Left to Right: Eid ul-Adha 2020,  Winter 2021, Ramadan 2021, and Eid ul-Fitr 2021"
       />
@@ -99,7 +99,7 @@ export default function ForestCityMuslim() {
         feeling.
       </p>
       <Artwork
-        imageURL="/img/artwork/fcm-logo-mockup.jpg"
+        imageURL="/img/artwork/work/fcm-logo-mockup.jpg"
         alt="Forest City Ramadan Magazine"
         caption="Left: Primary Logo | Right: Alternate Logo"
       />

@@ -28,20 +28,20 @@ export default function BeladisBakery() {
       </p>
 
       <Artwork
-        imageURL="/img/artwork/beladis-leftscreen.png"
+        imageURL="/img/artwork/work/beladis-leftscreen.png"
         alt="TV Menu"
         caption="TV Menu (Left Screen)"
         bgColor="bg-slate-700"
       />
 
       <Artwork
-        imageURL="/img/artwork/beladis-centerscreen.png"
+        imageURL="/img/artwork/work/beladis-centerscreen.png"
         alt="TV Menu"
         caption="TV Menu (Center Screen)"
         bgColor="bg-slate-700"
       />
       <Artwork
-        imageURL="/img/artwork/beladis-rightscreen.png"
+        imageURL="/img/artwork/work/beladis-rightscreen.png"
         alt="TV Menu"
         caption="TV Menu (Right Screen)"
         bgColor="bg-slate-700"

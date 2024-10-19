@@ -49,7 +49,7 @@ export default function Nurcare() {
         positive and welcoming presense.
       </p>
       <Artwork
-        imageURL="/img/artwork/nurcare-logo-mock-up.png"
+        imageURL="/img/artwork/work/nurcare-logo-mock-up.png"
         alt="Nurcare Logo Mock Up"
         caption="Left: Primary Logo |  Right: Alternate Logo"
       />
@@ -64,7 +64,7 @@ export default function Nurcare() {
         "Rekindle your inner light".
       </p>
       <Artwork
-        imageURL="/img/artwork/nurcare-business-card-mock-up.jpg"
+        imageURL="/img/artwork/work/nurcare-business-card-mock-up.jpg"
         alt="Business Card Mock Up"
         caption="Business card mock up."
       />

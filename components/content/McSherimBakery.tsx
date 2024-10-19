@@ -26,14 +26,14 @@ export default function McSherimBakery() {
       </p>
       <h3>Logo</h3>
       <Artwork
-        imageURL="/img/artwork/mcsherim-logo.jpg"
+        imageURL="/img/artwork/work/mcsherim-logo.jpg"
         alt="McSherim Logo"
         caption="McSherim Logo"
       />
       <h3>Sticker</h3>
       <p>The sticker would be placed on a plastic bag containing pita bread.</p>
       <Artwork
-        imageURL="/img/artwork/mcsherim-sticker.jpg"
+        imageURL="/img/artwork/work/mcsherim-sticker.jpg"
         alt="McSherim Sticker"
         caption="McSherim Sticker"
       />

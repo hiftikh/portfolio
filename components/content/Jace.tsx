@@ -17,12 +17,12 @@ export default function Jace() {
       />
       <h3>Business Card</h3>
       <Artwork
-        imageURL="/img/artwork/jace-card-front.jpg"
+        imageURL="/img/artwork/work/jace-card-front.jpg"
         alt="Jace Business Card Front"
         caption="Business Card Front"
       />
       <Artwork
-        imageURL="/img/artwork/jace-card-back.jpg"
+        imageURL="/img/artwork/work/jace-card-back.jpg"
         alt="Jace Business Card Back"
         caption="Business Card Back"
       />

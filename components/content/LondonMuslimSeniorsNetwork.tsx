@@ -30,7 +30,7 @@ export default function LondonMuslimSeniorsNetwork() {
         to the center, the stronger they become as a community.
       </p>
       <Artwork
-        imageURL="/img/artwork/lmsn-logo.png"
+        imageURL="/img/artwork/work/lmsn-logo.png"
         alt="London Muslim Seniors Network Logo"
         caption="London Muslim Seniors Network Logo"
       />

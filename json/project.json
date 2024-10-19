@@ -3,15 +3,14 @@
     "id": 0,
     "show": true,
     "name": "Portfolio",
-    "slug": "portfolio",
     "description": "Portfolio of Haris Iftikhar",
     "url": {
       "github": "https://github.com/hiftikh/portfolio",
-      "site": "harisiftikhar.com"
+      "site": "//harisiftikhar.com"
     },
     "img": {
       "banner": {
-        "url": "/img/banner/portfolio.jpg",
+        "url": "/img/banner/project/portfolio.jpg",
         "alt": "Nurcare Banner"
       }
     },

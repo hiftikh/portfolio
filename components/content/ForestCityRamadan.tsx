@@ -78,7 +78,7 @@ export default function ForestCityRamadan() {
       </ul>
 
       <Artwork
-        imageURL="/img/artwork/fcr-magazine.jpg"
+        imageURL="/img/artwork/work/fcr-magazine.jpg"
         alt="Forest City Ramadan Magazine"
         caption="Left: Ramadan 2020 | Right: Eid 2020"
       />
@@ -88,7 +88,7 @@ export default function ForestCityRamadan() {
         reputable feeling.
       </p>
       <Artwork
-        imageURL="/img/artwork/fcr-logo-mockup.jpg"
+        imageURL="/img/artwork/work/fcr-logo-mockup.jpg"
         alt="Forest City Ramadan Magazine"
         caption="Left: Primary Logo | Right: Alternate Logo"
       />

@@ -54,12 +54,12 @@ export default function Westdell() {
         </li>
       </ul>
       <Artwork
-        imageURL="/img/artwork/westdell-website-screenshot.jpg"
+        imageURL="/img/artwork/work/westdell-website-screenshot.jpg"
         alt="Westdell Webpage"
         caption="Westdell Website (Desktop) Screenshot"
       />
       <Artwork
-        imageURL="/img/artwork/westdell-property-screenshot.jpg"
+        imageURL="/img/artwork/work/westdell-property-screenshot.jpg"
         alt="Westdell Property Webpage"
         caption="Westdell Property (Desktop) Screenshot"
       />

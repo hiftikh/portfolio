@@ -28,7 +28,7 @@ export default function Lionheart() {
         &quot;Heart&quot; in the wordmark logo.
       </p>
       <Artwork
-        imageURL="/img/artwork/lionheart-logo-mock-up.png"
+        imageURL="/img/artwork/work/lionheart-logo-mock-up.png"
         alt="Lionheart Logo Mock Up"
         caption="Top: Primary Logo | Bottom: Alternate Logo"
       />
@@ -76,7 +76,7 @@ export default function Lionheart() {
         </li>
       </ul>
       <Artwork
-        imageURL="/img/artwork/lionheart-webpage.jpg"
+        imageURL="/img/artwork/work/lionheart-webpage.jpg"
         alt="Lionheart Webpage"
         caption="Lionheart Webpage"
       />

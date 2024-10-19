@@ -57,7 +57,7 @@ export default function CanterburyHomes() {
         </li>
       </ul>
       <Artwork
-        imageURL="/img/artwork/canterbury-webpage-screenshot.jpg"
+        imageURL="/img/artwork/work/canterbury-webpage-screenshot.jpg"
         alt="Canterbury Homes Webpage"
         caption="Canterbury Homes Website (Desktop) Screenshot"
       />

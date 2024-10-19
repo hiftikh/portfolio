@@ -70,7 +70,7 @@ export default function EdgewoodEstates() {
         </li>
       </ul>
       <Artwork
-        imageURL="/img/artwork/edgewood-webpage-screenshot.jpg"
+        imageURL="/img/artwork/work/edgewood-webpage-screenshot.jpg"
         alt="Edgewood Estates Webpage"
         caption="Edgewood Estates Website (Desktop) Screenshot"
       />

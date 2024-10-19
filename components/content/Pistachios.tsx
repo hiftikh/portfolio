@@ -27,7 +27,7 @@ export default function Pistachios() {
         pistachio nuts with the green and natural beige.
       </p>
       <Image
-        src="/img/logo/pistachios.png"
+        src="/img/logo/work/pistachios.png"
         width={500}
         height={179}
         alt="Pistachios Logo"

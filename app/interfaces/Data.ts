@@ -1,5 +1,4 @@
 export default interface Data {
-  id: number;
   show: boolean;
   name: string;
   slug?: string;

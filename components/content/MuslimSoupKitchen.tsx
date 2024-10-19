@@ -30,7 +30,7 @@ export default function MuslimSoupKitchen() {
         symbols conveys...
       </p>
       <Artwork
-        imageURL="/img/artwork/msk-logo-mock-up.png"
+        imageURL="/img/artwork/work/msk-logo-mock-up.png"
         alt="Muslim Soup Kitchen Logo"
         caption="Left: Primary Logo | Right: Alternate Logo"
       />

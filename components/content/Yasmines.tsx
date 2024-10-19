@@ -28,7 +28,7 @@ export default function CanterburyHomes() {
         &nbsp; per day as the billboard was located in a major interaction.
       </p>
       <Artwork
-        imageURL="/img/artwork/yasmines-billboard.jpg"
+        imageURL="/img/artwork/work/yasmines-billboard.jpg"
         alt="Yasmine's Billboard"
         caption="Billboard design"
       />
@@ -52,7 +52,7 @@ export default function CanterburyHomes() {
         identity.
       </p>
       <Artwork
-        imageURL="/img/artwork/yasmines-landing-screenshot.jpg"
+        imageURL="/img/artwork/work/yasmines-landing-screenshot.jpg"
         alt="Yasmine's Landing page"
         caption="Yasmine's Landing Page (Desktop) Screenshot"
       />
@@ -61,7 +61,7 @@ export default function CanterburyHomes() {
         HTML code for better accessibility and SEO.
       </p>
       <Artwork
-        imageURL="/img/artwork/yasmines-menu-screenshot.jpg"
+        imageURL="/img/artwork/work/yasmines-menu-screenshot.jpg"
         alt="Yasmine's Menu"
         caption="Yasmine's Menu Page (Desktop) Screenshot"
       />
