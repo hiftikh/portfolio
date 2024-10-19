@@ -105,7 +105,7 @@ export default function Navigation() {
                       src="/img/hi-logo.svg"
                       alt="Haris Iftikhar"
                       width={30}
-                      height={30}
+                      height={41}
                       className="text-left absolute bottom-8"
                     />
                   </Link>

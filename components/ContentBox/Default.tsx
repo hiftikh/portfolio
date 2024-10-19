@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Badge } from "@/components/ui/badge";
 import DataInterance from "../../app/interfaces/Data";
 import Image from "next/image";
 import Link from "next/link";
 import { orderByRecent, orderByAlphabetically } from "@/lib/utils";
 import Button from "@/components/Button";
+import Loading from "@/app/loading";
 
 export interface CardProps {
   data: DataInterance[];
