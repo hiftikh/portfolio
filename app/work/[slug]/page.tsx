@@ -75,6 +75,7 @@ export default function Page({ params }: any) {
           />
         </div>
       )}
+      <br />
       {work.keywords && <KeyWords {...work} />}
     </>
   );
