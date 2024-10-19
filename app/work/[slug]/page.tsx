@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import Button from "@/components/Button";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import data from "@/json/work.json";
@@ -64,7 +64,17 @@ export default function Page({ params }: any) {
       <Header underline>{work.name}</Header>
       {work.description && <About {...work} />}
       <DetailedContent></DetailedContent>
-      {work.url && <Btn {...work} />}
+      {work.url && (
+        <div className="container mx-auto my-6 w-8/12 text-center">
+          <Button
+            href={work.url.site}
+            text="Website"
+            icon="external-link"
+            external
+            variant="secondary"
+          />
+        </div>
+      )}
       {work.keywords && <KeyWords {...work} />}
     </>
   );
@@ -76,21 +86,6 @@ const About = ({ description }: WorkInterface) => {
       <h2>About</h2>
       <p>{description}</p>
     </>
-  );
-};
-
-const Btn = ({ url }: WorkInterface) => {
-  return (
-    <div className="container mx-auto my-6 w-8/12 text-center">
-      <Button
-        asChild
-        className="my-5 text-primary bg-secondary hover:bg-slate-300 hover:text-primary"
-      >
-        <Link href={`${url?.site}`} target="_blank">
-          Website <Icon name="external-link" />
-        </Link>
-      </Button>
-    </div>
   );
 };
 

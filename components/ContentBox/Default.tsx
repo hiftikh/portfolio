@@ -1,3 +1,4 @@
+import React from "react";
 import { Badge } from "@/components/ui/badge";
 import DataInterance from "../../app/interfaces/Data";
 import Image from "next/image";
@@ -7,12 +8,11 @@ import {
   orderByAlphabetically,
   displayYear,
 } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import Icon from "../Icon";
+import Button from "@/components/Button";
 
 export interface CardProps {
   data: DataInterance[];
-  flatCard: boolean;
+  flatCard?: boolean;
 }
 
 export default function ContentBox({ data, flatCard = false }: CardProps) {
@@ -21,21 +21,21 @@ export default function ContentBox({ data, flatCard = false }: CardProps) {
   };
   return (
     <>
+      .
       <div className="my-10  grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {data.sort(orderByNewDate).map((item) => (
-          <>
+          <React.Fragment key={item.id}>
             {flatCard ? (
               <CardComp {...item} />
             ) : (
               <Link
                 href={updatedHREF(item) || ""}
-                key={item.id}
                 target={item.slug ? "_self" : "_blank"}
               >
                 <CardComp {...item} />
               </Link>
             )}
-          </>
+          </React.Fragment>
         ))}
       </div>
     </>
@@ -48,6 +48,15 @@ const CardComp = (item: DataInterance) => {
       {item.img.banner && <Banner {...item} />}
       <div className="p-5 bg-white h-full">
         {item.name && <Title {...item} />}
+        {item.url?.github && (
+          <Button
+            href={item.url.github}
+            className="text-secondary"
+            text="Github"
+            external
+            icon="external-link"
+          />
+        )}
         {item.keywords && <KeyWords {...item} />}
       </div>
     </div>

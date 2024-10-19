@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import Button from "@/components/Button";
 import { Lora } from "next/font/google";
 import Link from "next/link";
 import data from "@/json/dataURL.json";
@@ -33,25 +33,19 @@ export default function Home() {
           </p>
           <div className="mt-10 flex justify-center gap-4">
             <Button
-              asChild
+              href={data[0].github}
+              icon="external-link"
               variant="outline"
               className="text-secondary hover:border-accent"
-              aria-label="Github"
-            >
-              <Link href={data[0].github} target="_blank">
-                Github <Icon name="external-link" />
-              </Link>
-            </Button>
+              text="Github"
+            />
             <Button
-              asChild
+              href={data[0].linkedin}
+              icon="external-link"
               variant="outline"
               className="text-secondary hover:border-accent"
-              aria-label="LinkedIn"
-            >
-              <Link href={data[0].linkedin} target="_blank">
-                LinkedIn <Icon name="external-link" />
-              </Link>
-            </Button>
+              text="LinkedIn"
+            />
           </div>
         </div>
       </div>
