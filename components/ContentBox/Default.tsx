@@ -7,46 +7,52 @@ import {
   orderByAlphabetically,
   displayYear,
 } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import Icon from "../Icon";
 
 export interface CardProps {
   data: DataInterance[];
+  flatCard: boolean;
 }
 
-export default function ContentBox({ data }: CardProps) {
+export default function ContentBox({ data, flatCard = false }: CardProps) {
+  const updatedHREF = (item: DataInterance) => {
+    return item.slug ? `/work/${item.slug}` : item.url?.site;
+  };
   return (
     <>
       <div className="my-10  grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {data.sort(orderByNewDate).map((item) => (
-          <Link
-            href={`/work/${item.slug}`}
-            key={item.id}
-            className="border-0 rounded-xl bg-transparent overflow-hidden group "
-          >
-            {item.img.banner && (
-              <div className="relative bg-black">
-                <Image
-                  width={600}
-                  height={600}
-                  src={item.img.banner.url || ""}
-                  alt={item.img.banner.alt || "Alt Tag"}
-                  className="group-hover:opacity-60"
-                  placeholder="blur"
-                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkWNz6HwAD/AIpceji/QAAAABJRU5ErkJggg=="
-                />
-
-                {/* {item.dateAdded && <DateAddedComp {...item} />} */}
-              </div>
+          <>
+            {flatCard ? (
+              <CardComp {...item} />
+            ) : (
+              <Link
+                href={updatedHREF(item) || ""}
+                key={item.id}
+                target={item.slug ? "_self" : "_blank"}
+              >
+                <CardComp {...item} />
+              </Link>
             )}
-            <div className="p-5 bg-white h-full">
-              {item.name && <Title {...item} />}
-              {item.keywords && <KeyWords {...item} />}
-            </div>
-          </Link>
+          </>
         ))}
       </div>
     </>
   );
 }
+
+const CardComp = (item: DataInterance) => {
+  return (
+    <div className="border-0 rounded-xl bg-transparent overflow-hidden group">
+      {item.img.banner && <Banner {...item} />}
+      <div className="p-5 bg-white h-full">
+        {item.name && <Title {...item} />}
+        {item.keywords && <KeyWords {...item} />}
+      </div>
+    </div>
+  );
+};
 
 const Title = ({ name }: DataInterance) => {
   return (
@@ -71,10 +77,26 @@ const KeyWords = ({ keywords }: DataInterance) => {
   );
 };
 
-const DateAddedComp = ({ dateAdded }: DataInterance) => {
+const Banner = ({ img }: DataInterance) => {
+  return (
+    <div className="relative bg-black">
+      <Image
+        width={600}
+        height={600}
+        src={img.banner?.url ?? "/img/placeholder-image.jpg"}
+        alt={img.banner?.alt ?? "No Image Found :/"}
+        className="group-hover:opacity-60"
+        placeholder="blur"
+        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkWNz6HwAD/AIpceji/QAAAABJRU5ErkJggg=="
+      />
+    </div>
+  );
+};
+
+const DateAdded = ({ dateAdded }: DataInterance) => {
   return (
     <p className=" text-sm absolute font-semibold bottom-3 right-3 bg-black/70 outline-black py-1 px-5 rounded-xl">
-      {displayYear(dateAdded || "####")}
+      {displayYear(dateAdded ?? "####")}
     </p>
   );
 };
