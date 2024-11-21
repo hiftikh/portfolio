@@ -1,12 +1,10 @@
 import Header from "@/components/Header";
 import { Badge } from "@/components/ui/badge";
 import Button from "@/components/Button";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import data from "@/json/work.json";
 import BreadCrumbCustom from "@/components/BreadCrumbCustom";
 import dynamic from "next/dynamic";
-import Icon from "@/components/Icon";
 import WorkInterface from "@/app/interfaces/Data";
 import type { Metadata, ResolvingMetadata } from "next";
 import { orderByAlphabetically } from "@/lib/utils";
