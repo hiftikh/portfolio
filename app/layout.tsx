@@ -60,7 +60,7 @@ export default function RootLayout({
         <Footer />
         <ScrollToTopButton />
       </body>
-      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`} />
+      <GoogleAnalytics gaId="G-S3DJMMDR8G" />
     </html>
   );
 }
