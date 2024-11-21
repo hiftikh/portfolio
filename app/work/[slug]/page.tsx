@@ -20,22 +20,21 @@ export async function generateMetadata(
   { params, searchParams }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const slug = params.slug;
+  const { slug } = await params;
   const work = data.find((item) => item.slug.toString() === slug);
-
   return {
     title: work?.name,
   };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return data.map((item) => ({
     slug: item.slug,
   }));
 }
 
-export default function Page({ params }: any) {
-  const { slug } = params;
+export default async function Page({ params }: any) {
+  const { slug } = await params;
   const work = data.find((item) => item.slug.toString() === slug);
 
   if (!work) {

@@ -3,7 +3,7 @@
     "id": 0,
     "show": true,
     "name": "Portfolio",
-    "description": "Portfolio of Haris Iftikhar",
+    "description": "Digital Portfolio of Haris Iftikhar.",
     "url": {
       "github": "https://github.com/hiftikh/portfolio",
       "site": "//harisiftikhar.com"
@@ -11,10 +11,46 @@
     "img": {
       "banner": {
         "url": "/img/banner/project/portfolio.jpg",
-        "alt": "Nurcare Banner"
+        "alt": "Portfolio Logo"
       }
     },
-    "keywords": ["NextJS", "ReactJS", "Tailwind", "shadcn/ui"],
+    "keywords": ["NextJS", "Typescript", "Tailwind", "shadcn/ui"],
     "dateAdded": "2024-10-01"
+  },
+  {
+    "id": 1,
+    "show": true,
+    "name": "To Do",
+    "description": "Simple ToDo application.",
+    "url": {
+      "github": "https://github.com/hiftikh/to-do-app",
+      "site": "https://hiftikh.github.io/to-do-app/"
+    },
+    "img": {
+      "banner": {
+        "url": "/img/banner/project/todo.jpg",
+        "alt": "To Do Application"
+      }
+    },
+    "keywords": ["ReactJS", "Zustand", "Typescript", "Tailwind", "Mantine"],
+    "dateAdded": "2024-11-01"
+  },
+  {
+    "id": 2,
+    "show": true,
+    "name": "Badminton Session Tracker",
+    "description": "Allows badminton players to select players and add them to a waitlist to play.",
+    "url": {
+      "github": "https://github.com/hiftikh/mbc_react_app",
+      "site": "https://mbc-react-app.vercel.app/"
+    },
+    "img": {
+      "banner": {
+        "url": "/img/banner/project/mbc.jpg",
+        "alt": "Badminton Session Tracker"
+      }
+    },
+    "keywords": ["ReactJS", "Zustand", "Typescript", "Tailwind", "shadcn/ui"],
+    "dateAdded": "2024-11-02"
   }
 ]

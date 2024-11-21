@@ -18,7 +18,7 @@ export default function Page() {
 
       {/* {data && <KeywordFilter data={data} />} */}
 
-      <ContentBox data={data} />
+      <ContentBox data={data} type="work" />
     </>
   );
 }
