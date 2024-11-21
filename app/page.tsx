@@ -1,10 +1,8 @@
 import Button from "@/components/Button";
 import { Lora } from "next/font/google";
-import Link from "next/link";
 import data from "@/json/dataURL.json";
 const font = Lora({ subsets: ["latin"], display: "swap" });
 import { joinClassNames } from "@/lib/utils";
-import Icon from "@/components/Icon";
 
 export default function Home() {
   return (
@@ -13,15 +11,14 @@ export default function Home() {
         <div className="text-center">
           <h1
             className={joinClassNames(
-              "text-secondary text-7xl font-normal",
+              "text-secondary text-4xl font-normal",
               `${font.className}`
             )}
           >
             Hi, I&apos;m&nbsp;
-            <span className="font-bold underline decoration-accent underline-offset-8">
-              Haris
-            </span>
-            .
+          </h1>
+          <h1 className="text-secondary text-8xl font-bold underline decoration-accent underline-offset-8 ">
+            Haris
           </h1>
           <p
             className={joinClassNames(
