@@ -10,14 +10,11 @@ import type { Metadata, ResolvingMetadata } from "next";
 import { orderByAlphabetically } from "@/lib/utils";
 
 type Props = {
-  params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
-export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const work = data.find((item) => item.slug.toString() === slug);
   return {
