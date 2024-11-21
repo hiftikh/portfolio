@@ -1,10 +1,11 @@
 import "./globals.css";
 import { Mulish } from "next/font/google";
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-import GoogleAnalytics from "@/components/Tools/GoogleAnalytics";
+// import GoogleAnalytics from "@/components/Tools/GoogleAnalytics";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const font = Mulish({
   subsets: ["latin"],
@@ -51,7 +52,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className}>
-      <GoogleAnalytics />
       <body className="flex flex-col min-h-screen transition-colors duration-500 ease-in-out">
         <Navigation />
         <main className="">
@@ -60,6 +60,7 @@ export default function RootLayout({
         <Footer />
         <ScrollToTopButton />
       </body>
+      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`} />
     </html>
   );
 }
