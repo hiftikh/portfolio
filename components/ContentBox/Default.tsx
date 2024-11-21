@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import { Badge } from "@/components/ui/badge";
 import DataInterance from "../../app/interfaces/Data";
 import Image from "next/image";
-import Link from "next/link";
 import { cn, orderByRecent } from "@/lib/utils";
 import Button from "@/components/Button";
 
