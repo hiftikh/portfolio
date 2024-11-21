@@ -19,9 +19,10 @@ export default function CanterburyHomes() {
         to get more information the Canterbury Homes project.
       </p>
       <p>
-        Since this was a "Coming Soon" project, only the contact information was
-        provided. The clear choice was to create a landing page that showed the
-        logo, "Coming Soon" text, and contact information.
+        Since this was a &quot;Coming Soon&quot; project, only the contact
+        information was provided. The clear choice was to create a landing page
+        that showed the logo, &quot;Coming Soon&quot; text, and contact
+        information.
       </p>
       <p>
         &nbsp; The client was already hosting other websites on&nbsp;

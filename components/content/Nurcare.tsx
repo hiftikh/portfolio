@@ -61,7 +61,7 @@ export default function Nurcare() {
       </p>
       <p>
         The back of the business card shows the main logo with a tagline of
-        "Rekindle your inner light".
+        &quot;Rekindle your inner light&quot;.
       </p>
       <Artwork
         imageURL="/img/artwork/work/nurcare-business-card-mock-up.jpg"

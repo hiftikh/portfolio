@@ -22,9 +22,9 @@ export default function Pistachios() {
 
       <p>
         The client wanted a simple logo for their grocery store called
-        "Pistachios". I designed the logo to be a wordmark logo embded with
-        leafs to repersent freshness of produce. The color theme was inspired by
-        pistachio nuts with the green and natural beige.
+        &quot;Pistachios&quot;. I designed the logo to be a wordmark logo embded
+        with leafs to repersent freshness of produce. The color theme was
+        inspired by pistachio nuts with the green and natural beige.
       </p>
       <Image
         src="/img/logo/pistachios.png"

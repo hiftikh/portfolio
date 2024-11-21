@@ -22,8 +22,8 @@ export default function Westdell() {
       </p>
       <p>
         A realtor Wordpress template was purchased and then altered to better
-        fit the information. A "Recently Added Property" section was added to
-        the homepage.
+        fit the information. A &quot;Recently Added Property&quot; section was
+        added to the homepage.
       </p>
 
       <p>The following tools/plugins were used:</p>
