@@ -72,7 +72,11 @@ const ButtonGroup = ({ url, slug }: DataInterance) => {
   return (
     <div className="flex mt-4 mb-4 justify-between gap-2">
       {slug && (
-        <Button href={`work/${slug}`} className="basis-1/2" text="Learn More" />
+        <Button
+          href={`/work/${slug}`}
+          className="basis-1/2"
+          text="Learn More"
+        />
       )}
       {url?.github && (
         <Button
