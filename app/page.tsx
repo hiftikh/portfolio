@@ -2,26 +2,31 @@ import Button from "@/components/Button";
 import { Lora } from "next/font/google";
 import data from "@/json/dataURL.json";
 const font = Lora({ subsets: ["latin"], display: "swap" });
-import { joinClassNames } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
     <>
-      <div className="flex h-[70svh] justify-center items-center">
+      <div className="flex h-[70svh] justify-center items-center ">
         <div className="text-center">
           <h1
-            className={joinClassNames(
+            className={cn(
               "text-secondary text-4xl font-normal",
               `${font.className}`
             )}
           >
             Hi, I&apos;m&nbsp;
           </h1>
-          <h1 className="text-secondary text-8xl font-bold underline decoration-accent underline-offset-8 ">
-            Haris
+          <h1
+            className={cn(
+              "text-secondary text-8xl font-bold underline decoration-accent underline-offset-8",
+              `${font.className}`
+            )}
+          >
+            Haris.
           </h1>
           <p
-            className={joinClassNames(
+            className={cn(
               "text-secondary text-2xl pt-4 mt-3",
               `${font.className}`
             )}
