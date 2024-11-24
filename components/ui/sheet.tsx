@@ -4,8 +4,6 @@ import * as React from "react";
 import * as SheetPrimitive from "@radix-ui/react-dialog";
 import { cva, type VariantProps } from "class-variance-authority";
 import { X } from "lucide-react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
-
 import { cn } from "@/lib/utils";
 
 const Sheet = SheetPrimitive.Root;
@@ -68,7 +66,7 @@ const SheetContent = React.forwardRef<
       {children}
       <SheetPrimitive.Close className="absolute text-secondary p-1 right-14 top-8 rounded-sm opacity-70 transition-opacity hover:opacity-100 focus:outline-none focus:ring-0 focus:ring-secondary focus:ring-offset-3 disabled:pointer-events-none data-[state=open]:bg-secondary hover:bg-accent">
         <span className="absolute -inset-0.5" />
-        <XMarkIcon aria-hidden="true" className="h-6 w-6 " />
+        <X aria-hidden="true" className="h-6 w-6 " />
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>
   </SheetPortal>
