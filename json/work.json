@@ -4,7 +4,7 @@
     "name": "Nurcare",
     "slug": "nurcare",
     "componentName": "Nurcare",
-    "description": "Nurcare takes on a humanistic, strength-based, trauma-informed, anti-oppressive and anti-racist approach to therapy.",
+    "description": "Nurcare is a counseling and psychotherapy service that takes on a humanistic, strength-based, trauma-informed, anti-oppressive, and anti-racist approach to therapy.",
     "img": {
       "logo": {
         "url": "/img/logo/work/nurcare.png",
@@ -137,7 +137,7 @@
     "show": true,
     "name": "Yasmine's",
     "componentName": "Yasmines",
-    "description": "Yasmine’s is a unique concept that combines modern and traditional Lebanese dishes reflecting the amazing flavours of the region’s cuisine.",
+    "description": "Yasmine’s is a Lebanese restaurant that combines modern and traditional Lebanese dishes, reflecting the region’s amazing flavours and cuisine.",
     "url": { "site": "//yasminesrestaurant.com" },
     "slug": "yasmines",
     "img": {
@@ -157,7 +157,7 @@
     "show": true,
     "name": "Lionheart Tattoo Parlour",
     "componentName": "Lionheart",
-    "description": "Lionheart Tattoo Parlour strives to provide a friendly and welcoming atmosphere and are confident that you will leave feeling thrilled with your experience and new tattoo.",
+    "description": "Lionheart Tattoo Parlour strives to provide a friendly and welcoming atmosphere that will leave customers feeling thrilled with their experience and new tattoo.",
     "url": { "site": "//lionhearttattoo.ca" },
     "slug": "lionheart",
     "img": {
@@ -215,7 +215,7 @@
     "show": true,
     "name": "Pistachios",
     "componentName": "Pistachios",
-    "description": "Pistachios is your one-stop shop for all your quality meats and groceries needs!",
+    "description": "Pistachios is a grocery store that caters to a wide array of consumers and is intended to be a one-stop shop for all quality meats, produce and grocery needs.",
     "slug": "pistachios",
     "img": {
       "logo": {
@@ -235,7 +235,7 @@
     "show": true,
     "name": "Edgewood Estates",
     "componentName": "EdgewoodEstates",
-    "description": "This thriving community offers small town charm just minutes from big city amenities located in Mount Brydes, Ontario.",
+    "description": "Edgewood Estates is a housing community project that aims to offer a small town charm just minutes from big city amenities located in Mount Brydes, Ontario.",
     "url": { "site": "//edgewoodestates.ca" },
     "slug": "edgewood-estates",
     "img": {
@@ -256,7 +256,7 @@
     "show": true,
     "name": "Canterbury Homes",
     "componentName": "CanterburyHomes",
-    "description": "Canterbury Homes brings the craftsmanship, construction techniques, and attention to detail you'd expect to see from a custom home builder to everything we do.",
+    "description": "Canterbury Homes is a custom home builder that brings craftsmanship, construction techniques, and attention to detail in everything they do.",
     "url": { "site": "//canterburyhomes.ca" },
     "slug": "canterbury-homes",
     "img": {
