@@ -1,11 +1,10 @@
 "use client";
 
-import { Bars3Icon } from "@heroicons/react/24/outline";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 import navigation from "../json/navagation.json";
 import Image from "next/image";
-
-import { joinClassNames } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 import {
   Sheet,
@@ -30,7 +29,6 @@ export default function Navigation() {
               <div className="flex-shrink-0">
                 <Link href="/">
                   <Image
-                    priority
                     src="/img/hi-logo.svg"
                     alt="Haris Iftikhar"
                     width={30}
@@ -51,7 +49,7 @@ export default function Navigation() {
                           aria-current={
                             item.href === pathname ? "page" : undefined
                           }
-                          className={joinClassNames(
+                          className={cn(
                             "px-2 py-2 text-sm font-normal text-white underline-offset-8 decoration-2",
                             item.href === pathname
                               ? "underline font-extrabold decoration-accent text-accent"
@@ -68,7 +66,7 @@ export default function Navigation() {
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger className="md:hidden" aria-label="MobileMenu">
                 <div className="group relative inline-flex items-center justify-center rounded-md p-2 text-secondary hover:bg-accent hover:text-white">
-                  <Bars3Icon
+                  <Menu
                     aria-hidden="true"
                     className="block h-6 w-6 group-data-[open]:hidden"
                   />
@@ -88,7 +86,7 @@ export default function Navigation() {
                           aria-current={
                             item.href === pathname ? "page" : undefined
                           }
-                          className={joinClassNames(
+                          className={cn(
                             "text-left py-2 block text-3xl text-slate-300",
                             item.href === pathname
                               ? "font-bold text-white underline underline-offset-8"
