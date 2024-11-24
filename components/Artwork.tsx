@@ -1,4 +1,4 @@
-import { joinClassNames } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import ArtworkInterface from "../app/interfaces/Artwork";
 import Image from "next/image";
 
@@ -12,10 +12,7 @@ export default function Artwork(params: ArtworkInterface) {
             alt={params.alt || "Alt Tag"}
             width={params.width || 800}
             height={params.height || 800}
-            className={joinClassNames(
-              "mx-auto",
-              params.bgColor || "bg-transparent"
-            )}
+            className={cn("mx-auto", params.bgColor || "bg-transparent")}
             style={{ height: "auto", width: "auto" }}
           />
         </div>
