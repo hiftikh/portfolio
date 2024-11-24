@@ -1,42 +1,33 @@
-import React from "react";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import Button from "@/components/Button";
-import { orderByRecent } from "@/lib/utils";
 import DataInterfaces from "@/app/interfaces/Data";
-import { CardProps } from "@/app/interfaces/CardProps";
+import { ContentCardProps } from "@/app/interfaces/ContentCardProps";
 
-export default function ContentCard(props: CardProps) {
+export default function ContentCard(props: ContentCardProps, key: any) {
   const { data, includeDesc } = props;
-  const dataUpdated = data.filter((data) => data.show).sort(orderByRecent);
 
   return (
-    <>
-      {dataUpdated.map((item, index) => (
-        <div className="rounded-xl overflow-hidden h-full" key={index}>
-          <Image
-            width={600}
-            height={600}
-            src={item.img.banner?.url || "/img/placeholder-image.jpg"}
-            alt={item.img.banner?.alt || "Placeholder Image"}
-            placeholder="blur"
-            blurDataURL="/img/placeholder-image.jpg"
-          />
-          <div className="p-5 bg-white h-full">
-            <h2 className="leading-7 text-black font-semibold text-xl">
-              {item.name || "Name"}
-            </h2>
-            {includeDesc && (
-              <p className="text-black/60 leading-tight">
-                {data[0].description}
-              </p>
-            )}
-            <ButtonGroup {...item} />
-            {item.keywords && <KeyWords {...item} />}
-          </div>
-        </div>
-      ))}
-    </>
+    <div className="rounded-xl overflow-hidden h-full">
+      <Image
+        width={600}
+        height={600}
+        src={data.img.banner?.url || "/img/placeholder-image.jpg"}
+        alt={data.img.banner?.alt || "Placeholder Image"}
+        placeholder="blur"
+        blurDataURL="/img/placeholder-image.jpg"
+      />
+      <div className="p-5 bg-white h-full">
+        <h2 className="leading-7 text-black font-semibold text-xl">
+          {data.name || "Name"}
+        </h2>
+        {includeDesc && (
+          <p className="text-black/60 leading-tight">{data.description}</p>
+        )}
+        <ButtonGroup {...data} />
+        {data.keywords && <KeyWords {...data} />}
+      </div>
+    </div>
   );
 }
 

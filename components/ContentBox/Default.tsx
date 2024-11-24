@@ -1,16 +1,17 @@
 import React from "react";
-import DataInterance from "../../app/interfaces/Data";
 import ContentCard from "../ContentCard/Default";
+import { ContentBoxProps } from "@/app/interfaces/ContentBoxProps";
+import { orderByRecent } from "@/lib/utils";
 
-interface CardProps {
-  data: DataInterance[];
-  includeDesc?: boolean;
-}
+export default function ContentBox(props: ContentBoxProps) {
+  const { data, includeDesc } = props;
+  const dataUpdated = data.filter((data) => data.show).sort(orderByRecent);
 
-export default function ContentBox(props: CardProps) {
   return (
     <div className=" my-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      <ContentCard {...props} />
+      {dataUpdated.map((item, index) => (
+        <ContentCard data={item} key={index} includeDesc={includeDesc} />
+      ))}
     </div>
   );
 }
