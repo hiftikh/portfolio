@@ -1,6 +1,6 @@
+import Link from "next/link";
 import { Button as ButtonUI } from "@/components/ui/button";
 import Icon from "@/components/Icon";
-import Link from "next/link";
 import dynamicIconImports from "lucide-react/dynamicIconImports";
 import { cn } from "@/lib/utils";
 
@@ -19,16 +19,12 @@ export default function Button({
 }: ButtonInterface) {
   return (
     <ButtonUI
-      asChild
       variant={props.variant}
       aria-label={props.text}
-      className={cn("cursor-pointer", props.className)}
+      className={cn(props.className)}
+      asChild
     >
-      <Link
-        href={props.href}
-        target={external ? "_blank" : "_self"}
-        scroll={false}
-      >
+      <Link href={props.href} target={external ? "_blank" : "_self"}>
         {props.text} {props.icon && <Icon name={props?.icon} />}
       </Link>
     </ButtonUI>
