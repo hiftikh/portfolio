@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import data from "@/json/work.json";
-import ContentBox from "@/components/ContentBox/Default";
+import ContentBox from "@/components/ContentContainer/Default";
 
 export const metadata: Metadata = {
-  title: "Work",
+  title: "Recent Work",
 };
 
 // import KeywordFilter from "@/components/KeywordFilter";
