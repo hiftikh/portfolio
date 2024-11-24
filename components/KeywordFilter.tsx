@@ -1,11 +1,6 @@
 "use client";
 
-import { Badge } from "@/components/ui/badge";
-import {
-  orderByAlphabetically,
-  removeDuplicates,
-  joinClassNames,
-} from "@/lib/utils";
+import { orderByAlphabetically, removeDuplicates } from "@/lib/utils";
 import { useState } from "react";
 
 export default function KeywordFilter({ data }: any) {
