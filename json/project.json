@@ -32,7 +32,7 @@
         "alt": "To Do Application"
       }
     },
-    "keywords": ["ReactJS", "Zustand", "Typescript", "Tailwind", "Mantine"],
+    "keywords": ["ReactJS", "Zustand", "Typescript", "Tailwind", "MantineUI"],
     "dateAdded": "2024-11-01"
   },
   {
@@ -41,7 +41,7 @@
     "name": "Badminton Session Tracker",
     "description": "Allows badminton players to select players and add them to a waitlist to play.",
     "url": {
-      "github": "https://github.com/hiftikh/mbc_react_app",
+      "github": "",
       "site": "https://mbc-react-app.vercel.app/"
     },
     "img": {
