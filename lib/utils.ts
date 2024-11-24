@@ -20,10 +20,6 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function joinClassNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export const displayMonthYear = (date: string) => {
   const dateISO = new Date(date);
   return `${month[dateISO.getMonth()].slice(0, 3)} ${dateISO.getFullYear()}`;
