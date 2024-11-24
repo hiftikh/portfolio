@@ -3,12 +3,13 @@ import { Badge } from "@/components/ui/badge";
 import Button from "@/components/Button";
 import DataInterfaces from "@/app/interfaces/Data";
 import { ContentCardProps } from "@/app/interfaces/ContentCardProps";
+import FadeUpAnimation from "../Animatation/AnimatedComponent";
 
 export default function ContentCard(props: ContentCardProps, key: any) {
   const { data, includeDesc } = props;
 
   return (
-    <div className="rounded-xl overflow-hidden h-full">
+    <FadeUpAnimation className="rounded-xl overflow-hidden h-full" key={key}>
       <Image
         width={600}
         height={600}
@@ -27,7 +28,7 @@ export default function ContentCard(props: ContentCardProps, key: any) {
         <ButtonGroup {...data} />
         {data.keywords && <KeyWords {...data} />}
       </div>
-    </div>
+    </FadeUpAnimation>
   );
 }
 
