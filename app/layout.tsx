@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-// import GoogleAnalytics from "@/components/Tools/GoogleAnalytics";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 const font = Mulish({
@@ -54,9 +53,7 @@ export default function RootLayout({
     <html lang="en" className={font.className}>
       <body className="flex flex-col min-h-screen transition-colors duration-500 ease-in-out">
         <Navigation />
-        <main className="">
-          <div className="mt-10 mx-auto w-10/12 lg:max-w-6xl">{children}</div>
-        </main>
+        <main className="mt-10 mx-auto w-10/12 lg:max-w-6xl">{children}</main>
         <Footer />
         <ScrollToTopButton />
       </body>
