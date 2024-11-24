@@ -15,10 +15,8 @@ export default function Page() {
       <Header align="center" underline>
         Recent Work
       </Header>
-
       {/* {data && <KeywordFilter data={data} />} */}
-
-      <ContentBox data={data} type="work" />
+      <ContentBox data={data} />
     </>
   );
 }
