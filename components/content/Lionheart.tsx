@@ -23,9 +23,11 @@ export default function Lionheart() {
       </p>
       <h3>Logo</h3>
       <p>
-        The client had provided a rough sketch on paper of what they wanted the
-        logo to like. The choice of the color red was inspired by the word
-        &quot;Heart&quot; in the wordmark logo.
+        Using a rough sketch that the client had provided on paper for what they
+        wanted their logo to resemble, I developed a few different mockups. I
+        selected the color red based on the word &quot;Heart&quot; in the
+        wordmark logo. The bold line work and weight is meant to inspire
+        confidence and trust.
       </p>
       <Artwork
         imageURL="/img/artwork/work/lionheart-logo-mock-up.png"
@@ -34,22 +36,21 @@ export default function Lionheart() {
       />
       <h3>Website</h3>
       <p>
-        The website would be used by potional customers to look at the
-        client&apos;s artwork, learn about tattoo care, and/or being able to
-        contact the business with ease. Having this in mind, I decided to create
-        a simple website.
+        The website would be accessed by potential customers to view the
+        tattooers&apos; artwork and portfolios, learn about tattoo care, and/or
+        contact the business with ease. My client wanted to be able to update
+        the website easily themselves.
       </p>
       <p>
-        Since the client wanted to do their own updates after the completion of
-        this work, I decided to go with EasyWP(Managed WordPress Hosting)
-        by&nbsp;
+        With that in mind, I decided to create a simple website using EasyWP
+        (Managed WordPress Hosting) by{" "}
         <a href="https://www.namecheap.com/" target="_blank">
           Namecheap
           <Icon name="external-link" />
         </a>
-        . The reason why I went with NameCheap is because they offer free SSL
-        and Supersonic CDN.
+        . NameCheap offers free SSL and Supersonic CDN.
       </p>
+
       <p>
         A basic Wordpress template was purchased and then modified to meet the
         needs of the business.

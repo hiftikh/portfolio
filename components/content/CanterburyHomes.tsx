@@ -15,23 +15,20 @@ export default function CanterburyHomes() {
       </p>
       <h3>Website</h3>
       <p>
-        The main users of the website would be future homeowners who would want
-        to get more information the Canterbury Homes project.
+        The main users of the website would be future homeowners who want to get
+        more information about the Canterbury Homes project.
       </p>
       <p>
         Since this was a &quot;Coming Soon&quot; project, only the contact
-        information was provided. The clear choice was to create a landing page
-        that showed the logo, &quot;Coming Soon&quot; text, and contact
-        information.
+        information was necessary to present/publish at that time. The clear
+        choice was to create a landing page that showed the logo, &quot;Coming
+        Soon&quot; text, and contact information.
       </p>
       <p>
-        &nbsp; The client was already hosting other websites on&nbsp;
-        <a href="https://www.godaddy.com/" target="_blank">
-          GoDaddy
-          <Icon name="external-link" />
-        </a>
-        , so I decided to stick with it for hosting and domain.
+        The client was already hosting other websites on GoDaddy, so I decided
+        to stick with it for hosting and domain.
       </p>
+
       <p>
         A Wordpress template was purchased and then altered to better fit the
         minimal information.

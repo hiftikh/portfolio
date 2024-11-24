@@ -1,6 +1,5 @@
 import Icon from "@/components/Icon";
 import Artwork from "../Artwork";
-import Image from "next/image";
 
 export default function Pistachios() {
   return (
@@ -19,19 +18,19 @@ export default function Pistachios() {
         .
       </p>
       <h3 className="text-xl font-bold">Logo</h3>
-
       <p>
-        The client wanted a simple logo for their grocery store called
-        &quot;Pistachios&quot;. I designed the logo to be a wordmark logo embded
-        with leafs to repersent freshness of produce. The color theme was
-        inspired by pistachio nuts with the green and natural beige.
+        The client wanted a simple logo for their grocery store named
+        &quot;Pistachios&quot;. I designed the logo to be a wordmark logo
+        embedded with leafs to signify the freshness of their produce. The color
+        theme was inspired by the natural green and beige tones of pistachio
+        nuts.
       </p>
-      <Image
-        src="/img/logo/pistachios.png"
+      <Artwork
+        imageURL="/img/logo/pistachios.png"
+        alt="Pistachios Logo"
+        caption="Pistachios Logo"
         width={500}
         height={179}
-        alt="Pistachios Logo"
-        className="mx-auto my-10"
       />
     </>
   );

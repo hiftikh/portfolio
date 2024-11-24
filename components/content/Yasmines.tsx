@@ -13,8 +13,8 @@ export default function CanterburyHomes() {
         >
           Adobe Photoshop
           <Icon name="external-link" />
-        </a>
-        &nbsp; and the website was created using&nbsp;
+        </a>{" "}
+        and the website was created using{" "}
         <a href="https://wordpress.com/" target="_blank">
           Wordpress
           <Icon name="external-link" />
@@ -23,9 +23,9 @@ export default function CanterburyHomes() {
       </p>
       <h3>Billboard</h3>
       <p>
-        The purpose for the billboard was to alert future customers that the
-        restaurant was finally open. The daily impressions were <b>10,000+</b>
-        &nbsp; per day as the billboard was located in a major interaction.
+        The purpose of the billboard was to alert future customers that the
+        restaurant was finally open. The daily impressions were 10,000+ per day
+        as the billboard was located in a major interaction.
       </p>
       <Artwork
         imageURL="/img/artwork/work/yasmines-billboard.jpg"
@@ -34,22 +34,23 @@ export default function CanterburyHomes() {
       />
       <h3>Website</h3>
       <p>
-        The main users of the website would be customers who would want to get
-        more information about the restaurant like menu items or hours.
+        The main users of the website would be customers who want to get more
+        information about the restaurant&apos;s menu, hours of operations,
+        contact information, and more.
       </p>
       <p>
         I decided to use Wordpress since the client wanted to edit the content
-        after the completion of this project.&nbsp;
+        after the completion of this project.{" "}
         <a href="https://www.godaddy.com/" target="_blank">
           GoDaddy
           <Icon name="external-link" />
-        </a>
-        &nbsp; was used for domain and hosting. A Wordpress template was
-        purchased and then altered to better fit the information.
+        </a>{" "}
+        was used for domain and hosting. A Wordpress template was purchased and
+        then altered to better fit the information.
       </p>
       <p>
-        The color branding was used throughout the site to better inforce its
-        identity.
+        The color branding was used throughout the site to better enforce the
+        brand&apos;s identity.
       </p>
       <Artwork
         imageURL="/img/artwork/work/yasmines-landing-screenshot.jpg"

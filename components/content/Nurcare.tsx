@@ -22,31 +22,33 @@ export default function Nurcare() {
           Adobe InDesign
           <Icon name="external-link" />
         </a>
-        &nbsp; respectfully.
+        , respectively.
       </p>
       <h3 className="text-xl font-bold">Logo</h3>
       <p>
-        Taking inspriation from the words <b>Noor(Arabic for light)</b>,&nbsp;
-        <b>Nurture</b>, and <b>Care</b>, the idea of&nbsp;
-        <b>
-          <i>Nurcare</i>
-        </b>
-        &nbsp; was born. The green pastel color evoking a calm nurturing
-        atmosphere and the yellow color producing a sense of warmth. The
-        typography is in lowercase and rounded which conveys comfort and
-        softness. The yellow rotated squares on the &quot;u&quot; takes
-        inspiration from the&nbsp;
+        For the color scheme and font, I took inspiration from the business
+        name, Nurcare, which is a mashup of the words Noor (meaning light in
+        Arabic), Nurture, and Care. I used a green pastel color to evoke a calm
+        nurturing atmosphere and a yellow accent color for warmth. The
+        typography is in lowercase and rounded to convey comfort and softness.
+        In psychotherapy, it&apos;s important to create a space where clients
+        feel comfortable and safe to share their thoughts and feelings. Having a
+        logo that conveys that was necessary. Finally, the diamond shapes on the
+        letter &quot;u&quot; were drawn from the{" "}
         <a href="https://en.wikipedia.org/wiki/Arabic_alphabet" target="_blank">
           Arabic Alphabet
           <Icon name="external-link" />
-        </a>
-        .
+        </a>{" "}
+        which was a unique touch as most of the clinic&apos;s clientele are
+        Arab/Middle Eastern. Coincidentally, the dotted &quot;u&quot; also
+        appears as a smiling face which is warm and inviting.
       </p>
       <h3 className="text-xl font-bold">Icon</h3>
       <p>
-        Having open hands means having an open heart which allows you to talk to
-        someone in a very open and honest way. The rays of sunshine symbolzing a
-        positive and welcoming presense.
+        To convey a sense of positivity, openness, and welcoming presence, I
+        created the upward-facing open palms design with rays of light behind
+        it. The heart being cradled within the palms was added to show that the
+        clinic was a space where clients were safe and secure.
       </p>
       <Artwork
         imageURL="/img/artwork/work/nurcare-logo-mock-up.png"

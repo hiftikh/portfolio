@@ -15,19 +15,14 @@ export default function EdgewoodEstates() {
       </p>
       <h3>Website</h3>
       <p>
-        The main users of the website would be future homeowners who would want
-        to get more information about the builder and the Edgewood Estates
-        project.
+        The main users of the website would be future homeowners who want to get
+        more information about the builder and the Edgewood Estates project.
       </p>
       <p>
-        Since this was just a simple landing page with minor information, I
-        decided to create a single page website. The client was already hosting
-        other websites on&nbsp;
-        <a href="https://www.godaddy.com/" target="_blank">
-          GoDaddy
-          <Icon name="external-link" />
-        </a>
-        , so I decided to stick with it for hosting and domain.
+        Since this was a relatively simple landing page with minimal
+        information, I decided to create a single page website. As the client
+        was already hosting other websites on GoDaddy, I decided to align with
+        their approach for hosting and domain.
       </p>
       <p>
         A Wordpress template was purchased and then altered to better fit the
