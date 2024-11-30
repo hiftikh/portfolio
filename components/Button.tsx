@@ -1,17 +1,10 @@
 import Link from "next/link";
-import { Button as ButtonUI } from "@/components/ui/button";
-import Icon from "@/components/Icon";
-import dynamicIconImports from "lucide-react/dynamicIconImports";
 import { cn } from "@/lib/utils";
 
-export interface ButtonInterface {
-  text: string;
-  href: string;
-  external?: boolean;
-  variant?: any;
-  icon?: keyof typeof dynamicIconImports;
-  className?: string;
-}
+import ButtonInterface from "@/app/interfaces/Button";
+
+import { Button as ButtonUI } from "@/components/ui/button";
+import Icon from "@/components/Icon";
 
 export default function Button({
   external = false,
