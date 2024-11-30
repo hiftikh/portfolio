@@ -1,8 +1,8 @@
 export default interface Artwork {
-  caption?: string;
+  caption?: string | undefined;
   imageURL: string;
   alt: string;
-  width?: number;
-  height?: number;
-  bgColor?: string;
+  width?: number | undefined;
+  height?: number | undefined;
+  bgColor?: string | undefined;
 }
