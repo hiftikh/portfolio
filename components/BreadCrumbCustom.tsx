@@ -1,3 +1,7 @@
+import Link from "next/link";
+
+import BreadcrumbProps from "@/app/interfaces/Breadcrumb";
+
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -5,11 +9,10 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import Link from "next/link";
 
 const ClassName = "text-secondary hover:underline underline-offset-8";
 
-export default function BreadCrumbCustom(props: any) {
+export default function BreadCrumbCustom(props: BreadcrumbProps) {
   return (
     <Breadcrumb className="mb-4">
       <BreadcrumbList>
