@@ -2,14 +2,12 @@
 
 export default function ChangeBgColor({ color }: any) {
   return (
-    <>
-      <style jsx global>
-        {`
+    <style jsx global>
+      {`
     body {
       background: ${color}};
     }
   `}
-      </style>
-    </>
+    </style>
   );
 }
