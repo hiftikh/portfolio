@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import Header from "@/components/Header";
+import Header from "@/components/Page/Header";
 import data from "@/json/work.json";
-import ContentBox from "@/components/ContentContainer/Default";
+import ContentCard from "@/components/ContentCard/Default";
 
 export const metadata: Metadata = {
-  title: "Recent Work",
+  title: "Work",
 };
-
-// import KeywordFilter from "@/components/KeywordFilter";
 
 export default function Page() {
   return (
@@ -15,8 +13,7 @@ export default function Page() {
       <Header align="center" underline>
         Recent Work
       </Header>
-      {/* {data && <KeywordFilter data={data} />} */}
-      <ContentBox data={data} />
+      <ContentCard data={data} pathname="work" />
     </>
   );
 }

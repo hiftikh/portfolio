@@ -1,23 +1,24 @@
 export default interface Data {
-  show: boolean;
-  name: string;
-  slug?: string;
-  description?: string;
-  componentName?: string;
+  id: number;
+  show: boolean | null;
+  name: string | null;
+  slug?: string | null;
+  description?: string | null;
+  componentName?: string | null;
   url?: {
-    site?: string;
-    github?: string;
+    site?: string | null;
+    github?: string | null;
   };
   img: {
     logo?: {
-      url?: string;
-      alt?: string;
+      url?: string | null;
+      alt?: string | null;
     };
     banner?: {
-      url?: string;
-      alt?: string;
+      url?: string | null;
+      alt?: string | null;
     };
   };
-  keywords?: string[];
-  dateAdded?: string;
+  keywords?: string[] | null;
+  dateAdded?: string | null;
 }

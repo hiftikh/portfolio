@@ -1,14 +1,14 @@
 "use client";
-import { motion, Variants } from "framer-motion";
 import { useRef } from "react";
+import { motion, Variants } from "framer-motion";
 
 const fadeUpVariant: Variants = {
   offscreen: {
-    y: 100,
+    x: 100,
     opacity: 0.2,
   },
   onscreen: {
-    y: 0,
+    x: 0,
     opacity: 1,
     transition: {
       type: "spring",
@@ -18,7 +18,7 @@ const fadeUpVariant: Variants = {
   },
 };
 
-const FadeUpAnimation = ({ children, className, key }: any) => {
+export default function FadeUpAnimation({ children, className, key }: any) {
   const ref = useRef(null);
   return (
     <motion.div
@@ -33,6 +33,4 @@ const FadeUpAnimation = ({ children, className, key }: any) => {
       {children}
     </motion.div>
   );
-};
-
-export default FadeUpAnimation;
+}

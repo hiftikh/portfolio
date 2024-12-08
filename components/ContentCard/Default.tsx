@@ -1,84 +1,49 @@
 import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
-import Button from "@/components/Button";
-import DataInterfaces from "@/app/interfaces/Data";
-import { ContentCardProps } from "@/app/interfaces/ContentCardProps";
-import FadeUpAnimation from "../Animatation/AnimatedComponent";
+import DataInterface from "@/app/interfaces/Data";
 
-export default function ContentCard(props: ContentCardProps, key: any) {
-  const { data, includeDesc } = props;
+import { orderByRecent } from "@/lib/utils";
 
-  return (
-    <FadeUpAnimation className="rounded-xl overflow-hidden h-full" key={key}>
-      <Image
-        width={600}
-        height={600}
-        src={data.img.banner?.url || "/img/placeholder-image.jpg"}
-        alt={data.img.banner?.alt || "Placeholder Image"}
-        placeholder="blur"
-        blurDataURL="/img/placeholder-image.jpg"
-      />
-      <div className="p-5 bg-white h-full">
-        <h2 className="leading-7 text-black font-semibold text-xl">
-          {data.name || "Name"}
-        </h2>
-        {includeDesc && (
-          <p className="text-black/60 leading-tight">{data.description}</p>
-        )}
-        <ButtonGroup {...data} />
-        {data.keywords && <KeyWords {...data} />}
-      </div>
-    </FadeUpAnimation>
-  );
+import FadeUpAnimation from "../Animatation/FadeUp";
+import ButtonGroup from "./ButtonGroup";
+import Keywords from "./Keywords";
+
+interface ContentCardProps {
+  data: DataInterface[];
+  pathname: string | null;
+  includeDesc?: boolean | null;
 }
 
-const KeyWords = ({ keywords }: DataInterfaces) => {
-  return (
-    <div className="flex-wrap justify-normal">
-      {keywords &&
-        keywords.map((keyword, index) => (
-          <Badge
-            variant="outline"
-            className="mr-1 mt-2 text-gray-500"
-            key={index}
-          >
-            {keyword}
-          </Badge>
-        ))}
-    </div>
-  );
-};
+export default function ContentCard(props: ContentCardProps) {
+  const { data, includeDesc, pathname } = props;
+  const dataFiltered = data.filter((data) => data.show).sort(orderByRecent);
 
-const ButtonGroup = ({ url, slug }: DataInterfaces) => {
   return (
-    <div className="flex mt-4 mb-4 justify-between gap-2">
-      {slug && (
-        <Button
-          href={`/work/${slug}`}
-          className="basis-1/2"
-          text="Learn More"
-        />
-      )}
-      {url?.github && (
-        <Button
-          href={url.github}
-          text="Github"
-          external
-          icon="external-link"
-          variant={slug ? "outline" : "default"}
-          className="basis-1/2"
-        />
-      )}
-      {url?.site && (
-        <Button
-          href={url.site}
-          text="Website"
-          external
-          icon="external-link"
-          className="basis-1/2"
-          variant="outline"
-        />
-      )}
+    <div className="my-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {dataFiltered.map((item) => (
+        <FadeUpAnimation
+          className="rounded-xl overflow-hidden h-full"
+          key={item.id}
+        >
+          <Image
+            width={600}
+            height={600}
+            src={item.img.banner?.url || "/img/placeholder-image.jpg"}
+            alt={item.img.banner?.alt || "Placeholder Image"}
+            placeholder="blur"
+            blurDataURL="/img/placeholder-image.jpg"
+          />
+          <div className="p-5 bg-white h-full">
+            <h2 className="leading-7 text-black font-semibold text-xl">
+              {item.name || "Name"}
+            </h2>
+            {includeDesc && (
+              <p className="text-black/60 leading-tight">{item.description}</p>
+            )}
+            <ButtonGroup pathname={pathname} data={item} />
+            <Keywords data={item} />
+          </div>
+        </FadeUpAnimation>
+      ))}
     </div>
   );
-};
+}

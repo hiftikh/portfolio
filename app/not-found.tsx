@@ -1,8 +1,10 @@
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import ChangeBgColor from "@/components/ChangeBgColor";
 
-export default function NotFound() {
+import { Button } from "@/components/ui/button";
+import { Undo2 } from "lucide-react";
+
+export default async function NotFound() {
   return (
     <>
       <ChangeBgColor color="black" />
@@ -17,9 +19,11 @@ export default function NotFound() {
           <Button
             asChild
             variant="outline"
-            className="bg-transparent text-secondary mt-6 hover:border-accent"
+            className="text-white hover:bg-white"
           >
-            <Link href="/">Return Home Safely</Link>
+            <Link href="/">
+              Return Home Safely <Undo2 />
+            </Link>
           </Button>
         </div>
       </div>

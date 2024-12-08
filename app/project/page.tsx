@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import Header from "@/components/Header";
-import ContentBox from "@/components/ContentContainer/Default";
+import Header from "@/components/Page/Header";
+import ContentCard from "@/components/ContentCard/Default";
 import data from "@/json/project.json";
 
 export const metadata: Metadata = {
-  title: "Recent Projects",
+  title: "Projects",
 };
 
 export default function Page() {
@@ -13,7 +13,7 @@ export default function Page() {
       <Header align="center" underline>
         Recent Projects
       </Header>
-      <ContentBox data={data} includeDesc={true} />
+      <ContentCard data={data} includeDesc={true} pathname="project" />
     </>
   );
 }

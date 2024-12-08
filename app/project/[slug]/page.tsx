@@ -3,22 +3,21 @@ import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import { GenerateMetadata } from "@/app/interfaces/GenerateMetadata";
 
-import data from "@/json/work.json";
+import data from "@/json/project.json";
 
 import Header from "@/components/Page/Header";
 import Button from "@/components/Button";
 import BreadCrumbCustom from "@/components/Page/BreadCrumbCustom";
 import About from "@/components/SlugPage/About";
 import Keyword from "@/components/Keyword";
-import ScrollProgress from "@/components/Animatation/ScrollProgress";
 
 export async function generateMetadata({
   params,
 }: GenerateMetadata): Promise<Metadata> {
   const { slug } = await params;
-  const work = data.find((item) => item.slug.toString() === slug);
+  const project = data.find((item) => item.slug.toString() === slug);
   return {
-    title: work?.name,
+    title: project?.name,
   };
 }
 
@@ -30,39 +29,39 @@ export function generateStaticParams() {
 
 export default async function Page({ params }: any) {
   const { slug } = await params;
-  const work = data.find((item) => item.slug.toString() === slug);
+  const project = data.find((item) => item.slug.toString() === slug);
 
-  if (!work) {
+  if (!project) {
     notFound();
   }
 
-  const DetailedContent = dynamic(
-    () =>
-      import(`@/components/DetailedContent/${work.componentName}`).catch(
-        (err) => {
-          return () => "";
-        }
-      ),
-    {
-      ssr: true,
-    }
-  );
+  // const DetailedContent = dynamic(
+  //   () =>
+  //     import(`@/components/DetailedContent/${project.componentName}`).catch(
+  //       (err) => {
+  //         return () => "";
+  //       }
+  //     ),
+  //   {
+  //     ssr: true,
+  //   }
+  // );
 
   const breadCrumbObj = {
-    currentPage: work.name,
-    currentSubPageURL: "/work",
-    currentSubPageName: "Work",
+    currentPage: project.name,
+    currentSubPageURL: "/project",
+    currentSubPageName: "Project",
   };
 
   return (
     <>
       <BreadCrumbCustom {...breadCrumbObj} />
-      <Header underline>{work.name}</Header>
-      <About {...work} />
-      {work.url && (
+      <Header underline>{project.name}</Header>
+      <About {...project} />
+      {project.url && (
         <>
           <Button
-            href={work.url.site}
+            href={project.url.site}
             text="Vist Website"
             icon="external-link"
             external
@@ -72,8 +71,8 @@ export default async function Page({ params }: any) {
           <br />
         </>
       )}
-      <DetailedContent></DetailedContent>
-      <Keyword {...work} />
+      {/* <DetailedContent></DetailedContent> */}
+      <Keyword {...project} />
     </>
   );
 }

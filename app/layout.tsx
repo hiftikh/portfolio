@@ -1,8 +1,8 @@
 import "./globals.css";
 import { Mulish } from "next/font/google";
 import type { Metadata } from "next";
-import Navigation from "../components/Navigation";
-import Footer from "@/components/Footer";
+import Navigation from "@/components/Page/Navigation";
+import Footer from "@/components/Page/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Haris Iftikhar",
     default: "Haris Iftikhar",
   },
-  description: "Portfolio of Haris Iftikhar.",
+  description: "Digital Portfolio of Haris Iftikhar.",
   creator: "Haris Iftikhar",
   publisher: "Haris Iftikhar",
   keywords: ["Next.js", "React", "JavaScript", "Frontend Developer"],

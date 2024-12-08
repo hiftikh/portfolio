@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "show": true,
     "name": "Nurcare",
     "slug": "nurcare",
@@ -19,6 +20,7 @@
     "dateAdded": "2024-08-01"
   },
   {
+    "id": 2,
     "show": true,
     "name": "Jilani and Asuncion Consulting Engineers",
     "componentName": "Jace",
@@ -38,6 +40,7 @@
     "dateAdded": "2017-05-01"
   },
   {
+    "id": 3,
     "show": true,
     "name": "Beladi's Bakery",
     "componentName": "BeladisBakery",
@@ -57,6 +60,7 @@
     "dateAdded": "2019-10-01"
   },
   {
+    "id": 4,
     "show": true,
     "name": "Forest City Ramadan",
     "componentName": "ForestCityRamadan",
@@ -76,6 +80,7 @@
     "dateAdded": "2020-05-01"
   },
   {
+    "id": 5,
     "show": true,
     "name": "McSherim Bakery",
     "componentName": "McSherimBakery",
@@ -95,6 +100,7 @@
     "dateAdded": "2020-07-01"
   },
   {
+    "id": 6,
     "show": true,
     "name": "Shraim's Sweets",
     "description": "Shraim's Sweets is an exclusive collection of world wide sweets and recipes servered with our special chocolates and fruits.",
@@ -114,6 +120,7 @@
     "dateAdded": "2019-03-01"
   },
   {
+    "id": 7,
     "show": true,
     "name": "Westdell",
     "componentName": "Westdell",
@@ -134,6 +141,7 @@
     "dateAdded": "2020-05-01"
   },
   {
+    "id": 8,
     "show": true,
     "name": "Yasmine's",
     "componentName": "Yasmines",
@@ -154,6 +162,7 @@
     "dateAdded": "2021-02-01"
   },
   {
+    "id": 9,
     "show": true,
     "name": "Lionheart Tattoo Parlour",
     "componentName": "Lionheart",
@@ -174,6 +183,7 @@
     "dateAdded": "2023-07-01"
   },
   {
+    "id": 10,
     "show": true,
     "name": "London Muslim Seniors Network",
     "componentName": "LondonMuslimSeniorsNetwork",
@@ -193,6 +203,7 @@
     "dateAdded": "2021-01-01"
   },
   {
+    "id": 11,
     "show": true,
     "name": "Muslim Soup Kitchen",
     "componentName": "MuslimSoupKitchen",
@@ -212,6 +223,7 @@
     "dateAdded": "2021-01-01"
   },
   {
+    "id": 12,
     "show": true,
     "name": "Pistachios",
     "componentName": "Pistachios",
@@ -230,8 +242,8 @@
     "keywords": ["Logo"],
     "dateAdded": "2021-11-01"
   },
-
   {
+    "id": 13,
     "show": true,
     "name": "Edgewood Estates",
     "componentName": "EdgewoodEstates",
@@ -251,8 +263,8 @@
     "keywords": ["Website"],
     "dateAdded": "2021-07-01"
   },
-
   {
+    "id": 14,
     "show": true,
     "name": "Canterbury Homes",
     "componentName": "CanterburyHomes",
@@ -273,6 +285,7 @@
     "dateAdded": "2021-07-01"
   },
   {
+    "id": 15,
     "show": true,
     "name": "Forest City Muslim",
     "componentName": "ForestCityMuslim",

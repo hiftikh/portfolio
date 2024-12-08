@@ -2,7 +2,7 @@
 
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import navigation from "../json/navagation.json";
+import navigation from "@/json/navagation.json";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
