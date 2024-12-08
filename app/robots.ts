@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    // sitemap: '',
+    sitemap: "https://harisiftikhar.com/sitemap.xml",
   };
 }

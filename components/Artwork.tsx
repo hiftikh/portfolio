@@ -3,20 +3,20 @@ import { cn } from "@/lib/utils";
 
 import ArtworkInterface from "@/app/interfaces/Artwork";
 
-export default function Artwork(params: ArtworkInterface) {
+export default function Artwork(props: ArtworkInterface) {
   return (
     <div className="my-10 mx-auto md:w-8/12 text-center">
-      <div className={params.bgColor || "bg-transparent"}>
+      <div className={props.bgColor || "bg-transparent"}>
         <Image
-          src={params.imageURL}
-          alt={params.alt || "Alt Tag"}
-          width={params.width || 800}
-          height={params.height || 800}
-          className={cn("mx-auto", params.bgColor || "bg-transparent")}
+          src={props.imageURL}
+          alt={props.alt || "Alt Tag"}
+          width={props.width || 800}
+          height={props.height || 800}
+          className={cn("mx-auto", props.bgColor || "bg-transparent")}
           style={{ height: "auto", width: "auto" }}
         />
       </div>
-      <Caption {...params} />
+      <Caption {...props} />
     </div>
   );
 }
