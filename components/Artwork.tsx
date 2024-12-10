@@ -2,24 +2,21 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 import ArtworkInterface from "@/app/interfaces/Artwork";
-import SlideOnScrollAnimation from "./Animatation/Scroll/Slide";
 
 export default function Artwork(props: ArtworkInterface) {
   return (
     <div className="my-10 mx-auto md:w-8/12 text-center">
-      <SlideOnScrollAnimation dirY={50}>
-        <div className={props.bgColor || "bg-transparent"}>
-          <Image
-            src={props.imageURL}
-            alt={props.alt || "Alt Tag"}
-            width={props.width || 800}
-            height={props.height || 800}
-            className={cn("mx-auto", props.bgColor || "bg-transparent")}
-            style={{ height: "auto", width: "auto" }}
-          />
-        </div>
-        <Caption {...props} />
-      </SlideOnScrollAnimation>
+      <div className={props.bgColor || "bg-transparent"}>
+        <Image
+          src={props.imageURL}
+          alt={props.alt || "Alt Tag"}
+          width={props.width || 800}
+          height={props.height || 800}
+          className={cn("mx-auto", props.bgColor || "bg-transparent")}
+          style={{ height: "auto", width: "auto" }}
+        />
+      </div>
+      <Caption {...props} />
     </div>
   );
 }
