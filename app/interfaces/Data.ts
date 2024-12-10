@@ -2,10 +2,10 @@ export default interface Data {
   id: number;
   show: boolean | null;
   name: string | null;
-  slug?: string | null;
   description?: string | null;
   componentName?: string | null;
   url?: {
+    slug?: string | null;
     site?: string | null;
     github?: string | null;
   };

@@ -49,6 +49,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.log("meow");
   return (
     <html lang="en" className={font.className}>
       <body className="flex flex-col min-h-screen transition-colors duration-500 ease-in-out">

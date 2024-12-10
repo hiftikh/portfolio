@@ -10,27 +10,27 @@ import Button from "@/components/Button";
 import BreadCrumbCustom from "@/components/Page/BreadCrumbCustom";
 import About from "@/components/SlugPage/About";
 import Keyword from "@/components/Keyword";
-import ScrollProgress from "@/components/Animatation/ScrollProgress";
+import ScrollProgress from "@/components/Animatation/Scroll/ScrollProgress";
 
 export async function generateMetadata({
   params,
 }: GenerateMetadata): Promise<Metadata> {
   const { slug } = await params;
-  const work = data.find((item) => item.slug.toString() === slug);
+  const work = data.find((item) => item.url.slug.toString() === slug);
   return {
-    title: work?.name,
+    title: `${work?.name} | Work`,
   };
 }
 
 export function generateStaticParams() {
   return data.map((item) => ({
-    slug: item.slug,
+    slug: item.url.slug,
   }));
 }
 
 export default async function Page({ params }: any) {
   const { slug } = await params;
-  const work = data.find((item) => item.slug.toString() === slug);
+  const work = data.find((item) => item.url.slug.toString() === slug);
 
   if (!work) {
     notFound();
@@ -59,7 +59,7 @@ export default async function Page({ params }: any) {
       <BreadCrumbCustom {...breadCrumbObj} />
       <Header underline>{work.name}</Header>
       <About {...work} />
-      {work.url && (
+      {work.url.site && (
         <>
           <Button
             href={work.url.site}
@@ -74,6 +74,7 @@ export default async function Page({ params }: any) {
       )}
       <DetailedContent></DetailedContent>
       <Keyword {...work} />
+      <ScrollProgress />
     </>
   );
 }

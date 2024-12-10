@@ -18,7 +18,8 @@ export default function Button({
       asChild
     >
       <Link href={props.href} target={external ? "_blank" : "_self"}>
-        {props.text} {props.icon && <Icon name={props?.icon} />}
+        {props.text}
+        {props.icon && <Icon name={props?.icon} />}
       </Link>
     </ButtonUI>
   );

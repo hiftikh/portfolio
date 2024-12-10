@@ -8,38 +8,39 @@ interface ButtonGroupProps {
 
 export default function ButtonGroup(props: ButtonGroupProps) {
   const { data, pathname } = props;
+  const url = data.url;
 
-  if (data === null || data === undefined) {
+  if (url === null || url === undefined) {
     return false;
   }
 
   return (
     <div className="flex mt-4 mb-4 justify-between gap-2">
-      {data.slug !== undefined && data.componentName !== undefined && (
+      {url?.slug !== null && url.slug?.length !== 0 && (
         <Button
-          href={`/${pathname}/${data.slug}`}
-          className="basis-1/2"
+          href={`/${pathname}/${url?.slug}`}
           text="Learn More"
+          className="basis-full"
         />
       )}
-      {data.url?.github && (
+      {url?.site && (
         <Button
-          href={data.url.github}
+          href={url.site}
+          text="Website"
+          external
+          icon="external-link"
+          variant="outline"
+          className="basis-full"
+        />
+      )}
+      {url?.github && (
+        <Button
+          href={url.github}
           text="Github"
           external
           icon="external-link"
           variant="outline"
-          className="basis-1/2"
-        />
-      )}
-      {data.url?.site && (
-        <Button
-          href={data.url.site}
-          text="Website"
-          external
-          icon="external-link"
-          className="basis-1/2"
-          variant="outline"
+          className="basis-full"
         />
       )}
     </div>

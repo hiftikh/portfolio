@@ -15,21 +15,21 @@ export async function generateMetadata({
   params,
 }: GenerateMetadata): Promise<Metadata> {
   const { slug } = await params;
-  const project = data.find((item) => item.slug.toString() === slug);
+  const project = data.find((item) => item.url.slug.toString() === slug);
   return {
-    title: project?.name,
+    title: `${project?.name} | Projects`,
   };
 }
 
-export function generateStaticParams() {
-  return data.map((item) => ({
-    slug: item.slug,
-  }));
-}
+// export function generateStaticParams() {
+//   return data.map((item) => ({
+//     slug: item.url.slug,
+//   }));
+// }
 
 export default async function Page({ params }: any) {
   const { slug } = await params;
-  const project = data.find((item) => item.slug.toString() === slug);
+  const project = data.find((item) => item.url.slug.toString() === slug);
 
   if (!project) {
     notFound();
@@ -58,7 +58,7 @@ export default async function Page({ params }: any) {
       <BreadCrumbCustom {...breadCrumbObj} />
       <Header underline>{project.name}</Header>
       <About {...project} />
-      {project.url && (
+      {project.url.site && (
         <>
           <Button
             href={project.url.site}

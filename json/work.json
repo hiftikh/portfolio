@@ -1,11 +1,35 @@
 [
   {
+    "id": 0,
+    "show": true,
+    "name": "Forest City Muslim",
+    "componentName": "ForestCityMuslim",
+    "description": "This initiative started out as a simple flyer with information on the basic rules of deep understanding related to Islamic practice, including the do's and don'ts of fasting in Ramadan, but quickly evolved into a magazine. There is so much to share in the context of Ramadan, with so many topics and perspectives, that we felt we could try to make it a comprehensive go-to practical guide and resource for everyone in the Forest City.",
+    "url": {
+      "slug": "forest-city-muslim"
+    },
+    "img": {
+      "logo": {
+        "url": "/img/logo/work/forest-city-muslim.png",
+        "alt": "Forest City Muslim Logo"
+      },
+      "banner": {
+        "url": "/img/banner/work/forest-city-muslim.jpg",
+        "alt": "Forest City Muslim Banner"
+      }
+    },
+    "keywords": ["Photography", "Publication", "Logo"],
+    "dateAdded": "2020-06-09"
+  },
+  {
     "id": 1,
     "show": true,
     "name": "Nurcare",
-    "slug": "nurcare",
     "componentName": "Nurcare",
     "description": "Nurcare is a counseling and psychotherapy service that takes on a humanistic, strength-based, trauma-informed, anti-oppressive, and anti-racist approach to therapy.",
+    "url": {
+      "slug": "nurcare"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/nurcare.png",
@@ -25,7 +49,9 @@
     "name": "Jilani and Asuncion Consulting Engineers",
     "componentName": "Jace",
     "description": "Jilani and Asuncion Consulting Engineers (JACE) is a building systems consulting and engineering firm that provides quality comprehensive Professional Mechanical and Electrical Engineering Services.",
-    "slug": "jace",
+    "url": {
+      "slug": "jace"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/jace.png",
@@ -45,7 +71,9 @@
     "name": "Beladi's Bakery",
     "componentName": "BeladisBakery",
     "description": "Beladi’s brings the taste of the Middle East to London, Ontario with traditional, authentic, home-made cuisine!",
-    "slug": "beladis",
+    "url": {
+      "slug": "beladis"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/beladis.png",
@@ -64,8 +92,10 @@
     "show": true,
     "name": "Forest City Ramadan",
     "componentName": "ForestCityRamadan",
-    "slug": "forest-city-ramadan",
     "description": "This initiative started out as a simple flyer with information on the basic rules of deep understanding related to Islamic practice, including the do's and don'ts of fasting in Ramadan, but quickly evolved into a magazine. There is so much to share in the context of Ramadan, with so many topics and perspectives, that we felt we could try to make it a comprehensive go-to practical guide and resource for everyone in the Forest City.",
+    "url": {
+      "slug": "forest-city-ramadan"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/forest-city-ramadan.png",
@@ -85,7 +115,9 @@
     "name": "McSherim Bakery",
     "componentName": "McSherimBakery",
     "description": "Bringing homemade pita bread to your table.",
-    "slug": "mcsherim-bakery",
+    "url": {
+      "slug": "mcsherim-bakery"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/mcsherim-bakery.png",
@@ -105,7 +137,9 @@
     "name": "Shraim's Sweets",
     "description": "Shraim's Sweets is an exclusive collection of world wide sweets and recipes servered with our special chocolates and fruits.",
     "componentName": "ShraimsSweets",
-    "slug": "shraims-sweets",
+    "url": {
+      "slug": "shraims-sweets"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/shraims-sweets.png",
@@ -125,8 +159,10 @@
     "name": "Westdell",
     "componentName": "Westdell",
     "description": "Westdell Development Corporation is a commercial, office and residential development company based in London, Ontario that has been developing and managing a growing portfolio of commercial, office and residential properties for over 30 years.",
-    "url": { "site": "//www.westdellcorp.com" },
-    "slug": "westdell",
+    "url": {
+      "slug": "westdell",
+      "site": "//www.westdellcorp.com"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/westdell.png",
@@ -146,8 +182,10 @@
     "name": "Yasmine's",
     "componentName": "Yasmines",
     "description": "Yasmine’s is a Lebanese restaurant that combines modern and traditional Lebanese dishes, reflecting the region’s amazing flavours and cuisine.",
-    "url": { "site": "//yasminesrestaurant.com" },
-    "slug": "yasmines",
+    "url": {
+      "slug": "yasmines",
+      "site": "//yasminesrestaurant.com"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/yasmines.png",
@@ -167,8 +205,10 @@
     "name": "Lionheart Tattoo Parlour",
     "componentName": "Lionheart",
     "description": "Lionheart Tattoo Parlour strives to provide a friendly and welcoming atmosphere that will leave customers feeling thrilled with their experience and new tattoo.",
-    "url": { "site": "//lionhearttattoo.ca" },
-    "slug": "lionheart",
+    "url": {
+      "slug": "lionheart",
+      "site": "//lionhearttattoo.ca"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/lionheart.png",
@@ -188,7 +228,9 @@
     "name": "London Muslim Seniors Network",
     "componentName": "LondonMuslimSeniorsNetwork",
     "description": "To improve the quality of life for Muslim seniors through the delivery of culturally sensitive programs and services to enhance and facilitate seniors’ proud & independent living, social support and integration in the community and their own homes.",
-    "slug": "london-muslim-seniors-network",
+    "url": {
+      "slug": "london-muslim-seniors-network"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/london-muslim-seniors-network.png",
@@ -208,7 +250,9 @@
     "name": "Muslim Soup Kitchen",
     "componentName": "MuslimSoupKitchen",
     "description": "The Muslim Soup Kitchen is a weekly soup kitchen based out of Hyatt Mosque in London, Ontario that has been running since 2019.",
-    "slug": "muslim-soup-kitchen",
+    "url": {
+      "slug": "muslim-soup-kitchen"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/muslim-soup-kitchen.png",
@@ -228,7 +272,9 @@
     "name": "Pistachios",
     "componentName": "Pistachios",
     "description": "Pistachios is a grocery store that caters to a wide array of consumers and is intended to be a one-stop shop for all quality meats, produce and grocery needs.",
-    "slug": "pistachios",
+    "url": {
+      "slug": "pistachios"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/pistachios.png",
@@ -248,8 +294,10 @@
     "name": "Edgewood Estates",
     "componentName": "EdgewoodEstates",
     "description": "Edgewood Estates is a housing community project that aims to offer a small town charm just minutes from big city amenities located in Mount Brydes, Ontario.",
-    "url": { "site": "//edgewoodestates.ca" },
-    "slug": "edgewood-estates",
+    "url": {
+      "slug": "edgewood-estates",
+      "site": "//edgewoodestates.ca"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/edgewood-estates.png",
@@ -269,8 +317,10 @@
     "name": "Canterbury Homes",
     "componentName": "CanterburyHomes",
     "description": "Canterbury Homes is a custom home builder that brings craftsmanship, construction techniques, and attention to detail in everything they do.",
-    "url": { "site": "//canterburyhomes.ca" },
-    "slug": "canterbury-homes",
+    "url": {
+      "slug": "canterbury-homes",
+      "site": "//canterburyhomes.ca"
+    },
     "img": {
       "logo": {
         "url": "/img/logo/work/canterbury-homes.png",
@@ -283,25 +333,5 @@
     },
     "keywords": ["Website"],
     "dateAdded": "2021-07-01"
-  },
-  {
-    "id": 15,
-    "show": true,
-    "name": "Forest City Muslim",
-    "componentName": "ForestCityMuslim",
-    "slug": "forest-city-muslim",
-    "description": "This initiative started out as a simple flyer with information on the basic rules of deep understanding related to Islamic practice, including the do's and don'ts of fasting in Ramadan, but quickly evolved into a magazine. There is so much to share in the context of Ramadan, with so many topics and perspectives, that we felt we could try to make it a comprehensive go-to practical guide and resource for everyone in the Forest City.",
-    "img": {
-      "logo": {
-        "url": "/img/logo/work/forest-city-muslim.png",
-        "alt": "Forest City Muslim Logo"
-      },
-      "banner": {
-        "url": "/img/banner/work/forest-city-muslim.jpg",
-        "alt": "Forest City Muslim Banner"
-      }
-    },
-    "keywords": ["Photography", "Publication", "Logo"],
-    "dateAdded": "2020-06-09"
   }
 ]

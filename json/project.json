@@ -1,11 +1,11 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "show": true,
     "name": "Portfolio",
     "description": "Digital Portfolio of Haris Iftikhar.",
-    "slug": "portfolio",
     "url": {
+      "slug": "",
       "github": "https://github.com/hiftikh/portfolio",
       "site": "//harisiftikhar.com"
     },
@@ -19,12 +19,12 @@
     "dateAdded": "2024-10-01"
   },
   {
-    "id": 2,
+    "id": 1,
     "show": true,
     "name": "To Do",
     "description": "Simple ToDo application.",
-    "slug": "todo",
     "url": {
+      "slug": "",
       "github": "https://github.com/hiftikh/to-do-app",
       "site": "https://hiftikh.github.io/to-do-app/"
     },
@@ -38,13 +38,12 @@
     "dateAdded": "2024-11-01"
   },
   {
-    "id": 3,
+    "id": 2,
     "show": true,
     "name": "Badminton Session Tracker",
-    "slug": "badminton-session-tracker",
     "description": "Allows badminton players to select players and add them to a waitlist to play.",
     "url": {
-      "github": "",
+      "slug": "",
       "site": "https://mbc-react-app.vercel.app/"
     },
     "img": {

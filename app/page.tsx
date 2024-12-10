@@ -3,17 +3,15 @@ import { Lora } from "next/font/google";
 import data from "@/json/dataURL.json";
 const font = Lora({ subsets: ["latin"], display: "swap" });
 import { cn } from "@/lib/utils";
-import FadeUpAnimation from "@/components/Animatation/FadeUp";
-import FadeLeftAnimation from "@/components/Animatation/FadeLeft";
-import FadeDownAnimation from "@/components/Animatation/FadeDown";
-import FadeRightAnimation from "@/components/Animatation/FadeRight";
+
+import SlideAnimation from "@/components/Animatation/Transition/Slide";
 
 export default function Home() {
   return (
     <>
-      <div className="flex h-[70svh] justify-center items-center ">
+      <div className="flex h-[70svh] justify-center items-center">
         <div className="text-center">
-          <FadeDownAnimation>
+          <SlideAnimation dirY={-50} delay={0.3}>
             <h1
               className={cn(
                 "text-secondary text-4xl font-normal",
@@ -22,16 +20,21 @@ export default function Home() {
             >
               Hi, I&apos;m&nbsp;
             </h1>
+          </SlideAnimation>
+          <SlideAnimation dirY={-50} delay={0.4}>
             <h1
               className={cn(
-                "text-secondary text-8xl font-bold underline decoration-accent underline-offset-8",
+                "text-secondary text-8xl font-bold",
                 `${font.className}`
               )}
             >
               Haris.
+              <SlideAnimation dirX={-200} delay={1.5}>
+                <div className="bg-accent h-3 w-full"></div>
+              </SlideAnimation>
             </h1>
-          </FadeDownAnimation>
-          <FadeUpAnimation>
+          </SlideAnimation>
+          <SlideAnimation dirY={50} delay={1}>
             <p
               className={cn(
                 "text-secondary text-2xl pt-4 mt-3",
@@ -40,9 +43,9 @@ export default function Home() {
             >
               Keeping it Simple.
             </p>
-          </FadeUpAnimation>
-          <div className="mt-10 flex justify-center gap-4">
-            <FadeLeftAnimation>
+          </SlideAnimation>
+          <div className="mt-8 flex justify-center gap-4">
+            <SlideAnimation dirX={-50} delay={2}>
               <Button
                 href={data[0].github}
                 icon="external-link"
@@ -51,8 +54,8 @@ export default function Home() {
                 text="Github"
                 external
               />
-            </FadeLeftAnimation>
-            <FadeRightAnimation>
+            </SlideAnimation>
+            <SlideAnimation dirX={50} delay={2}>
               <Button
                 href={data[0].linkedin}
                 icon="external-link"
@@ -61,7 +64,7 @@ export default function Home() {
                 text="LinkedIn"
                 external
               />
-            </FadeRightAnimation>
+            </SlideAnimation>
           </div>
         </div>
       </div>

@@ -26,14 +26,12 @@ export default function BeladisBakery() {
         Created 3 animated video menus for 3 seperate TV screens(left, center,
         and right).
       </p>
-
       <Artwork
         imageURL="/img/artwork/work/beladis-leftscreen.png"
         alt="TV Menu"
         caption="TV Menu (Left Screen)"
         bgColor="bg-slate-700"
       />
-
       <Artwork
         imageURL="/img/artwork/work/beladis-centerscreen.png"
         alt="TV Menu"
