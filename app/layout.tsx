@@ -56,7 +56,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  console.log("meow");
   return (
     <html lang="en" className={font.className}>
       <body className="flex flex-col min-h-screen transition-colors duration-500 ease-in-out">
@@ -64,9 +63,9 @@ export default function RootLayout({
         <main className="mt-10 mx-auto w-10/12 lg:max-w-6xl">{children}</main>
         <Footer />
         <ScrollToTopButton />
+        <GoogleAnalytics gaId="G-S3DJMMDR8G" />
+        <SpeedInsights />
       </body>
-      <GoogleAnalytics gaId="G-S3DJMMDR8G" />
-      <SpeedInsights />
     </html>
   );
 }
