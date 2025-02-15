@@ -20,7 +20,13 @@ export const metadata: Metadata = {
   description: "Digital Portfolio of Haris Iftikhar.",
   creator: "Haris Iftikhar",
   publisher: "Haris Iftikhar",
-  keywords: ["Next.js", "React", "JavaScript", "Frontend Developer"],
+  keywords: [
+    "Next.js",
+    "React",
+    "Frontend Developer",
+    "JavaScript",
+    "TypeScript",
+  ],
   generator: "Next.js",
   referrer: "origin-when-cross-origin",
   formatDetection: {
