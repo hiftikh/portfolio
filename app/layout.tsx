@@ -5,6 +5,7 @@ import Navigation from "@/components/Page/Navigation";
 import Footer from "@/components/Page/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const font = Mulish({
   subsets: ["latin"],
@@ -59,6 +60,7 @@ export default function RootLayout({
         <ScrollToTopButton />
       </body>
       <GoogleAnalytics gaId="G-S3DJMMDR8G" />
+      <SpeedInsights />
     </html>
   );
 }
