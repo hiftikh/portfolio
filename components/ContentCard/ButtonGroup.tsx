@@ -21,7 +21,7 @@ export default function ButtonGroup(props: ButtonGroupProps) {
           href={`/${pathname}/${url?.slug}`}
           text="Learn More"
           variant="default"
-          className="grow-1"
+          className="grow-1 basis-1/2"
         />
       )}
       {url?.site && (
@@ -31,7 +31,7 @@ export default function ButtonGroup(props: ButtonGroupProps) {
           external
           icon="external-link"
           variant="outline"
-          className="grow-1"
+          className="grow-1 basis-1/2"
         />
       )}
       {url?.github && (
@@ -41,7 +41,7 @@ export default function ButtonGroup(props: ButtonGroupProps) {
           external
           icon="external-link"
           variant="outline"
-          className="grow-1"
+          className="grow-1 basis-1/2"
         />
       )}
     </div>
