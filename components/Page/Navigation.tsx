@@ -10,6 +10,7 @@ import {
   Sheet,
   SheetContent,
   SheetDescription,
+  SheetFooter,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
@@ -64,7 +65,11 @@ export default function Navigation() {
               </div>
             </div>
             <Sheet open={open} onOpenChange={setOpen}>
-              <SheetTrigger className="md:hidden" aria-label="MobileMenu">
+              <SheetTrigger
+                className="md:hidden"
+                aria-label="MobileMenu"
+                asChild
+              >
                 <div className="group relative inline-flex items-center justify-center rounded-md p-2 text-secondary hover:bg-accent hover:text-white">
                   <Menu
                     aria-hidden="true"
@@ -73,7 +78,10 @@ export default function Navigation() {
                 </div>
               </SheetTrigger>
 
-              <SheetContent className="w-screen pt-10">
+              <SheetContent
+                className="w-screen pt-10 p-8 bg-primary"
+                side="right"
+              >
                 <SheetTitle className="text-white/60 text-sm">MENU</SheetTitle>
 
                 <SheetDescription className="mt-2">
@@ -98,6 +106,8 @@ export default function Navigation() {
                         </Link>
                       )
                   )}
+                </SheetDescription>
+                <SheetFooter>
                   <Link href="/" onClick={() => setOpen(false)}>
                     <Image
                       src="/img/hi-logo.svg"
@@ -107,7 +117,7 @@ export default function Navigation() {
                       className="text-left absolute bottom-8"
                     />
                   </Link>
-                </SheetDescription>
+                </SheetFooter>
               </SheetContent>
             </Sheet>
           </div>

@@ -20,7 +20,8 @@ export default function ButtonGroup(props: ButtonGroupProps) {
         <Button
           href={`/${pathname}/${url?.slug}`}
           text="Learn More"
-          className="basis-full"
+          variant="default"
+          className="grow-1 basis-1/2"
         />
       )}
       {url?.site && (
@@ -30,7 +31,7 @@ export default function ButtonGroup(props: ButtonGroupProps) {
           external
           icon="external-link"
           variant="outline"
-          className="basis-full"
+          className="grow-1 basis-1/2"
         />
       )}
       {url?.github && (
@@ -40,7 +41,7 @@ export default function ButtonGroup(props: ButtonGroupProps) {
           external
           icon="external-link"
           variant="outline"
-          className="basis-full"
+          className="grow-1 basis-1/2"
         />
       )}
     </div>

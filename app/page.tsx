@@ -50,7 +50,7 @@ export default function Home() {
                 href={data[0].github}
                 icon="external-link"
                 variant="outline"
-                className="text-secondary hover:text-secondary"
+                className="text-secondary hover:text-secondary border-secondary/50"
                 text="Github"
                 external
               />
@@ -60,7 +60,7 @@ export default function Home() {
                 href={data[0].linkedin}
                 icon="external-link"
                 variant="outline"
-                className="text-secondary hover:text-secondary"
+                className="text-secondary hover:text-secondary border-secondary/50"
                 text="LinkedIn"
                 external
               />

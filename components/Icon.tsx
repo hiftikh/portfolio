@@ -12,7 +12,7 @@ const Icon = ({ name, ...props }: IconProps) => {
 
   return (
     <>
-      <LucideIcon {...props} className="inline pl-1 box-content" />
+      <LucideIcon {...props} className="inline box-content" />
     </>
   );
 };
