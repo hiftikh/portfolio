@@ -40,8 +40,9 @@ export const metadata: Metadata = {
       template: "%s | Haris Iftikhar",
       default: "",
     },
+    description: "Digital Portfolio of Haris Iftikhar.",
     siteName: "Haris Iftikhar",
-    url: "harisiftikhar.com",
+    url: "https://www.harisiftikhar.com/",
     images: {
       url: "/img/og.png",
       width: 1200,
@@ -59,7 +60,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className}>
-      <body className="flex flex-col min-h-screen transition-colors duration-500 ease-in-out">
+      <body className="flex flex-col min-h-screen transition-colors duration-500 ease-in-out bg-primary">
         <Navigation />
         <main className="mt-10 mx-auto w-10/12 lg:max-w-6xl">{children}</main>
         <Footer />
