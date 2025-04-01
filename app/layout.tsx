@@ -14,7 +14,6 @@ const font = Mulish({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.harisiftikhar.com/"),
-
   title: {
     template: "%s | Haris Iftikhar",
     default: "Haris Iftikhar",
