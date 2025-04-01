@@ -65,8 +65,9 @@ export default async function Page({ params }: any) {
             href={work.url.site}
             text="Vist Website"
             icon="external-link"
-            external
+            external={true}
             variant="secondary"
+            size="lg"
           />
           <br />
           <br />
