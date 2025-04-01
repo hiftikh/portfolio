@@ -49,20 +49,20 @@ export default function Home() {
               <Button
                 href={data[0].github}
                 icon="external-link"
-                variant="outline"
-                className="text-secondary hover:text-secondary border-secondary/50"
+                variant="secondary"
                 text="Github"
-                external
+                external={true}
+                size="lg"
               />
             </SlideAnimation>
             <SlideAnimation dirX={50} delay={2}>
               <Button
                 href={data[0].linkedin}
                 icon="external-link"
-                variant="outline"
-                className="text-secondary hover:text-secondary border-secondary/50"
+                variant="secondary"
                 text="LinkedIn"
-                external
+                external={true}
+                size="lg"
               />
             </SlideAnimation>
           </div>
