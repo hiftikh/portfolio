@@ -15,11 +15,7 @@ export default function Keywords(props: KeywordProps) {
   return (
     <div className="flex-wrap justify-normal">
       {keywords.map((keyword, index) => (
-        <Badge
-          variant="outline"
-          className="mr-1 mt-2 text-gray-500"
-          key={index}
-        >
+        <Badge variant="outline" className="mr-2 mt-2 " key={index}>
           {keyword}
         </Badge>
       ))}

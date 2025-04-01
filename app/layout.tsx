@@ -60,13 +60,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className}>
-      <body className="flex flex-col min-h-screen transition-colors duration-500 ease-in-out">
+      <body className="flex flex-col min-h-screen transition-colors duration-500 ease-in-out bg-primary">
         <Navigation />
         <main className="mt-10 mx-auto w-10/12 lg:max-w-6xl">{children}</main>
         <Footer />
         <ScrollToTopButton />
-        <GoogleAnalytics gaId="G-S3DJMMDR8G" />
-        <SpeedInsights />
+        {/* <GoogleAnalytics gaId="G-S3DJMMDR8G" /> */}
+        {/* <SpeedInsights /> */}
       </body>
     </html>
   );
