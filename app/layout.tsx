@@ -65,8 +65,8 @@ export default function RootLayout({
         <main className="mt-10 mx-auto w-10/12 lg:max-w-6xl">{children}</main>
         <Footer />
         <ScrollToTopButton />
-        {/* <GoogleAnalytics gaId="G-S3DJMMDR8G" /> */}
-        {/* <SpeedInsights /> */}
+        <GoogleAnalytics gaId="G-S3DJMMDR8G" />
+        <SpeedInsights />
       </body>
     </html>
   );
