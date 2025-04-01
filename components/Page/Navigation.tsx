@@ -44,7 +44,7 @@ export default function Navigation() {
                 <div className="ml-10 flex items-baseline space-x-4">
                   {navigation.map(
                     (item) =>
-                      !item.show || (
+                      item.show && (
                         <Link
                           href={item.href}
                           key={item.id}
@@ -98,7 +98,7 @@ export default function Navigation() {
                 <SheetDescription className="mt-2">
                   {navigation.map(
                     (item) =>
-                      !item.show || (
+                      item.show && (
                         <Link
                           key={item.name}
                           href={item.href}
