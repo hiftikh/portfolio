@@ -22,13 +22,14 @@ export default function ButtonGroup(props: ButtonGroupProps) {
           text="Learn More"
           variant="default"
           className="grow-1 basis-1/2"
+          external={false}
         />
       )}
       {url?.site && (
         <Button
           href={url.site}
           text="Website"
-          external
+          external={true}
           icon="external-link"
           variant="outline"
           className="grow-1 basis-1/2"
@@ -38,7 +39,7 @@ export default function ButtonGroup(props: ButtonGroupProps) {
         <Button
           href={url.github}
           text="Github"
-          external
+          external={true}
           icon="external-link"
           variant="outline"
           className="grow-1 basis-1/2"

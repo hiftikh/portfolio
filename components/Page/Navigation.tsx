@@ -4,6 +4,7 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import navigation from "@/json/navagation.json";
 import Image from "next/image";
+import Button from "@/components/Button";
 import { cn } from "@/lib/utils";
 
 import {
@@ -61,6 +62,16 @@ export default function Navigation() {
                         </Link>
                       )
                   )}
+                </div>
+                <div className="ml-10 flex items-baseline space-x-4">
+                  {/* <Button
+                    text="hh"
+                    href="https://www.linkedin.com/in/haris-iftikhar/"
+                    external={true}
+                    icon="linkedin"
+                    variant="ghost"
+                    className="text-secondary"
+                  ></Button> */}
                 </div>
               </div>
             </div>

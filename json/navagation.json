@@ -17,14 +17,14 @@
     "name": "Github",
     "href": "https://github.com/hiftikh",
     "current": false,
-    "id": 3,
+    "id": 2,
     "show": false
   },
   {
-    "name": "Linkin",
+    "name": "Linkedin",
     "href": "https://www.linkedin.com/in/haris-iftikhar/",
     "current": false,
-    "id": 4,
+    "id": 3,
     "show": false
   }
 ]
