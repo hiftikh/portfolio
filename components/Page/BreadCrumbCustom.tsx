@@ -1,7 +1,5 @@
 import Link from "next/link";
-
 import BreadcrumbProps from "@/app/interfaces/Breadcrumb";
-
 import {
   Breadcrumb,
   BreadcrumbItem,
